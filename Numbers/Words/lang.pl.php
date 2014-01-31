@@ -32,7 +32,7 @@
 /**
  * Include needed files
  */
-require_once "Numbers/Words.php";
+//require_once "Numbers/Words.php";
 
 /**
  * Class for translating numbers into Polish.
@@ -85,50 +85,50 @@ class Numbers_Words_pl extends Numbers_Words
      * @access private
      */
     var $_exponent = array(
-       // potêga dziesi±tki => liczba pojedyncza, podwójna, mnoga
+       // potï¿½ga dziesiï¿½tki => liczba pojedyncza, podwï¿½jna, mnoga
         0 => array('','',''),
-        3 => array('tysi±c','tysi±ce','tysiêcy'),
-        6 => array('milion','miliony','milionów'),
-        9 => array('miliard','miliardy','miliardów'),
-       12 => array('bilion','biliony','bilionów'),
-       15 => array('biliard','biliardy','biliardów'),
-       18 => array('trylion','tryliony','trylionów'),
-       21 => array('tryliard','tryliardy','tryliardów'),
-       24 => array('kwadrylion','kwadryliony','kwadrylionów'),
-       27 => array('kwadryliard','kwadryliardy','kwadryliardów'),
-       30 => array('kwintylion','kwintyliony','kwintylionów'),
-       33 => array('kwintyliiard','kwintyliardy','kwintyliardów'),
-       36 => array('sekstylion','sekstyliony','sekstylionów'),
-       39 => array('sekstyliard','sekstyliardy','sekstyliardów'),
-       42 => array('septylion','septyliony','septylionów'),
-       45 => array('septyliard','septyliardy','septyliardów'),
-       48 => array('oktylion','oktyliony','oktylionów'),
-       51 => array('oktyliard','oktyliardy','oktyliardów'),
-       54 => array('nonylion','nonyliony','nonylionów'),
-       57 => array('nonyliard','nonyliardy','nonyliardów'),
-       60 => array('decylion','decyliony','decylionów'),
-       63 => array('decyliard','decyliardy','decyliardów'),
-      100 => array('centylion','centyliony','centylionów'),
-      103 => array('centyliard','centyliardy','centyliardów'),
+        3 => array('tysiï¿½c','tysiï¿½ce','tysiï¿½cy'),
+        6 => array('milion','miliony','milionï¿½w'),
+        9 => array('miliard','miliardy','miliardï¿½w'),
+       12 => array('bilion','biliony','bilionï¿½w'),
+       15 => array('biliard','biliardy','biliardï¿½w'),
+       18 => array('trylion','tryliony','trylionï¿½w'),
+       21 => array('tryliard','tryliardy','tryliardï¿½w'),
+       24 => array('kwadrylion','kwadryliony','kwadrylionï¿½w'),
+       27 => array('kwadryliard','kwadryliardy','kwadryliardï¿½w'),
+       30 => array('kwintylion','kwintyliony','kwintylionï¿½w'),
+       33 => array('kwintyliiard','kwintyliardy','kwintyliardï¿½w'),
+       36 => array('sekstylion','sekstyliony','sekstylionï¿½w'),
+       39 => array('sekstyliard','sekstyliardy','sekstyliardï¿½w'),
+       42 => array('septylion','septyliony','septylionï¿½w'),
+       45 => array('septyliard','septyliardy','septyliardï¿½w'),
+       48 => array('oktylion','oktyliony','oktylionï¿½w'),
+       51 => array('oktyliard','oktyliardy','oktyliardï¿½w'),
+       54 => array('nonylion','nonyliony','nonylionï¿½w'),
+       57 => array('nonyliard','nonyliardy','nonyliardï¿½w'),
+       60 => array('decylion','decyliony','decylionï¿½w'),
+       63 => array('decyliard','decyliardy','decyliardï¿½w'),
+      100 => array('centylion','centyliony','centylionï¿½w'),
+      103 => array('centyliard','centyliardy','centyliardï¿½w'),
       120 => array('wicylion','wicylion','wicylion'),
-      123 => array('wicyliard','wicyliardy','wicyliardów'),
+      123 => array('wicyliard','wicyliardy','wicyliardï¿½w'),
       180 => array('trycylion','trycylion','trycylion'),
-      183 => array('trycyliard','trycyliardy','trycyliardów'),
+      183 => array('trycyliard','trycyliardy','trycyliardï¿½w'),
       240 => array('kwadragilion','kwadragilion','kwadragilion'),
-      243 => array('kwadragiliard','kwadragiliardy','kwadragiliardów'),
+      243 => array('kwadragiliard','kwadragiliardy','kwadragiliardï¿½w'),
       300 => array('kwinkwagilion','kwinkwagilion','kwinkwagilion'),
-      303 => array('kwinkwagiliard','kwinkwagiliardy','kwinkwagiliardów'),
+      303 => array('kwinkwagiliard','kwinkwagiliardy','kwinkwagiliardï¿½w'),
       360 => array('seskwilion','seskwilion','seskwilion'),
-      363 => array('seskwiliard','seskwiliardy','seskwiliardów'),
+      363 => array('seskwiliard','seskwiliardy','seskwiliardï¿½w'),
       420 => array('septagilion','septagilion','septagilion'),
-      423 => array('septagiliard','septagiliardy','septagiliardów'),
+      423 => array('septagiliard','septagiliardy','septagiliardï¿½w'),
       480 => array('oktogilion','oktogilion','oktogilion'),
-      483 => array('oktogiliard','oktogiliardy','oktogiliardów'),
+      483 => array('oktogiliard','oktogiliardy','oktogiliardï¿½w'),
       540 => array('nonagilion','nonagilion','nonagilion'),
-      543 => array('nonagiliard','nonagiliardy','nonagiliardów'),
-      600 => array('centylion','centyliony','centylionów'),
-      603 => array('centyliard','centyliardy','centyliardów'),
-      6000018 => array('milinilitrylion','milinilitryliony','milinilitrylionów')
+      543 => array('nonagiliard','nonagiliardy','nonagiliardï¿½w'),
+      600 => array('centylion','centyliony','centylionï¿½w'),
+      603 => array('centyliard','centyliardy','centyliardï¿½w'),
+      6000018 => array('milinilitrylion','milinilitryliony','milinilitrylionï¿½w')
         );
 
     /**
@@ -138,7 +138,7 @@ class Numbers_Words_pl extends Numbers_Words
      */
     var $_digits = array(
         0 => 'zero', 'jeden', 'dwa', 'trzy', 'cztery',
-        'piêæ', 'sze¶æ', 'siedem', 'osiem', 'dziewiêæ'
+        'piï¿½ï¿½', 'szeï¿½ï¿½', 'siedem', 'osiem', 'dziewiï¿½ï¿½'
     );
 
     /**
@@ -159,42 +159,42 @@ class Numbers_Words_pl extends Numbers_Words
      * @access private
      */
     var $_currency_names = array(
-      'ALL' => array(array('lek','leki','leków'), array('quindarka','quindarki','quindarek')),
-      'AUD' => array(array('dolar australijski', 'dolary australijskie', 'dolarów australijskich'), array('cent', 'centy', 'centów')),
-      'BAM' => array(array('marka','marki','marek'), array('fenig','fenigi','fenigów')),
+      'ALL' => array(array('lek','leki','lekï¿½w'), array('quindarka','quindarki','quindarek')),
+      'AUD' => array(array('dolar australijski', 'dolary australijskie', 'dolarï¿½w australijskich'), array('cent', 'centy', 'centï¿½w')),
+      'BAM' => array(array('marka','marki','marek'), array('fenig','fenigi','fenigï¿½w')),
       'BGN' => array(array('lew','lewy','lew'), array('stotinka','stotinki','stotinek')),
-      'BRL' => array(array('real','reale','realów'), array('centavos','centavos','centavos')),
+      'BRL' => array(array('real','reale','realï¿½w'), array('centavos','centavos','centavos')),
       'BYR' => array(array('rubel','ruble','rubli'), array('kopiejka','kopiejki','kopiejek')),
-      'CAD' => array(array('dolar kanadyjski', 'dolary kanadyjskie', 'dolarów kanadyjskich'), array('cent', 'centy', 'centów')),
-      'CHF' => array(array('frank szwajcarski','franki szwajcarskie','franków szwajcarskich'), array('rapp','rappy','rappów')),
-      'CYP' => array(array('funt cypryjski','funty cypryjskie','funtów cypryjskich'), array('cent', 'centy', 'centów')),
+      'CAD' => array(array('dolar kanadyjski', 'dolary kanadyjskie', 'dolarï¿½w kanadyjskich'), array('cent', 'centy', 'centï¿½w')),
+      'CHF' => array(array('frank szwajcarski','franki szwajcarskie','frankï¿½w szwajcarskich'), array('rapp','rappy','rappï¿½w')),
+      'CYP' => array(array('funt cypryjski','funty cypryjskie','funtï¿½w cypryjskich'), array('cent', 'centy', 'centï¿½w')),
       'CZK' => array(array('korona czeska','korony czeskie','koron czeskich'), array('halerz','halerze','halerzy')),
-      'DKK' => array(array('korona duñska','korony duñskie','koron duñskich'), array('ore','ore','ore')),
-      'EEK' => array(array('korona estoñska','korony estoñskie','koron estoñskich'), array('senti','senti','senti')),
-      'EUR' => array(array('euro', 'euro', 'euro'), array('eurocent', 'eurocenty', 'eurocentów')),
-      'GBP' => array(array('funt szterling','funty szterlingi','funtów szterlingów'), array('pens','pensy','pensów')),
-      'HKD' => array(array('dolar Hongkongu','dolary Hongkongu','dolarów Hongkongu'), array('cent', 'centy', 'centów')),
+      'DKK' => array(array('korona duï¿½ska','korony duï¿½skie','koron duï¿½skich'), array('ore','ore','ore')),
+      'EEK' => array(array('korona estoï¿½ska','korony estoï¿½skie','koron estoï¿½skich'), array('senti','senti','senti')),
+      'EUR' => array(array('euro', 'euro', 'euro'), array('eurocent', 'eurocenty', 'eurocentï¿½w')),
+      'GBP' => array(array('funt szterling','funty szterlingi','funtï¿½w szterlingï¿½w'), array('pens','pensy','pensï¿½w')),
+      'HKD' => array(array('dolar Hongkongu','dolary Hongkongu','dolarï¿½w Hongkongu'), array('cent', 'centy', 'centï¿½w')),
       'HRK' => array(array('kuna','kuny','kun'), array('lipa','lipy','lip')),
-      'HUF' => array(array('forint','forinty','forintów'), array('filler','fillery','fillerów')),
+      'HUF' => array(array('forint','forinty','forintï¿½w'), array('filler','fillery','fillerï¿½w')),
       'ILS' => array(array('nowy szekel','nowe szekele','nowych szekeli'), array('agora','agory','agorot')),
       'ISK' => array(array('korona islandzka','korony islandzkie','koron islandzkich'), array('aurar','aurar','aurar')),
-      'JPY' => array(array('jen','jeny','jenów'), array('sen','seny','senów')),
-      'LTL' => array(array('lit','lity','litów'), array('cent', 'centy', 'centów')),
-      'LVL' => array(array('³at','³aty','³atów'), array('sentim','sentimy','sentimów')),
-      'MKD' => array(array('denar','denary','denarów'), array('deni','deni','deni')),
-      'MTL' => array(array('lira maltañska','liry maltañskie','lir maltañskich'), array('centym','centymy','centymów')),
+      'JPY' => array(array('jen','jeny','jenï¿½w'), array('sen','seny','senï¿½w')),
+      'LTL' => array(array('lit','lity','litï¿½w'), array('cent', 'centy', 'centï¿½w')),
+      'LVL' => array(array('ï¿½at','ï¿½aty','ï¿½atï¿½w'), array('sentim','sentimy','sentimï¿½w')),
+      'MKD' => array(array('denar','denary','denarï¿½w'), array('deni','deni','deni')),
+      'MTL' => array(array('lira maltaï¿½ska','liry maltaï¿½skie','lir maltaï¿½skich'), array('centym','centymy','centymï¿½w')),
       'NOK' => array(array('korona norweska','korony norweskie','koron norweskich'), array('oere','oere','oere')),
-      'PLN' => array(array('z³oty', 'z³ote', 'z³otych'), array('grosz', 'grosze', 'groszy')),
+      'PLN' => array(array('zï¿½oty', 'zï¿½ote', 'zï¿½otych'), array('grosz', 'grosze', 'groszy')),
       'ROL' => array(array('lej','leje','lei'), array('bani','bani','bani')),
       'RUB' => array(array('rubel','ruble','rubli'), array('kopiejka','kopiejki','kopiejek')),
       'SEK' => array(array('korona szwedzka','korony szwedzkie','koron szweckich'), array('oere','oere','oere')),
-      'SIT' => array(array('tolar','tolary','tolarów'), array('stotinia','stotinie','stotini')),
-      'SKK' => array(array('korona s³owacka','korony s³owackie','koron s³owackich'), array('halerz','halerze','halerzy')),
+      'SIT' => array(array('tolar','tolary','tolarï¿½w'), array('stotinia','stotinie','stotini')),
+      'SKK' => array(array('korona sï¿½owacka','korony sï¿½owackie','koron sï¿½owackich'), array('halerz','halerze','halerzy')),
       'TRL' => array(array('lira turecka','liry tureckie','lir tureckich'), array('kurusza','kurysze','kuruszy')),
-      'UAH' => array(array('hrywna','hrywna','hrywna'), array('cent', 'centy', 'centów')),
-      'USD' => array(array('dolar','dolary','dolarów'), array('cent', 'centy', 'centów')),
-      'YUM' => array(array('dinar','dinary','dinarów'), array('para','para','para')),
-      'ZAR' => array(array('rand','randy','randów'), array('cent', 'centy', 'centów'))
+      'UAH' => array(array('hrywna','hrywna','hrywna'), array('cent', 'centy', 'centï¿½w')),
+      'USD' => array(array('dolar','dolary','dolarï¿½w'), array('cent', 'centy', 'centï¿½w')),
+      'YUM' => array(array('dinar','dinary','dinarï¿½w'), array('para','para','para')),
+      'ZAR' => array(array('rand','randy','randï¿½w'), array('cent', 'centy', 'centï¿½w'))
     );
 
     /**
@@ -288,7 +288,7 @@ class Numbers_Words_pl extends Numbers_Words
 
         switch ($h) {
         case 9:
-            $ret .= $this->_sep . 'dziewiêæset';
+            $ret .= $this->_sep . 'dziewiï¿½ï¿½set';
             break;
 
         case 8:
@@ -300,11 +300,11 @@ class Numbers_Words_pl extends Numbers_Words
             break;
 
         case 6:
-            $ret .= $this->_sep . 'sze¶æset';
+            $ret .= $this->_sep . 'szeï¿½ï¿½set';
             break;
 
         case 5:
-            $ret .= $this->_sep . 'piêæset';
+            $ret .= $this->_sep . 'piï¿½ï¿½set';
             break;
 
         case 4:
@@ -316,7 +316,7 @@ class Numbers_Words_pl extends Numbers_Words
             break;
 
         case 2:
-            $ret .= $this->_sep . 'dwie¶cie';
+            $ret .= $this->_sep . 'dwieï¿½cie';
             break;
 
         case 1:
@@ -330,52 +330,52 @@ class Numbers_Words_pl extends Numbers_Words
         case 7:
         case 6:
         case 5:
-            $ret .= $this->_sep . $this->_digits[$t] . 'dziesi±t';
+            $ret .= $this->_sep . $this->_digits[$t] . 'dziesiï¿½t';
             break;
 
         case 4:
-            $ret .= $this->_sep . 'czterdzie¶ci';
+            $ret .= $this->_sep . 'czterdzieï¿½ci';
             break;
 
         case 3:
-            $ret .= $this->_sep . 'trzydzie¶ci';
+            $ret .= $this->_sep . 'trzydzieï¿½ci';
             break;
 
         case 2:
-            $ret .= $this->_sep . 'dwadzie¶cia';
+            $ret .= $this->_sep . 'dwadzieï¿½cia';
             break;
 
         case 1:
             switch ($d) {
             case 0:
-                $ret .= $this->_sep . 'dziesiêæ';
+                $ret .= $this->_sep . 'dziesiï¿½ï¿½';
                 break;
 
             case 1:
-                $ret .= $this->_sep . 'jedena¶cie';
+                $ret .= $this->_sep . 'jedenaï¿½cie';
                 break;
 
             case 2:
             case 3:
             case 7:
             case 8:
-                $ret .= $this->_sep . $this->_digits[$d] . 'na¶cie';
+                $ret .= $this->_sep . $this->_digits[$d] . 'naï¿½cie';
                 break;
 
             case 4:
-                $ret .= $this->_sep . 'czterna¶cie';
+                $ret .= $this->_sep . 'czternaï¿½cie';
                 break;
 
             case 5:
-                $ret .= $this->_sep . 'piêtna¶cie';
+                $ret .= $this->_sep . 'piï¿½tnaï¿½cie';
                 break;
 
             case 6:
-                $ret .= $this->_sep . 'szesna¶cie';
+                $ret .= $this->_sep . 'szesnaï¿½cie';
                 break;
 
             case 9:
-                $ret .= $this->_sep . 'dziewiêtna¶cie';
+                $ret .= $this->_sep . 'dziewiï¿½tnaï¿½cie';
                 break;
             }
             break;

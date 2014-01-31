@@ -36,7 +36,7 @@
 /**
  * Include needed files
  */
-require_once "Numbers/Words.php";
+//require_once "Numbers/Words.php";
 
 /**
  * Class for translating numbers into Hungarian.
@@ -90,27 +90,27 @@ class Numbers_Words_hu_HU extends Numbers_Words
     var $_exponent = array(
         0 => array(''),
         3 => array('ezer'),
-        6 => array('millió'),
-        9 => array('milliárd'),
-       12 => array('billió'),
-       15 => array('billiárd'),
-       18 => array('trillió'),
-       21 => array('trilliárd'),
-       24 => array('kvadrillió'),
-       27 => array('kvadrilliárd'),
-       30 => array('kvintillió'),
-       33 => array('kvintilliárd'),
-       36 => array('szextillió'),
-       39 => array('szextilliárd'),
-       42 => array('szeptillió'),
-       45 => array('szeptilliárd'),
-       48 => array('oktillió'),
-       51 => array('oktilliárd'),
-       54 => array('nonillió'),
-       57 => array('nonilliárd'),
-       60 => array('decillió'),
-       63 => array('decilliárd'),
-       600 => array('centillió')
+        6 => array('milliï¿½'),
+        9 => array('milliï¿½rd'),
+       12 => array('billiï¿½'),
+       15 => array('billiï¿½rd'),
+       18 => array('trilliï¿½'),
+       21 => array('trilliï¿½rd'),
+       24 => array('kvadrilliï¿½'),
+       27 => array('kvadrilliï¿½rd'),
+       30 => array('kvintilliï¿½'),
+       33 => array('kvintilliï¿½rd'),
+       36 => array('szextilliï¿½'),
+       39 => array('szextilliï¿½rd'),
+       42 => array('szeptilliï¿½'),
+       45 => array('szeptilliï¿½rd'),
+       48 => array('oktilliï¿½'),
+       51 => array('oktilliï¿½rd'),
+       54 => array('nonilliï¿½'),
+       57 => array('nonilliï¿½rd'),
+       60 => array('decilliï¿½'),
+       63 => array('decilliï¿½rd'),
+       600 => array('centilliï¿½')
         );
 
     /**
@@ -119,8 +119,8 @@ class Numbers_Words_hu_HU extends Numbers_Words
      * @access private
      */
     var $_digits = array(
-        0 => 'nulla', 'egy', 'kettõ', 'három', 'négy',
-        'öt', 'hat', 'hét', 'nyolc', 'kilenc'
+        0 => 'nulla', 'egy', 'kettï¿½', 'hï¿½rom', 'nï¿½gy',
+        'ï¿½t', 'hat', 'hï¿½t', 'nyolc', 'kilenc'
     );
 
     /**
@@ -159,7 +159,7 @@ class Numbers_Words_hu_HU extends Numbers_Words
       'HRK' => array(array('Croatian kuna'), array('lipa')),
       'HUF' => array(array('forint'), array('filler')),
       'ILS' => array(array('new sheqel','new sheqels'), array('agora','agorot')),
-      'ISK' => array(array('Icelandic króna'), array('aurar')),
+      'ISK' => array(array('Icelandic krï¿½na'), array('aurar')),
       'JPY' => array(array('yen'), array('sen')),
       'LTL' => array(array('litas'), array('cent')),
       'LVL' => array(array('lat'), array('sentim')),
@@ -172,7 +172,7 @@ class Numbers_Words_hu_HU extends Numbers_Words
       'SEK' => array(array('Swedish krona'), array('oere')),
       'SIT' => array(array('Tolar'), array('stotinia')),
       'SKK' => array(array('Slovak koruna'), array()),
-      'TRL' => array(array('lira'), array('kuruþ')),
+      'TRL' => array(array('lira'), array('kuruï¿½')),
       'UAH' => array(array('hryvna'), array('cent')),
       'USD' => array(array('dollar'), array('cent')),
       'YUM' => array(array('dinars'), array('para')),
@@ -269,7 +269,7 @@ class Numbers_Words_hu_HU extends Numbers_Words
         }
     
         if ($h) {
-            $ret .= $this->_sep . $this->_digits[$h] . $this->_sep . 'száz';
+            $ret .= $this->_sep . $this->_digits[$h] . $this->_sep . 'szï¿½z';
         }
 
         // ten, twenty etc.
@@ -294,7 +294,7 @@ class Numbers_Words_hu_HU extends Numbers_Words
         case 2:
             switch ($d) {
             case 0:
-                $ret .= $this->_sep . 'húsz';
+                $ret .= $this->_sep . 'hï¿½sz';
                 break;   
             case 1: 
             case 2:
@@ -305,14 +305,14 @@ class Numbers_Words_hu_HU extends Numbers_Words
             case 7:
             case 8:
             case 9:
-                $ret .= $this->_sep . 'húszon';
+                $ret .= $this->_sep . 'hï¿½szon';
                 break;
             }
             break;
         case 1:
             switch ($d) {
             case 0:
-                $ret .= $this->_sep . 'tíz';
+                $ret .= $this->_sep . 'tï¿½z';
                 break;   
             case 1: 
             case 2:

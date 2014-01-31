@@ -34,7 +34,7 @@
 /**
  * Include needed files
  */
-require_once "Numbers/Words.php";
+//require_once "Numbers/Words.php";
 
 /**
  * Class for translating numbers into Swedish.
@@ -119,8 +119,8 @@ class Numbers_Words_sv extends Numbers_Words
      * @access private
      */
     var $_digits = array(
-        0 => 'noll', 'ett', 'två', 'tre', 'fyra',
-        'fem', 'sex', 'sju', 'åtta', 'nio'
+        0 => 'noll', 'ett', 'tvï¿½', 'tre', 'fyra',
+        'fem', 'sex', 'sju', 'ï¿½tta', 'nio'
     );
 
     /**
@@ -241,7 +241,7 @@ class Numbers_Words_sv extends Numbers_Words
             break;
     
         case 8:
-            $ret .= $this->_sep . 'åttio';
+            $ret .= $this->_sep . 'ï¿½ttio';
             break;
     
         case 4:

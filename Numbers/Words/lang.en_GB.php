@@ -32,7 +32,7 @@
 /**
  * Include needed files
  */
-require_once "Numbers/Words.php";
+//require_once "Numbers/Words.php";
 
 /**
  * Class for translating numbers into British English.
@@ -156,7 +156,7 @@ class Numbers_Words_en_GB extends Numbers_Words
       'HRK' => array(array('Croatian kuna'), array('lipa')),
       'HUF' => array(array('forint'), array('filler')),
       'ILS' => array(array('new sheqel','new sheqels'), array('agora','agorot')),
-      'ISK' => array(array('Icelandic króna'), array('aurar')),
+      'ISK' => array(array('Icelandic krï¿½na'), array('aurar')),
       'JPY' => array(array('yen'), array('sen')),
       'LTL' => array(array('litas'), array('cent')),
       'LVL' => array(array('lat'), array('sentim')),
@@ -169,7 +169,7 @@ class Numbers_Words_en_GB extends Numbers_Words
       'SEK' => array(array('Swedish krona'), array('oere')),
       'SIT' => array(array('Tolar'), array('stotinia')),
       'SKK' => array(array('Slovak koruna'), array()),
-      'TRL' => array(array('lira'), array('kuruş')),
+      'TRL' => array(array('lira'), array('kuruï¿½')),
       'UAH' => array(array('hryvna'), array('cent')),
       'USD' => array(array('dollar'), array('cent')),
       'YUM' => array(array('dinars'), array('para')),

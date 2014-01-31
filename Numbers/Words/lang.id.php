@@ -24,7 +24,7 @@
  */
 
 require_once "PEAR.php";
-require_once "Numbers/Words.php";
+//require_once "Numbers/Words.php";
 
 /**
 * Class for translating numbers into Indonesian.

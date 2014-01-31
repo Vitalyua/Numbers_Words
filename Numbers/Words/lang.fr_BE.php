@@ -26,7 +26,7 @@
 /**
  * Include needed files
  */
-require_once "Numbers/Words.php";
+//require_once "Numbers/Words.php";
 
 /**
  * Class for translating numbers into French (Belgium).
@@ -62,7 +62,7 @@ class Numbers_Words_fr_BE extends Numbers_Words
      * @var string
      * @access public
      */
-    var $lang_native = 'Français';
+    var $lang_native = 'Franï¿½ais';
 
     /**
      * The words for some numbers.
@@ -100,7 +100,7 @@ class Numbers_Words_fr_BE extends Numbers_Words
      * @var string
      * @access private
      */
-    var $_zero = 'zéro';
+    var $_zero = 'zï¿½ro';
 
     /**
      * The word for infinity.
