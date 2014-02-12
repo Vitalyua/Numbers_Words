@@ -235,6 +235,7 @@ class Numbers_Words_en_US extends Numbers_Words
        #mamay
       'BHD' => array(array('Dinar'), array('fil')),
       'SAR' => array(array('Riyal'), array('halala')),
+      'KWD' => array(array('Dinar'), array('fil')),
 
       'ALL' => array(array('lek'), array('qindarka')),
       'AUD' => array(array('Australian dollar'), array('cent')),
