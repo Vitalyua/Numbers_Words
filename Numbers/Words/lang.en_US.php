@@ -236,7 +236,7 @@ class Numbers_Words_en_US extends Numbers_Words
       'BHD' => array(array('Dinar'), array('fil')),
       'SAR' => array(array('Riyal'), array('halala')),
       'KWD' => array(array('Dinar'), array('fil')),
-      'INR' => array(array('Rupees'), array('paise')),
+      'INR' => array(array('Rupee'), array('paise')),
 
       'ALL' => array(array('lek'), array('qindarka')),
       'AUD' => array(array('Australian dollar'), array('cent')),
