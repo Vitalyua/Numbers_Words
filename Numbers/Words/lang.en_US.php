@@ -231,8 +231,9 @@ class Numbers_Words_en_US extends Numbers_Words
      */
     var $_currency_names = array(
       'AED' => array(array('Dirham'), array('fil')),
-      'DIR' => array(array('Dirham'), array('fil')),
        #mamay
+      'AFN' => array(array('Afghani'), array('afghani')),
+      'DIR' => array(array('Dirham'), array('fil')),
       'BHD' => array(array('Dinar'), array('fil')),
       'SAR' => array(array('Riyal'), array('halala')),
       'KWD' => array(array('Dinar'), array('fil')),
