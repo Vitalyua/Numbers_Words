@@ -1,0 +1,11 @@
+{
+  "name": "awery/numberswords",
+  "license": "no usage restriction",
+  "type": "library",
+  "require": {
+    "php": ">=5.3.0"
+  },
+    "autoload": {
+      "files" : ["Numbers/Words.php","Numbers/Words/lang.en_US.php"]
+  }
+}
