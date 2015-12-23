@@ -278,6 +278,7 @@ class Numbers_Words_en_US extends Numbers_Words
       'ZAR' => array(array('rand'), array('cent'))
     );
 
+
     /**
      * The default currency name
      * @var string
