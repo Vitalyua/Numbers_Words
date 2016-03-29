@@ -4,7 +4,7 @@
   "type": "library",
   "require": {
     "php": ">=5.3.0"  ,
-    "phpseclib/phpseclib": "dev-master"
+    "phpseclib/phpseclib": "2.0.1"
   },
   "autoload": {
       "files" : ["Numbers/Words.php","Numbers/Words/lang.en_US.php"]
