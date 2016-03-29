@@ -149,8 +149,8 @@ class Numbers_Words
                 // round up without losing precision
                 //include_once "Math/BigInteger.php";
 
-                $int = new Zend_Crypt_Math_BigInteger(join($currency));
-                $int = $int->add(new Zend_Crypt_Math_BigInteger(1));
+                $int = new Math_BigInteger(join($currency));
+                $int = $int->add(new Math_BigInteger(1));
                 $int_str = $int->toString();
 
                 $currency[0] = substr($int_str, 0, -2);
