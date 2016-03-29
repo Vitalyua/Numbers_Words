@@ -147,7 +147,7 @@ class Numbers_Words
             
             if ($round_digit >= 5) {
                 // round up without losing precision
-                include_once "Math/BigInteger.php";
+                //include_once "Math/BigInteger.php";
 
                 $int = new Math_BigInteger(join($currency));
                 $int = $int->add(new Math_BigInteger(1));
