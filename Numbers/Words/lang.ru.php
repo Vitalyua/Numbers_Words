@@ -497,18 +497,18 @@ class Numbers_Words_ru extends Numbers_Words
 
                 if ($power == 3) {
                     if ($_case == 1) {
-                        $group .= $this->_sep . '������';
+                        $group .= $this->_sep . 'тысяча';
                     } elseif ($_case == 2) {
-                        $group .= $this->_sep . '������';
+                        $group .= $this->_sep . 'тысячи';
                     } else {
-                        $group .= $this->_sep . '�����';
+                        $group .= $this->_sep . 'тысяч';
                     }
                 } elseif ($group && $power>3 && isset($this->_exponent[$power])) {
                     $group .= $this->_sep . $this->_exponent[$power];
                     if ($_case == 2) {
-                        $group .= '�';
+                        $group .= 'а';
                     } elseif ($_case == 3) {
-                        $group .= '��';
+                        $group .= 'ов';
                     }
                 }
 
@@ -575,7 +575,7 @@ class Numbers_Words_ru extends Numbers_Words
             $ones = (int)$num{2};
             if ($tens || $ones) {
                 if ($tens == 1 && $ones == 0) {
-                    $ret .= '������';
+                    $ret .= 'десять';
                 } elseif ($tens == 1) {
                     $ret .= $this->_teens[$ones+10];
                 } else {
