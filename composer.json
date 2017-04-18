@@ -7,7 +7,7 @@
     "phpseclib/phpseclib": "2.0.1"
   },
   "autoload": {
-      "files" : ["Numbers/Words.php","Numbers/Words/lang.en_US.php"]
+      "files" : ["Numbers/Words.php","Numbers/Words/lang.en_US.php","Numbers/Words/lang.ru.php"]
   }
 }
 
