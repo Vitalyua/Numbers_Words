@@ -90,27 +90,27 @@ class Numbers_Words_hu_HU extends Numbers_Words
     var $_exponent = array(
         0 => array(''),
         3 => array('ezer'),
-        6 => array('milli�'),
-        9 => array('milli�rd'),
-       12 => array('billi�'),
-       15 => array('billi�rd'),
-       18 => array('trilli�'),
-       21 => array('trilli�rd'),
-       24 => array('kvadrilli�'),
-       27 => array('kvadrilli�rd'),
-       30 => array('kvintilli�'),
-       33 => array('kvintilli�rd'),
-       36 => array('szextilli�'),
-       39 => array('szextilli�rd'),
-       42 => array('szeptilli�'),
-       45 => array('szeptilli�rd'),
-       48 => array('oktilli�'),
-       51 => array('oktilli�rd'),
-       54 => array('nonilli�'),
-       57 => array('nonilli�rd'),
-       60 => array('decilli�'),
-       63 => array('decilli�rd'),
-       600 => array('centilli�')
+        6 => array('millió'),
+        9 => array('milliárd'),
+       12 => array('billió'),
+       15 => array('billiárd'),
+       18 => array('trillió'),
+       21 => array('trilliárd'),
+       24 => array('kvadrillió'),
+       27 => array('kvadrilliárd'),
+       30 => array('kvintillió'),
+       33 => array('kvintilliárd'),
+       36 => array('szextillió'),
+       39 => array('szextilliárd'),
+       42 => array('szeptillió'),
+       45 => array('szeptilliárd'),
+       48 => array('oktillió'),
+       51 => array('oktilliárd'),
+       54 => array('nonillió'),
+       57 => array('nonilliárd'),
+       60 => array('decillió'),
+       63 => array('decilliárd'),
+       600 => array('centillió')
         );
 
     /**
@@ -119,8 +119,8 @@ class Numbers_Words_hu_HU extends Numbers_Words
      * @access private
      */
     var $_digits = array(
-        0 => 'nulla', 'egy', 'kett�', 'h�rom', 'n�gy',
-        '�t', 'hat', 'h�t', 'nyolc', 'kilenc'
+        0 => 'nulla', 'egy', 'kettő', 'három', 'négy',
+        'öt', 'hat', 'hét', 'nyolc', 'kilenc'
     );
 
     /**
@@ -159,7 +159,7 @@ class Numbers_Words_hu_HU extends Numbers_Words
       'HRK' => array(array('Croatian kuna'), array('lipa')),
       'HUF' => array(array('forint'), array('filler')),
       'ILS' => array(array('new sheqel','new sheqels'), array('agora','agorot')),
-      'ISK' => array(array('Icelandic kr�na'), array('aurar')),
+      'ISK' => array(array('Icelandic króna'), array('aurar')),
       'JPY' => array(array('yen'), array('sen')),
       'LTL' => array(array('litas'), array('cent')),
       'LVL' => array(array('lat'), array('sentim')),
@@ -172,7 +172,7 @@ class Numbers_Words_hu_HU extends Numbers_Words
       'SEK' => array(array('Swedish krona'), array('oere')),
       'SIT' => array(array('Tolar'), array('stotinia')),
       'SKK' => array(array('Slovak koruna'), array()),
-      'TRL' => array(array('lira'), array('kuru�')),
+      'TRL' => array(array('lira'), array('kuruþ')),
       'UAH' => array(array('hryvna'), array('cent')),
       'USD' => array(array('dollar'), array('cent')),
       'YUM' => array(array('dinars'), array('para')),
@@ -269,7 +269,7 @@ class Numbers_Words_hu_HU extends Numbers_Words
         }
     
         if ($h) {
-            $ret .= $this->_sep . $this->_digits[$h] . $this->_sep . 'sz�z';
+            $ret .= $this->_sep . $this->_digits[$h] . $this->_sep . 'száz';
         }
 
         // ten, twenty etc.
@@ -294,7 +294,7 @@ class Numbers_Words_hu_HU extends Numbers_Words
         case 2:
             switch ($d) {
             case 0:
-                $ret .= $this->_sep . 'h�sz';
+                $ret .= $this->_sep . 'húsz';
                 break;   
             case 1: 
             case 2:
@@ -305,14 +305,14 @@ class Numbers_Words_hu_HU extends Numbers_Words
             case 7:
             case 8:
             case 9:
-                $ret .= $this->_sep . 'h�szon';
+                $ret .= $this->_sep . 'huszon';
                 break;
             }
             break;
         case 1:
             switch ($d) {
             case 0:
-                $ret .= $this->_sep . 't�z';
+                $ret .= $this->_sep . 'tíz';
                 break;   
             case 1: 
             case 2:
