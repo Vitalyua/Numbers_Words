@@ -1,6 +1,6 @@
 {
   "name": "awery/numberswords",
-  "license": "no usage restriction",
+  "license": "PHP-3.0",
   "type": "library",
   "require": {
     "php": ">=5.3.0"  ,
