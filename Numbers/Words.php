@@ -106,7 +106,7 @@ class Numbers_Words
     {
         $ret = $num;
 
-        @include_once "Numbers/Words/lang.${locale}.php";
+        include_once "Numbers/Words/lang.${locale}.php";
 
         $classname = "Numbers_Words_${locale}";
 
