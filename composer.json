@@ -7,6 +7,12 @@
     "phpseclib/phpseclib": "2.0.1"
   },
   "autoload": {
-      "files" : ["Numbers/Words.php","Numbers/Words/lang.en_US.php","Numbers/Words/lang.ru.php","Numbers/Words/lang.hu_HU.php"]
-  }
+      "psr-0": {
+        "Numbers_": "/"
+      }
+  },
+  "include_path" : [
+      "Numbers/"
+  ]
+
 }
