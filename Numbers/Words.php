@@ -223,8 +223,9 @@ class Numbers_Words
      */
     function raiseError($msg)
     {
+        return $msg;
 //        include_once 'PEAR.php';
-        return PEAR::raiseError($msg);
+//        return PEAR::raiseError($msg);
     }
     // }}}
 }
