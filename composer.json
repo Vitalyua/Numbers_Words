@@ -7,7 +7,6 @@
     "phpseclib/phpseclib": "2.0.1"
   },
   "autoload": {
-      "psr-0" : { "Numbers": "numberswords/" },
-      "files" : ["numberswords/Numbers/Words.php","numberswords/Numbers/Words/lang.en_US.php","numberswords/Numbers/Words/lang.ru.php","numberswords/Numbers/Words/lang.hu_HU.php"]
+      "psr-0" : { "Numbers": "numberswords/" }
   }
 }
