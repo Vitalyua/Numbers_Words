@@ -13,8 +13,7 @@
   },
   "include-path" : [
       "/",
-      "Numbers/",
-      "Numbers/Words/"
+      "Numbers/"
   ]
 
 }
