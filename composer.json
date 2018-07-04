@@ -11,7 +11,7 @@
         "Numbers_": "/"
       }
   },
-  "include_path" : [
+  "include-path" : [
       "Numbers/",
       "Numbers/Words/"
   ]
