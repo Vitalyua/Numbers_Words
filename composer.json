@@ -12,6 +12,7 @@
       }
   },
   "include-path" : [
+      "/",
       "Numbers/",
       "Numbers/Words/"
   ]
