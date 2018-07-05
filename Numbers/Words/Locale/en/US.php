@@ -230,6 +230,16 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
      * @access private
      */
     var $_currency_names = array(
+        #mamay
+        'AED' => array(array('Dirham'), array('fil')),
+        'AFN' => array(array('Afghani'), array('pul')),
+        'DIR' => array(array('Dirham'), array('fil')),
+        'BHD' => array(array('Dinar'), array('fil')),
+        'SAR' => array(array('Riyal'), array('halala')),
+        'KWD' => array(array('Dinar'), array('fil')),
+        'INR' => array(array('Rupee'), array('paise')),
+        'BDT' => array(array('Taka'), array('poisha')),
+
       'ALL' => array(array('lek'), array('qindarka')),
       'AUD' => array(array('Australian dollar'), array('cent')),
       'BAM' => array(array('convertible marka'), array('fenig')),
@@ -248,7 +258,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
       'HRK' => array(array('Croatian kuna'), array('lipa')),
       'HUF' => array(array('forint'), array('filler')),
       'ILS' => array(array('new sheqel','new sheqels'), array('agora','agorot')),
-      'ISK' => array(array('Icelandic króna'), array('aurar')),
+      'ISK' => array(array('Icelandic krona'), array('aurar')),
       'JPY' => array(array('yen'), array('sen')),
       'LTL' => array(array('litas'), array('cent')),
       'LVL' => array(array('lat'), array('sentim')),
@@ -261,7 +271,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
       'SEK' => array(array('Swedish krona'), array('oere')),
       'SIT' => array(array('Tolar'), array('stotinia')),
       'SKK' => array(array('Slovak koruna'), array()),
-      'TRL' => array(array('lira'), array('kuruş')),
+      'TRL' => array(array('lira'), array('kuruÅŸ')),
       'UAH' => array(array('hryvna'), array('cent')),
       'USD' => array(array('dollar'), array('cent')),
       'YUM' => array(array('dinars'), array('para')),
