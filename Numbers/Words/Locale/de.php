@@ -136,6 +136,109 @@ class Numbers_Words_Locale_de extends Numbers_Words
      * @access private
      */
     var $_sep2 = ' ';
+    /**
+     * The default currency name
+     * @var string
+     * @access public
+     */
+    public $def_currency = 'EUR';
+    /**
+     * The currency names (based on the below links,
+     * informations from central bank websites and on encyclopedias)
+     *
+     * @var array
+     * @link http://en.wikipedia.org/wiki/ISO_4217
+     * @access private
+     */
+    public $_currency_names = array(
+        'AFN' => array(array('Əfqanıstan əfqanisi'), array('pul')),
+        'ALL' => array(array('Albaniya ləki'), array('gindarka')),
+        'AMD' => array(array('Ermənistan dramı'), array('luma')),
+        'AOA' => array(array('Anqola yeni kuanzası'), array('lvey')),
+        'ARS' => array(array('Argentina pesosu'), array('sentavo')),
+        'AUD' => array(array('Avstraliya dolları'), array('sent')),
+        'AWG' => array(array('Aruba florini'), array('sent')),
+        'AZN' => array(array('Azərbaycan manatı'), array('qəpik')),
+        'BAM' => array(array('Bosniya-Herseqovina markası'), array('feniq')),
+        'BBD' => array(array('Barbados dolları'), array('sent')),
+        'BDT' => array(array('Banqladeş təkəsi'), array('paysa')),
+        'BGN' => array(array('Bolqarıstan levi'), array('stotinka')),
+        'BHD' => array(array('Bəhreyn dinarı'), array('fils')),
+        'BIF' => array(array('Burundi frankı'), array('sentim')),
+        'BMD' => array(array('Bermuda dolları'), array('sent')),
+        'BND' => array(array('Bruney singiti'), array('sen')),
+        'BOB' => array(array('Boliviya bolivianosu'), array('sentavo')),
+        'BRL' => array(array('Braziliya realı'), array('sentavos')),
+        'BSD' => array(array('Baham dolları'), array('sent')),
+        'BTN' => array(array('Butan nqultrumu'), array('çetrum')),
+        'BWP' => array(array('Botsvana pulası'), array('feb')),
+        'BYR' => array(array('Belarusiya rublu'), array('qəpik')),
+        'BZD' => array(array('Beliz dolları'), array('sent')),
+        'CAD' => array(array('Kanada dolları'), array('sent')),
+        'CDF' => array(array('Konqo frankı'), array('sentim')),
+        'CHF' => array(array('İsveçrə frankı'), array('rapp')),
+        'CLP' => array(array('Çili pesosu'), array('sentavo')),
+        'CNY' => array(array('Çin yuanı'), array('fen')),
+        'COP' => array(array('Kolumbiya pesosu'), array('sentavo')),
+        'CRC' => array(array('Kosta-Rika kolonu'), array('sentimos')),
+        'CUP' => array(array('Kuba pesosu'), array('sentavo')),
+        'CVE' => array(array('Keyp-Verde eskudosu'), array('sentavo')),
+        'CYP' => array(array('Kipr funtu'), array('sent')),
+        'CZK' => array(array('Çex korunası'), array('haler')),
+        'DJF' => array(array('Cibuti frankı'), array('sentim')),
+        'DKK' => array(array('Danimarka kronu'), array('ore')),
+        'DOP' => array(array('Dominikan pesosu'), array('sentavo')),
+        'DZD' => array(array('Əlcəzair dinarı'), array('sentim')),
+        'EEK' => array(array('Estoniya kronu'), array('senti')),
+        'EGP' => array(array('Misir məsrisi'), array('ərş')),
+        'ERN' => array(array('Eritrea nəkfası'), array('sent')),
+        'ETB' => array(array('Efiopiya birri'), array('santim')),
+        'EUR' => array(array('avro'), array('avro-sent')),
+        'FJD' => array(array('Fici dolları'), array('sent')),
+        'FKP' => array(array('Folklend adaları funtu'), array('penni')),
+        'GBP' => array(array('funt sterlinq'), array('penni')),
+        'GEL' => array(array('Gürcüstan larisi'), array('tetri')),
+        'GSH' => array(array('Qana sedisi'), array('peseva')),
+        'GIP' => array(array('Gibraltar funtu'), array('penni')),
+        'GMD' => array(array('Qambiya dalasisi'), array('butut')),
+        'GNF' => array(array('Qvineya frankı'), array('sentim')),
+        'GTQ' => array(array('Qvatemala kvetzalı'), array('sent')),
+        'HKD' => array(array('Honq Konq dolları'), array('sent')),
+        'HNL' => array(array('Honduras lempirası'), array('sentavo')),
+        'HRK' => array(array('Xorvat kunası'), array('lipa')),
+        'HUF' => array(array('Macar forinti'), array('filler')),
+        'IDR' => array(array('İndoneziya rupiası'), array('sen')),
+        'ILS' => array(array('İsrail yeni şeqeli'), array('aqorot')),
+        'INR' => array(array('Hindistan rupisi'), array('paysa')),
+        'IQD' => array(array('İraq dinarı'), array('fils')),
+        'IRR' => array(array('İran rialı'), array('')),
+        'ISK' => array(array('İslandiya kronu'), array('aurar')),
+        'JOD' => array(array('İordaniya dinarı'), array('qirş')),
+        'JPY' => array(array('Yapon yeni'), array('sen')),
+        'KGS' => array(array('Qırğızıstan somu'), array('tyiyn')),
+        'KPW' => array(array('Şimali Koreya vonu'), array('çon')),
+        'KRW' => array(array('Cənubi Koreya vonu'), array('jeon')),
+        'KWD' => array(array('Küveyt dinarı'), array('fils')),
+        'KYD' => array(array('Keymən adaları dolları'), array('sent')),
+        'KZT' => array(array('Qazaxıstan təngəsi'), array('tiın')),
+        'LBP' => array(array('Livan funtu'), array('piastr')),
+        'LTL' => array(array('Litva liti'), array('sent')),
+        'LVL' => array(array('Latviya latı'), array('sentim')),
+        'MDL' => array(array('Moldova leyi'), array('ban')),
+        'MKD' => array(array('Makedoniya dinarı'), array('deni')),
+        'MTL' => array(array('Malta lirəsi'), array('sentim')),
+        'NOK' => array(array('Norveç kronu'), array('ore')),
+        'PLN' => array(array('Polşa zlotu'), array('qroş')),
+        'ROL' => array(array('Rumıniya leyi'), array('bani')),
+        'RUB' => array(array('Rus rublu'), array('qəpik')),
+        'SEK' => array(array('İsveç kronu'), array('oere')),
+        'SIT' => array(array('Sloveniya Toları'), array('stotinia')),
+        'SKK' => array(array('Slovak kronu'), array()),
+        'TRL' => array(array('Türk lirəsi'), array('quruş')),
+        'UAH' => array(array('Ukrayna hrivnası'), array('sent')),
+        'USD' => array(array('Amerikan dolları'), array('sent')),
+        'ZAR' => array(array('Cənubi Afrika randı'), array('sent'))
+    );
 
     // }}}
     // {{{ _toWords()
@@ -326,4 +429,59 @@ class Numbers_Words_Locale_de extends Numbers_Words
         return $ret;
     }
     // }}}
+    /**
+     * Converts a currency value to its word representation
+     * (with monetary units) in English language
+     *
+     * @param integer       $int_curr   An international currency symbol as defined by the ISO 4217 standard (three characters)
+     * @param integer       $decimal A money total amount without fraction part (e.g. amount of dollars)
+     * @param integer|bool  $fraction   Fractional part of the money amount (e.g. amount of cents)
+     *                                  Optional. Defaults to false.
+     * @param integer|bool  $convert_fraction   Convert fraction to words (left as numeric if set to false).
+     *                                          Optional. Defaults to true.
+     * @return string  The corresponding word representation for the currency
+     *
+     * @access public
+     * @author Piotr Klaban <makler@man.torun.pl>
+     * @since  Numbers_Words 0.13.1
+     */
+    function toCurrencyWords($int_curr, $decimal, $fraction = false, $convert_fraction = true)
+    {
+        $int_curr = strtoupper($int_curr);
+        if (!isset($this->_currency_names[$int_curr])) {
+            $int_curr = $this->def_currency;
+        }
+        $curr_names = $this->_currency_names[$int_curr];
+
+        $ret = trim($this->_toWords($decimal));
+        $lev = ($decimal == 1) ? 0 : 1;
+        if ($lev > 0) {
+            if (count($curr_names[0]) > 1) {
+                $ret .= $this->_sep . $curr_names[0][$lev];
+            } else {
+                $ret .= $this->_sep . $curr_names[0][0] . 's';
+            }
+        } else {
+            $ret .= $this->_sep . $curr_names[0][0];
+        }
+
+        if ($fraction !== false) {
+            if ($convert_fraction) {
+                $ret .= $this->_sep . trim($this->_toWords($fraction));
+            } else {
+                $ret .= $this->_sep . $fraction;
+            }
+            $lev = ($fraction == 1) ? 0 : 1;
+            if ($lev > 0) {
+                if (count($curr_names[1]) > 1) {
+                    $ret .= $this->_sep . $curr_names[1][$lev];
+                } else {
+                    $ret .= $this->_sep . $curr_names[1][0] . 's';
+                }
+            } else {
+                $ret .= $this->_sep . $curr_names[1][0];
+            }
+        }
+        return $ret;
+    }
 }

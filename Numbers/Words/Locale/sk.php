@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class for translating numbers into Serbian
+ * Class for translating numbers into Slovak
  *
  * @package Numbers_Words
  */
@@ -13,35 +13,35 @@ require_once "Numbers/Words.php";
  
 
 /**
- * Class for translating numbers into Serbian.
+ * Class for translating numbers into Slovak.
  *
  * @category Numbers
  * @package  Numbers_Words
  * @license  PHP 3.01 http://www.php.net/license/3_01.txt
  * @link     http://pear.php.net/package/Numbers_Words
  */
-class Numbers_Words_Locale_sr extends Numbers_Words
+class Numbers_Words_Locale_sk extends Numbers_Words
 {
     /**
      * Locale name
      * @public string
      * @access public
      */
-    public $locale = 'sr';
+    public $locale = 'sk';
 
     /**
      * Language name in English
      * @var string
      * @access public
      */
-    public $lang = 'Serbian';
+    public $lang = 'Slovak';
 
     /**
      * Native language name
      * @var string
      * @access public
      */
-    public $lang_native = 'Serbian';
+    public $lang_native = 'Slovak';
 
     /**
      * The word for the minus sign
@@ -61,7 +61,7 @@ class Numbers_Words_Locale_sr extends Numbers_Words
      */
     public $_exponent = array(
         0 => '',
-        3 => 'са којим',
+        3 => 's katerim',
         6 => 'мильјон',
         9 => 'милионери',
         12 => 'трилион',

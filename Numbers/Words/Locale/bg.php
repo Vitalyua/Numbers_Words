@@ -125,7 +125,7 @@ class Numbers_Words_Locale_bg extends Numbers_Words
      * @access private
      */
     var $_and = 'и';
-    
+
     /**
      * The word separator.
      * @var string
@@ -256,6 +256,150 @@ class Numbers_Words_Locale_bg extends Numbers_Words
         300 => 'новемнонагинтилион',
         303 => 'центилион'
     );
+    public $def_currency = 'USD';  // Serbian money
+    var $_currency_names = array(
+        'ALL' => array(
+            array(1, 'лек', 'лека', 'леков'),
+            array(2, 'киндарка', 'киндарки', 'киндарок')
+        ),
+        'AUD' => array(
+            array(1, 'австралийский доллар', 'австралийских доллара', 'австралийских долларов'),
+            array(1, 'цент', 'цента', 'центов')
+        ),
+        'BGN' => array(
+            array(1, 'лев', 'лева', 'левов'),
+            array(2, 'стотинка', 'стотинки', 'стотинок')
+        ),
+        'BRL' => array(
+            array(1, 'бразильский реал', 'бразильских реала', 'бразильских реалов'),
+            array(1, 'сентаво', 'сентаво', 'сентаво')
+        ),
+        'BYR' => array(
+            array(1, 'белорусский рубль', 'белорусских рубля', 'белорусских рублей'),
+            array(2, 'копейка', 'копейки', 'копеек')
+        ),
+        'CAD' => array(
+            array(1, 'канадский доллар', 'канадских доллара', 'канадских долларов'),
+            array(1, 'цент', 'цента', 'центов')
+        ),
+        'CHF' => array(
+            array(1, 'швейцарский франк', 'швейцарских франка', 'швейцарских франков'),
+            array(1, 'сантим', 'сантима', 'сантимов')
+        ),
+        'CYP' => array(
+            array(1, 'кипрский фунт', 'кипрских фунта', 'кипрских фунтов'),
+            array(1, 'цент', 'цента', 'центов')
+        ),
+        'CZK' => array(
+            array(2, 'чешская крона', 'чешских кроны', 'чешских крон'),
+            array(1, 'галирж', 'галиржа', 'галиржей')
+        ),
+        'DKK' => array(
+            array(2, 'датская крона', 'датских кроны', 'датских крон'),
+            array(1, 'эре', 'эре', 'эре')
+        ),
+        'EEK' => array(
+            array(2, 'эстонская крона', 'эстонских кроны', 'эстонских крон'),
+            array(1, 'сенти', 'сенти', 'сенти')
+        ),
+        'EUR' => array(
+            array(1, 'евро', 'евро', 'евро'),
+            array(1, 'евроцент', 'евроцента', 'евроцентов')
+        ),
+        'GBP' => array(
+            array(1, 'фунт стерлингов', 'фунта стерлингов', 'фунтов стерлингов'),
+            array(1, 'пенс', 'пенса', 'пенсов')
+        ),
+        'HKD' => array(
+            array(1, 'гонконгский доллар', 'гонконгских доллара', 'гонконгских долларов'),
+            array(1, 'цент', 'цента', 'центов')
+        ),
+        'HRK' => array(
+            array(2, 'хорватская куна', 'хорватских куны', 'хорватских кун'),
+            array(2, 'липа', 'липы', 'лип')
+        ),
+        'HUF' => array(
+            array(1, 'венгерский форинт', 'венгерских форинта', 'венгерских форинтов'),
+            array(1, 'филлер', 'филлера', 'филлеров')
+        ),
+        'ISK' => array(
+            array(2, 'исландская крона', 'исландских кроны', 'исландских крон'),
+            array(1, 'эре', 'эре', 'эре')
+        ),
+        'JPY' => array(
+            array(2, 'иена', 'иены', 'иен'),
+            array(2, 'сена', 'сены', 'сен')
+        ),
+        'LTL' => array(
+            array(1, 'лит', 'лита', 'литов'),
+            array(1, 'цент', 'цента', 'центов')
+        ),
+        'LVL' => array(
+            array(1, 'лат', 'лата', 'латов'),
+            array(1, 'сентим', 'сентима', 'сентимов')
+        ),
+        'MKD' => array(
+            array(1, 'македонский динар', 'македонских динара', 'македонских динаров'),
+            array(1, 'дени', 'дени', 'дени')
+        ),
+        'MTL' => array(
+            array(2, 'мальтийская лира', 'мальтийских лиры', 'мальтийских лир'),
+            array(1, 'сентим', 'сентима', 'сентимов')
+        ),
+        'NOK' => array(
+            array(2, 'норвежская крона', 'норвежских кроны', 'норвежских крон'),
+            array(0, 'эре', 'эре', 'эре')
+        ),
+        'PLN' => array(
+            array(1, 'злотый', 'злотых', 'злотых'),
+            array(1, 'грош', 'гроша', 'грошей')
+        ),
+        'ROL' => array(
+            array(1, 'румынский лей', 'румынских лей', 'румынских лей'),
+            array(1, 'бани', 'бани', 'бани')
+        ),
+        // both RUR and RUR are used, I use RUB for shorter form
+        'RUB' => array(
+            array(1, 'рубль', 'рубля', 'рублей'),
+            array(2, 'копейка', 'копейки', 'копеек')
+        ),
+        'RUR' => array(
+            array(1, 'российский рубль', 'российских рубля', 'российских рублей'),
+            array(2, 'копейка', 'копейки', 'копеек')
+        ),
+        'SEK' => array(
+            array(2, 'шведская крона', 'шведских кроны', 'шведских крон'),
+            array(1, 'эре', 'эре', 'эре')
+        ),
+        'SIT' => array(
+            array(1, 'словенский толар', 'словенских толара', 'словенских толаров'),
+            array(2, 'стотина', 'стотины', 'стотин')
+        ),
+        'SKK' => array(
+            array(2, 'словацкая крона', 'словацких кроны', 'словацких крон'),
+            array(0, '', '', '')
+        ),
+        'TRL' => array(
+            array(2, 'турецкая лира', 'турецких лиры', 'турецких лир'),
+            array(1, 'пиастр', 'пиастра', 'пиастров')
+        ),
+        'UAH' => array(
+            array(2, 'гривна', 'гривны', 'гривен'),
+            array(1, 'цент', 'цента', 'центов')
+        ),
+        'USD' => array(
+            array(1, 'доллар США', 'доллара США', 'долларов США'),
+            array(1, 'цент', 'цента', 'центов')
+        ),
+        'YUM' => array(
+            array(1, 'югославский динар', 'югославских динара', 'югославских динаров'),
+            array(1, 'пара', 'пара', 'пара')
+        ),
+        'ZAR' => array(
+            array(1, 'ранд', 'ранда', 'рандов'),
+            array(1, 'цент', 'цента', 'центов')
+        )
+    );
     // }}}
 
     // {{{ Numbers_Words_Locale_bg()
@@ -269,7 +413,7 @@ class Numbers_Words_Locale_bg extends Numbers_Words
      * @author Kouber Saparev <kouber@php.net>
      * @see function _initDigits
      */
-    function Numbers_Words_Locale_bg()
+    function __construct()
     {
         $this->_initDigits();
     }
@@ -326,11 +470,11 @@ class Numbers_Words_Locale_bg extends Numbers_Words
 
             $ret =& $m[0];
             if ($first) {
-                array_unshift($ret, $first); 
+                array_unshift($ret, $first);
             }
             return $ret;
         }
-        
+
         return explode(' ', number_format($num, 0, '', ' ')); // a faster version for integers
     }
     // }}}
@@ -364,12 +508,12 @@ class Numbers_Words_Locale_bg extends Numbers_Words
              the array may vary.
         */
         $ret = array();
-        
+
         // extract the value of each digit from the three-digit number
         $e = $num%10;                  // ones
         $d = ($num-$e)%100/10;         // tens
         $s = ($num-$d*10-$e)%1000/100; // hundreds
-        
+
         // process the "hundreds" digit.
         if ($s) {
             switch ($s) {
@@ -432,6 +576,10 @@ class Numbers_Words_Locale_bg extends Numbers_Words
 
         return implode($this->_sep, $ret);
     }
+
+
+
+
     // }}}
 
     // {{{ _toWords()
@@ -515,6 +663,65 @@ class Numbers_Words_Locale_bg extends Numbers_Words
         }
 
         return $ret_minus . rtrim(implode('', array_reverse($ret)), $this->_sep);
+    }
+    // }}}
+
+
+    // {{{ toCurrencyWords()
+    /**
+     * Converts a currency value to its word representation
+     * (with monetary units) in English language
+     *
+     * @param integer       $int_curr   An international currency symbol as defined by the ISO 4217 standard (three characters)
+     * @param integer       $decimal A money total amount without fraction part (e.g. amount of dollars)
+     * @param integer|bool  $fraction   Fractional part of the money amount (e.g. amount of cents)
+     *                                  Optional. Defaults to false.
+     * @param integer|bool  $convert_fraction   Convert fraction to words (left as numeric if set to false).
+     *                                          Optional. Defaults to true.
+     * @return string  The corresponding word representation for the currency
+     *
+     * @access public
+     * @author Piotr Klaban <makler@man.torun.pl>
+     * @since  Numbers_Words 0.13.1
+     */
+   public function toCurrencyWords($int_curr, $decimal, $fraction = false, $convert_fraction = true)
+    {
+        $int_curr = strtoupper($int_curr);
+        if (!isset($this->_currency_names[$int_curr])) {
+            $int_curr = $this->def_currency;
+        }
+        $curr_names = $this->_currency_names[$int_curr];
+
+        $ret = trim($this->_toWords($decimal));
+        $lev = ($decimal == 1) ? 0 : 1;
+        if ($lev > 0) {
+            if (count($curr_names[0]) > 1) {
+                $ret .= $this->_sep . $curr_names[0][$lev];
+            } else {
+                $ret .= $this->_sep . $curr_names[0][0] . 's';
+            }
+        } else {
+            $ret .= $this->_sep . $curr_names[0][0];
+        }
+
+        if ($fraction !== false) {
+            if ($convert_fraction) {
+                $ret .= $this->_sep . trim($this->_toWords($fraction));
+            } else {
+                $ret .= $this->_sep . $fraction;
+            }
+            $lev = ($fraction == 1) ? 0 : 1;
+            if ($lev > 0) {
+                if (count($curr_names[1]) > 1) {
+                    $ret .= $this->_sep . $curr_names[1][$lev];
+                } else {
+                    $ret .= $this->_sep . $curr_names[1][0] . 's';
+                }
+            } else {
+                $ret .= $this->_sep . $curr_names[1][0];
+            }
+        }
+        return $ret;
     }
     // }}}
 }

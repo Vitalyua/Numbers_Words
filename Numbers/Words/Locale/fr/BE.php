@@ -63,7 +63,55 @@ class Numbers_Words_Locale_fr_BE extends Numbers_Words
      * @access public
      */
     var $lang_native = 'Français';
+    var $def_currency = 'EUR';
+    var $_currency_names = array(
+        #mamay
+        'AED' => array(array('Dirham'), array('fil')),
+        'AFN' => array(array('Afghani'), array('pul')),
+        'DIR' => array(array('Dirham'), array('fil')),
+        'BHD' => array(array('Dinar'), array('fil')),
+        'SAR' => array(array('Riyal'), array('halala')),
+        'KWD' => array(array('Dinar'), array('fil')),
+        'INR' => array(array('Rupee'), array('paise')),
+        'BDT' => array(array(1,'Taka','Taka','Taka'), array(2,'poisha','poisha','poisha')),
 
+        'ALL' => array(array('lek'), array('qindarka')),
+        'AUD' => array(array('Australian dollar'), array('cent')),
+        'BAM' => array(array('convertible marka'), array('fenig')),
+        'BGN' => array(array('lev'), array('stotinka')),
+        'BRL' => array(array('real'), array('centavos')),
+        'BYR' => array(array('Belarussian rouble'), array('kopiejka')),
+        'CAD' => array(array('Canadian dollar'), array('cent')),
+        'CHF' => array(array('Swiss franc'), array('rapp')),
+        'CYP' => array(array('Cypriot pound'), array('cent')),
+        'CZK' => array(array('Czech koruna'), array('halerz')),
+        'DKK' => array(array('Danish krone'), array('ore')),
+        'EEK' => array(array('kroon'), array('senti')),
+        'EUR' => array(array('euro'), array('euro-cent')),
+        'GBP' => array(array('pound', 'pounds'), array('pence', 'pence')),
+        'HKD' => array(array('Hong Kong dollar'), array('cent')),
+        'HRK' => array(array('Croatian kuna'), array('lipa')),
+        'HUF' => array(array('forint'), array('filler')),
+        'ILS' => array(array('new sheqel','new sheqels'), array('agora','agorot')),
+        'ISK' => array(array('Icelandic krona'), array('aurar')),
+        'JPY' => array(array('yen'), array('sen')),
+        'LTL' => array(array('litas'), array('cent')),
+        'LVL' => array(array('lat'), array('sentim')),
+        'MKD' => array(array('Macedonian dinar'), array('deni')),
+        'MTL' => array(array('Maltese lira'), array('centym')),
+        'NOK' => array(array('Norwegian krone'), array('oere')),
+        'PLN' => array(array('zloty', 'zlotys'), array('grosz')),
+        'ROL' => array(array('Romanian leu'), array('bani')),
+        'RUB' => array(array('Russian Federation rouble'), array('kopiejka')),
+        'SEK' => array(array('Swedish krona'), array('oere')),
+        'SIT' => array(array('Tolar'), array('stotinia')),
+        'SKK' => array(array('Slovak koruna'), array()),
+        'TRL' => array(array('lira'), array('kuruş')),
+        'UAH' => array(array('hryvna'), array('cent')),
+        'USD' => array(array('dollar'), array('cent')),
+        'YUM' => array(array('dinars'), array('para')),
+        'ZAR' => array(array('rand'), array('cent'))
+    );
     /**
      * The words for some numbers.
      * @var string
@@ -429,6 +477,63 @@ class Numbers_Words_Locale_fr_BE extends Numbers_Words
         }
 
         return rtrim($ret, $this->_sep);
+    }
+    // }}}
+    // {{{ toCurrencyWords()
+    /**
+     * Converts a currency value to its word representation
+     * (with monetary units) in English language
+     *
+     * @param integer       $int_curr   An international currency symbol as defined by the ISO 4217 standard (three characters)
+     * @param integer       $decimal A money total amount without fraction part (e.g. amount of dollars)
+     * @param integer|bool  $fraction   Fractional part of the money amount (e.g. amount of cents)
+     *                                  Optional. Defaults to false.
+     * @param integer|bool  $convert_fraction   Convert fraction to words (left as numeric if set to false).
+     *                                          Optional. Defaults to true.
+     * @return string  The corresponding word representation for the currency
+     *
+     * @access public
+     * @author Piotr Klaban <makler@man.torun.pl>
+     * @since  Numbers_Words 0.13.1
+     */
+    public function toCurrencyWords($int_curr, $decimal, $fraction = false, $convert_fraction = true)
+    {
+        $int_curr = strtoupper($int_curr);
+        if (!isset($this->_currency_names[$int_curr])) {
+            $int_curr = $this->def_currency;
+        }
+        $curr_names = $this->_currency_names[$int_curr];
+
+        $ret = trim($this->_toWords($decimal));
+        $lev = ($decimal == 1) ? 0 : 1;
+        if ($lev > 0) {
+            if (count($curr_names[0]) > 1) {
+                $ret .= $this->_sep . $curr_names[0][$lev];
+            } else {
+                $ret .= $this->_sep . $curr_names[0][0] . 's';
+            }
+        } else {
+            $ret .= $this->_sep . $curr_names[0][0];
+        }
+
+        if ($fraction !== false) {
+            if ($convert_fraction) {
+                $ret .= $this->_sep . trim($this->_toWords($fraction));
+            } else {
+                $ret .= $this->_sep . $fraction;
+            }
+            $lev = ($fraction == 1) ? 0 : 1;
+            if ($lev > 0) {
+                if (count($curr_names[1]) > 1) {
+                    $ret .= $this->_sep . $curr_names[1][$lev];
+                } else {
+                    $ret .= $this->_sep . $curr_names[1][0] . 's';
+                }
+            } else {
+                $ret .= $this->_sep . $curr_names[1][0];
+            }
+        }
+        return $ret;
     }
     // }}}
 }

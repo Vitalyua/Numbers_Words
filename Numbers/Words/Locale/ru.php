@@ -49,7 +49,6 @@ class Numbers_Words_Locale_ru extends Numbers_Words
 {
 
     // {{{ properties
-
     /**
      * Locale name
      * @var string

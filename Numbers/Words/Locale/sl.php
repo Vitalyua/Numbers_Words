@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class for translating numbers into Serbian
+ * Class for translating numbers into Slovenian
  *
  * @package Numbers_Words
  */
@@ -20,28 +20,28 @@ require_once "Numbers/Words.php";
  * @license  PHP 3.01 http://www.php.net/license/3_01.txt
  * @link     http://pear.php.net/package/Numbers_Words
  */
-class Numbers_Words_Locale_sr extends Numbers_Words
+class Numbers_Words_Locale_sl extends Numbers_Words
 {
     /**
      * Locale name
      * @public string
      * @access public
      */
-    public $locale = 'sr';
+    public $locale = 'sl';
 
     /**
      * Language name in English
      * @var string
      * @access public
      */
-    public $lang = 'Serbian';
+    public $lang = 'Slovenian';
 
     /**
      * Native language name
      * @var string
      * @access public
      */
-    public $lang_native = 'Serbian';
+    public $lang_native = 'Slovenian';
 
     /**
      * The word for the minus sign
@@ -408,7 +408,82 @@ class Numbers_Words_Locale_sr extends Numbers_Words
 
 
     // {{{ _toWords()
+    /**
+     * Converts a group of 3 digits to its word representation
+     * in Russian language.
+     *
+     * @param integer $num    An integer between -infinity and infinity inclusive :)
+     *                        that need to be converted to words
+     * @param integer $gender Gender of string, 0=neutral, 1=male, 2=female.
+     * @param integer &$case  A variable passed by reference which is set to case
+     *                        of the word associated with the number
+     *
+     * @return string  The corresponding word representation
+     *
+     * @access private
+     * @author Andrey Demenev <demenev@on-line.jar.ru>
+     */
+    function _groupToWords($num, $gender, &$case)
+    {
+        $ret  = '';
+        $case = 3;
 
+        if ((int)$num == 0) {
+            $ret = '';
+        } elseif ($num < 10) {
+            $ret = $this->_digits[$gender][(int)$num];
+            if ($num == 1) {
+                $case = 1;
+            } elseif ($num < 5) {
+                $case = 2;
+            } else {
+                $case = 3;
+            }
+
+        } else {
+            $num = str_pad($num, 3, '0', STR_PAD_LEFT);
+
+            $hundreds = (int)$num{0};
+            if ($hundreds) {
+                $ret = $this->_hundreds[$hundreds];
+                if (substr($num, 1) != '00') {
+                    $ret .= $this->_sep;
+                }
+
+                $case = 3;
+            }
+
+            $tens = (int)$num{1};
+            $ones = (int)$num{2};
+            if ($tens || $ones) {
+                if ($tens == 1 && $ones == 0) {
+                    $ret .= 'deset';
+                } elseif ($tens == 1) {
+                    $ret .= $this->_teens[$ones+10];
+                } else {
+                    if ($tens > 0) {
+                        $ret .= $this->_tens[(int)$tens];
+                    }
+
+                    if ($ones > 0) {
+                        $ret .= $this->_sep
+                            . $this->_digits[$gender][$ones];
+
+                        if ($ones == 1) {
+                            $case = 1;
+                        } elseif ($ones < 5) {
+                            $case = 2;
+                        } else {
+                            $case = 3;
+                        }
+                    }
+                }
+            }
+        }
+
+        return $ret;
+    }
+    // }}}
     /**
      * Converts a number to its word representation
      * in Russian language and determines the case of string.
