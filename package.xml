@@ -37,7 +37,9 @@ The following languages are supported:
     * ru (Russian) by Andrey Demenev
     * sv (Swedish) by Robin Ericsson
     * tr_TR (Turkish) by Shahriyar Imanov
-    * ua (Ukrainian) by Andrey Demenev and Vital Leshchyk</description>
+    * ua (Ukrainian) by Andrey Demenev and Vital Leshchyk
+	* sr (Serbian)  
+	</description>
  <lead>
   <name>Piotr Klaban</name>
   <user>makler</user>
@@ -120,6 +122,7 @@ The following languages are supported:
    <file name="Numbers/Words/Locale/sv.php" role="php" />
    <file name="Numbers/Words/Locale/tr/TR.php" role="php" />
    <file name="Numbers/Words/Locale/ua.php" role="php" />
+   <file name="Numbers/Words/Locale/sr.php" role="php" />
 
    <file name="tests/bootstrap.php" role="test" />
    <file name="tests/phpunit.xml" role="test" />
