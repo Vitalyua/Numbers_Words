@@ -38,7 +38,9 @@ The following languages are supported:
     * sv (Swedish) by Robin Ericsson
     * tr_TR (Turkish) by Shahriyar Imanov
     * ua (Ukrainian) by Andrey Demenev and Vital Leshchyk
-	* sr (Serbian)  
+	* sr (Serbian) by Hrybok Alex  
+	* sk (Slovak)  by Hrybok Alex (todo)
+	* sl (Slovenian) by Hrybok Alex (todo) 
 	</description>
  <lead>
   <name>Piotr Klaban</name>
@@ -123,6 +125,8 @@ The following languages are supported:
    <file name="Numbers/Words/Locale/tr/TR.php" role="php" />
    <file name="Numbers/Words/Locale/ua.php" role="php" />
    <file name="Numbers/Words/Locale/sr.php" role="php" />
+   <file name="Numbers/Words/Locale/sk.php" role="php" />
+   <file name="Numbers/Words/Locale/sl.php" role="php" />
 
    <file name="tests/bootstrap.php" role="test" />
    <file name="tests/phpunit.xml" role="test" />
