@@ -239,6 +239,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
         'KWD' => array(array('Dinar'), array('fil')),
         'INR' => array(array('Rupee'), array('paise')),
         'BDT' => array(array(1,'Taka','Taka','Taka'), array(2,'poisha','poisha','poisha')),
+        'LKR' => array(array('Rupee'), array('cent')),
 
       'ALL' => array(array('lek'), array('qindarka')),
       'AUD' => array(array('Australian dollar'), array('cent')),

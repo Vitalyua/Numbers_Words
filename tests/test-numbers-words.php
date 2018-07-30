@@ -20,9 +20,10 @@
  * @link       http://pear.php.net/package/Numbers_Words
  */
 /* vim: set expandtab tabstop=4 shiftwidth=4: */
+require_once 'bootstrap.php';
 require_once 'Numbers/Words.php';
 
-$num = "1121771141";
+$num = "151.51";
 
 if (isset($argv) && is_array($argv) && isset($argv[1])) {
   $num = $argv[1];
@@ -55,20 +56,20 @@ foreach ($lang as $loc_symbol) {
     $ret = $obj->toWords($num);
     $loc_name = $obj->lang;
     $langs[$loc_symbol] = $loc_name;
-    echo sprintf("%30s: '", $loc_name . ' (' . $loc_symbol . ')') . $ret . "'\n";
+//    echo sprintf("%30s: '", $loc_name . ' (' . $loc_symbol . ')') . $ret . "'\n";
   } catch (Numbers_Words_Exception $nwe) {
-    echo (string)$nwe . "\n";
+//    echo (string)$nwe . "\n";
   }
 }
 
 reset($langs);
 
-$num .= '.34';
+//$num .= '.34';
 $handle = new Numbers_Words();
 
-while (list ($loc_symbol, $loc_name) = each ($langs)) {
+foreach ($langs as $loc_symbol=>$loc_name) {
   try {
-    $ret = $handle->toCurrency($num, $loc_symbol);
+    $ret = $handle->toCurrency($num, $loc_symbol, 'BDT');
     echo sprintf("%30s: ", $loc_name . ' (' . $loc_symbol . ')') . $ret . "\n";
   } catch (Numbers_Words_Exception $nwe) {
     echo (string)$nwe . "\n";
