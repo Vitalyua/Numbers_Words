@@ -238,7 +238,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
         'SAR' => array(array('Riyal'), array('halala')),
         'KWD' => array(array('Dinar'), array('fil')),
         'INR' => array(array('Rupee'), array('paise')),
-        'BDT' => array(array(1,'Taka','Taka','Taka'), array(2,'poisha','poisha','poisha')),
+        'BDT' => array(array('Taka','Taka'), array('poisha','poisha')),
         'LKR' => array(array('Rupee'), array('cent')),
         'TZS' => array(array('Tanzanian Shilling'), array('cent')),
 
