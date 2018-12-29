@@ -383,9 +383,13 @@ class Numbers_Words_Locale_pt_BR extends Numbers_Words
          * (first chunk in array but last logical chunk)
          */
         reset($chunks);
-        do {
-            list(,$chunk) = each($chunks);
-        } while ($chunk === '000');
+        foreach ( $chunks as $chunk ) {
+            if ( $chunk === 000 ) continue;
+            break;
+        }
+//        do {
+//            list(,$chunk) = each($chunks);
+//        } while ($chunk === '000');
 
         if (($chunk < 100) || !($chunk % 100)) {
             return true;
