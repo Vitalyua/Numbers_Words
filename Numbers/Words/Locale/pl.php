@@ -197,7 +197,9 @@ class Numbers_Words_Locale_pl extends Numbers_Words
         'UAH' => array(array('hrywna','hrywna','hrywna'), array('cent', 'centy', 'centów')),
         'USD' => array(array('dolar','dolary','dolarów'), array('cent', 'centy', 'centów')),
         'YUM' => array(array('dinar','dinary','dinarów'), array('para','para','para')),
-        'ZAR' => array(array('rand','randy','randów'), array('cent', 'centy', 'centów'))
+        'ZAR' => array(array('rand','randy','randów'), array('cent', 'centy', 'centów')),
+        'MGA' => array(array('ariary','ariary','ariary'), array('', '', '')),
+
     );
 
     /**

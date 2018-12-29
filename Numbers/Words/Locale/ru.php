@@ -410,7 +410,11 @@ class Numbers_Words_Locale_ru extends Numbers_Words
       'ZAR' => array(
                 array(1, 'ранд', 'ранда', 'рандов'),
                 array(1, 'цент', 'цента', 'центов')
-               )
+               ),
+        'MGA' => array(
+            array(1, 'Ariary', 'Ariary', 'Ariary'),
+            array(1, '', '', ''),
+        )
     );
 
     /**

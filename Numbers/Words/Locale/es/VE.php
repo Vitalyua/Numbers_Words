@@ -163,7 +163,8 @@ class Numbers_Words_Locale_es_VE extends Numbers_Words
 		'USD' => array(array('dólar', 'dólares'), array('centavo')),
 		'VEB' => array(array('bolívar', 'bolívares'), array('céntimo')),
 		'YUM' => array(array('dinar', 'dinares'), array('para')),
-		'ZAR' => array(array('rand'), array('cent'))
+		'ZAR' => array(array('rand'), array('cent')),
+		'MGA' => array(array('ariary'), array('')),
 		);
 
     /**

@@ -396,6 +396,10 @@ class Numbers_Words_Locale_sr extends Numbers_Words
         'ZAR' => array(
             array(1, 'ранд', 'ранди', 'ранди'),
             array(1, 'цент', 'центи', 'центи'),
+        ),
+        'MGA' => array(
+            array(1, 'Ariary', 'Ariary', 'Ariary'),
+            array(1, '', '', ''),
         )
     );
 

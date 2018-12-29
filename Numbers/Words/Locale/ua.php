@@ -385,7 +385,11 @@ class Numbers_Words_Locale_ua extends Numbers_Words
         'ZAR' => array(
             array(1, 'ранд', 'ранди', 'рандів'),
             array(1, 'цент', 'центи', 'центів'),
-        )
+        ),
+        'MGA' => array(
+            array(1, 'Ariary', 'Ariary', 'Ariary'),
+            array(1, '', '', ''),
+        ),
     );
 
     /**
