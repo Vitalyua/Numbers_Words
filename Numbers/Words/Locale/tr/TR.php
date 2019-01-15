@@ -153,7 +153,9 @@ class Numbers_Words_Locale_tr_TR extends Numbers_Words
         'UAH' => array(array('Ukrayna hryvnyası'), array('kopiyka')),
         'USD' => array(array('ABD Doları'), array('sent')),
         'YUM' => array(array('dinar'), array('para')),
-        'ZAR' => array(array('Güney Afrika randı'), array('sent'))
+        'ZAR' => array(array('Güney Afrika randı'), array('sent')),
+        'MGA' => array(array('ariary'), array('')),
+        'MUR' => array(array('Mauritian rupee'), array('cent')),
     );
 
     /**

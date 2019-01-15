@@ -402,6 +402,10 @@ class Numbers_Words_Locale_bg extends Numbers_Words
         'MGA' => array(
             array(1, 'Ariary', 'Ariary', 'Ariary'),
             array(1, '', '', ''),
+        ),
+        'MUR' => array(
+            array(1, 'Mauritian rupee', 'Mauritian rupee', 'Mauritian rupee'),
+            array(1, 'cent', 'cent', 'cent'),
         )
     );
     // }}}

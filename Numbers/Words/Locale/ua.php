@@ -386,10 +386,17 @@ class Numbers_Words_Locale_ua extends Numbers_Words
             array(1, 'ранд', 'ранди', 'рандів'),
             array(1, 'цент', 'центи', 'центів'),
         ),
+
         'MGA' => array(
             array(1, 'Ariary', 'Ariary', 'Ariary'),
             array(1, '', '', ''),
         ),
+        'MUR' => array(
+            array(1, 'Маврикійська рупія', 'Маврикійські рупії', 'Маврикійських рупій'),
+            array(1, 'цент', 'центи', 'центів'),
+        )
+
+
     );
 
     /**

@@ -188,7 +188,8 @@ class Numbers_Words_Locale_fr extends Numbers_Words
         'USD' => array(array('dollar'), array('cent')),
         'YUM' => array(array('dinars'), array('para')),
         'ZAR' => array(array('rand'), array('cent')),
-        'MGA' => array(array('ariary'), array(''))
+        'MGA' => array(array('ariary'), array('')),
+        'MUR' => array(array('Roupie mauricienne'), array('cent'))
     );
 
     /**

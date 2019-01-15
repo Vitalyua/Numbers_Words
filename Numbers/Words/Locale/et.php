@@ -162,6 +162,8 @@ class Numbers_Words_Locale_et extends Numbers_Words
         'USD' => array(array('Amerikan dolları'), array('sent')),
         'ZAR' => array(array('Cənubi Afrika randı'), array('sent')),
         'MGA' => array(array('Ariary'), array('')),
+        'MUR' => array(array('Mauritian rupee'),  array('sent')),
+
     );
 
     /**

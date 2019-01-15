@@ -110,7 +110,9 @@ class Numbers_Words_Locale_fr_BE extends Numbers_Words
         'UAH' => array(array('hryvna'), array('cent')),
         'USD' => array(array('dollar'), array('cent')),
         'YUM' => array(array('dinars'), array('para')),
-        'ZAR' => array(array('rand'), array('cent'))
+        'ZAR' => array(array('rand'), array('cent')),
+        'MGA' => array(array('ariary'), array('')),
+        'MUR' => array(array('Mauritian rupee'), array('cent')),
     );
     /**
      * The words for some numbers.

@@ -227,7 +227,9 @@ class Numbers_Words_Locale_az extends Numbers_Words
         'TRL' => array(array('Türk lirəsi'), array('quruş')),
         'UAH' => array(array('Ukrayna hrivnası'), array('sent')),
         'USD' => array(array('Amerikan dolları'), array('sent')),
-        'ZAR' => array(array('Cənubi Afrika randı'), array('sent'))
+        'ZAR' => array(array('Cənubi Afrika randı'), array('sent')),
+        'MGA' => array(array('Ariari'), array('sent')),
+        'MUR' => array(array('Mauritian rupisi'), array('sent')),
     );
 
     /**

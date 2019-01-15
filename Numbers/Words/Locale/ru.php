@@ -412,8 +412,12 @@ class Numbers_Words_Locale_ru extends Numbers_Words
                 array(1, 'цент', 'цента', 'центов')
                ),
         'MGA' => array(
-            array(1, 'Ariary', 'Ariary', 'Ariary'),
+            array(1, 'Ариари', 'Ариари', 'Ариари'),
             array(1, '', '', ''),
+        ),
+        'MUR' => array(
+            array(1, 'Маврикийская рупия', 'Маврикийской рупии', 'Маврикийских рупий'),
+            array(1, 'цент', 'цента', 'центов'),
         )
     );
 

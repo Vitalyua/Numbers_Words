@@ -210,6 +210,7 @@ class Numbers_Words_Locale_es extends Numbers_Words
         'USD' => array(array('Amerikan dolları'), array('sent')),
         'ZAR' => array(array('Cənubi Afrika randı'), array('sent')),
         'MGA' => array(array('Ariary'), array('')),
+        'MUR' => array(array('Rupia de Mauricio'), array('sent')),
     );
 
 

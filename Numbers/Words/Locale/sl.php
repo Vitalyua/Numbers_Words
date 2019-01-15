@@ -400,7 +400,12 @@ class Numbers_Words_Locale_sl extends Numbers_Words
         'MGA' => array(
             array(1, 'Ariary', 'Ariary', 'Ariary'),
             array(1, '', '', ''),
+        ),
+          'MUR' => array(
+            array(1, 'Mauritska rupija', 'Mauritska rupija', 'Mauritska rupija'),
+            array(1,  'cent', 'cent', 'cent'),
         )
+
     );
 
     /**

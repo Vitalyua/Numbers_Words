@@ -160,6 +160,8 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
       'YUM' => array(array('dinars'), array('para')),
       'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('Ariary'), array('')),
+	  'MUR' => array(array('Mauritian rupee'), array('cent')),
+
     );
 
     /**

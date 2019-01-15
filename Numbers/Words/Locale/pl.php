@@ -199,6 +199,7 @@ class Numbers_Words_Locale_pl extends Numbers_Words
         'YUM' => array(array('dinar','dinary','dinarów'), array('para','para','para')),
         'ZAR' => array(array('rand','randy','randów'), array('cent', 'centy', 'centów')),
         'MGA' => array(array('ariary','ariary','ariary'), array('', '', '')),
+        'MUR' => array(array('rupia maurytyjska','rupia maurytyjska','rupia maurytyjska'), array('cent', 'centy', 'centów')),
 
     );
 

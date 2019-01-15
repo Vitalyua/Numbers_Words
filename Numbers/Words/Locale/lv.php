@@ -124,7 +124,9 @@ class Numbers_Words_Locale_lv extends Numbers_Words
         'USD' => array(array('dollar'), array('cent')),
         'YUM' => array(array('dinars'), array('para')),
         'ZAR' => array(array('rand'), array('cent')),
-        'LS' => array(array('ls'), array('ls'))
+        'LS' => array(array('ls'), array('ls')),
+        'MGA' => array(array('Ariary'), array('')),
+        'MUR' => array(array('Mauritian rupee'), array('cent')),
     );
 
     /**
