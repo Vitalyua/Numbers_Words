@@ -158,7 +158,7 @@ class Numbers_Words_Locale_it_IT extends Numbers_Words
      * @var string
      * @access private
      */
-    var $_sep = '';
+    var $_sep = ' ';
     // }}}
     // {{{ _toWords()
     /**

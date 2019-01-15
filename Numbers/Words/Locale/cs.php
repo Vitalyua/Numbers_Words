@@ -184,7 +184,7 @@ class Numbers_Words_Locale_cs extends Numbers_Words
         'YUM' => array(array('dinars'), array('para')),
         'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('ariary'), array('')),
-        'MUR' => array(array('rand'), array('cent')),
+        'MUR' => array(array('Rupia de Mauricio'), array('cent')),
     );
     // }}}
     // {{{ _toWords()

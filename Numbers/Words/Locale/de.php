@@ -128,7 +128,7 @@ class Numbers_Words_Locale_de extends Numbers_Words
      * @var string
      * @access private
      */
-    var $_sep = '';
+    var $_sep = ' ';
 
     /**
      * The exponent word separator
