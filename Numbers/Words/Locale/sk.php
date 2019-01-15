@@ -724,7 +724,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
         if ($lev > 0) {
-            if (count($curr_names[0]) > 1) {
+            if (is_array($curr_names[0]) && count($curr_names[0]) > 1) {
                 $ret .= $this->_sep . $curr_names[0][$lev];
             } else {
                 $ret .= $this->_sep . $curr_names[0][0] . 's';
