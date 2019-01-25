@@ -402,8 +402,12 @@ class Numbers_Words_Locale_sk extends Numbers_Words
             array(1, '', '', ''),
         ),
         'MUR' => array(
-            array(1, 'Mauritian rupee', 'Mauritian rupee', 'Mauritian rupee'),
-            array(1, 'cent', 'cent', 'cent'),
+            array(1, 'Maurícijská  rupia', 'Maurícijské rupia', 'Maurícijské rupia'),
+            array(1, '', '', ''),
+        ),
+		'SCR' => array(
+            array(1, 'Seychelská  rupia', 'Seychelské rupia', 'Seychelské rupia'),
+            array(1, '', '', ''),
         )
     );
 
@@ -412,7 +416,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * @var string
      * @access public
      */
-    public $def_currency = 'RSD';  // Serbian money
+    public $def_currency = 'EUR';  // Serbian money
 
 
     // {{{ _toWords()

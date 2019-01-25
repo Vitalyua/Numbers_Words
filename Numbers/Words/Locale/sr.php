@@ -402,8 +402,12 @@ class Numbers_Words_Locale_sr extends Numbers_Words
             array(1, '', '', ''),
         ),
         'MUR' => array(
-            array(1, 'Mauritian rupee', 'Mauritian rupee', 'Mauritian rupee'),
-            array(1, 'cent', 'cent', 'cent'),
+            array(1, 'Мауритиан рупее', 'Мауритиан рупее', 'Мауритиан рупее'),
+            array(1, 'цент', 'центи', 'центи'),
+        ),
+        'RSD' => array(
+            array(1, 'Сербиан Динар', 'Сербиан Динар', 'Сербиан Динар'),
+            array(1, 'цент', 'центи', 'центи'),
         )
     );
 

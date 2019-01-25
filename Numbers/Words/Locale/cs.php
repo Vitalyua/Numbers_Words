@@ -185,6 +185,8 @@ class Numbers_Words_Locale_cs extends Numbers_Words
         'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('ariary'), array('')),
         'MUR' => array(array('Rupia de Mauricio'), array('cent')),
+        'SCR' => array(array('Seychellois rupee'), array('cent')),
+        'RSD' => array(array('Serbian dinar'), array('cent')),
     );
     // }}}
     // {{{ _toWords()

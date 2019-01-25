@@ -211,6 +211,7 @@ class Numbers_Words_Locale_es extends Numbers_Words
         'ZAR' => array(array('Cənubi Afrika randı'), array('sent')),
         'MGA' => array(array('Ariary'), array('')),
         'MUR' => array(array('Rupia de Mauricio'), array('sent')),
+		'SCR' => array(array('Rupia de Seychelles'), array('sent')),
     );
 
 

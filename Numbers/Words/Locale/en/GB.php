@@ -176,6 +176,7 @@ class Numbers_Words_Locale_en_GB extends Numbers_Words
       'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('Ariary'), array('')),
 		'MUR' => array(array('Mauritian rupee'), array('cent')),
+		'SCR' => array(array('Seychellois rupee'), array('cent')),
     );
 
     /**

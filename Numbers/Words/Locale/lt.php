@@ -163,7 +163,8 @@ class Numbers_Words_Locale_lt extends Numbers_Words
         'YUM' => array(array('dinars'), array('para')),
         'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('Ariary'), array('')),
-        'MUR' => array(array('Mauritian rupee'), array('cent')),
+		'MUR' => array(array('Rupia mauriziana'), array('cent')),
+		'SCR' => array(array('Rupia delle Seychelles'), array('cent')),
     );
     // }}}
     // {{{ _toWords()

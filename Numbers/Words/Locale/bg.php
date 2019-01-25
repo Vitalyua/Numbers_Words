@@ -404,9 +404,20 @@ class Numbers_Words_Locale_bg extends Numbers_Words
             array(1, '', '', ''),
         ),
         'MUR' => array(
-            array(1, 'Mauritian rupee', 'Mauritian rupee', 'Mauritian rupee'),
-            array(1, 'cent', 'cent', 'cent'),
-        )
+            array(1, 'Мавриций рупия', 'Мавриций рупия', 'Мавриций рупия'),
+            array(1, 'цент', 'цента', 'центов'),
+        ),
+
+        'SCR' => array(
+            array(1, 'Сейшелите рупия', 'Сейшелите рупия', 'Сейшелите рупия'),
+            array(1, 'цент', 'цента', 'центов'),
+        ),
+        'RSD' => array(
+            array(1, 'Сръбски динар', 'Сръбски динар','Сръбски динар',),
+            array(1,  'цент', 'цента', 'центов'),
+        ),
+
+
     );
     // }}}
 

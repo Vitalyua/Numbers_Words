@@ -791,16 +791,21 @@ class Numbers_Words_Locale_sl extends Numbers_Words
      */
     public function toCurrencyWords($int_curr, $decimal, $fraction = false, $convert_fraction = true)
     {
+        $curr_names=[];
         $int_curr = strtoupper($int_curr);
         if (!isset($this->_currency_names[$int_curr])) {
             $int_curr = $this->def_currency;
         }
+        if (isset($this->_currency_names[$int_curr])){
         $curr_names = $this->_currency_names[$int_curr];
+        }
+
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
+        if (isset($curr_names[0])){
         if ($lev > 0) {
-            if (count($curr_names[0]) > 1) {
+                if (isset($curr_names[0]) && count($curr_names[0]) > 1) {
                 $ret .= $this->_sep . $curr_names[0][$lev];
             } else {
                 $ret .= $this->_sep . $curr_names[0][0] . 's';
@@ -808,6 +813,8 @@ class Numbers_Words_Locale_sl extends Numbers_Words
         } else {
             $ret .= $this->_sep . $curr_names[0][0];
         }
+        }
+
 
         if ($fraction !== false) {
             if ($convert_fraction) {

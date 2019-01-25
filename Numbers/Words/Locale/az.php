@@ -228,8 +228,10 @@ class Numbers_Words_Locale_az extends Numbers_Words
         'UAH' => array(array('Ukrayna hrivnası'), array('sent')),
         'USD' => array(array('Amerikan dolları'), array('sent')),
         'ZAR' => array(array('Cənubi Afrika randı'), array('sent')),
-        'MGA' => array(array('Ariari'), array('sent')),
+        'MGA' => array(array('Ariary'), array('')),
         'MUR' => array(array('Mauritian rupisi'), array('sent')),
+		'SCR' => array(array('Seyşel rupisi'), array('sent')),
+        'RSD' => array(array('Serb Dinarı'), array('sent')),
     );
 
     /**
