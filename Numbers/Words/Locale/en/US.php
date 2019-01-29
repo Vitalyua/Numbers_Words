@@ -280,7 +280,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
       'USD' => array(array('dollar'), array('cent')),
       'YUM' => array(array('dinars'), array('para')),
       'ZAR' => array(array('rand'), array('cent')),
-      'MGA' => array(array('Ariary'), array('')),
+      'MGA' => array(array('Ariary')),
 	  'MUR' => array(array('Mauritian rupee'), array('cent')),
 	  'SCR' => array(array('Seychellois rupee'), array('cent')),
 	  'RSD' => array(array('Serbian dinar'), array('cent')),
@@ -508,11 +508,18 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
+
+
+        if (empty($curr_names[1][0])){
+            $lev=0;
+        }
         if ($lev > 0) {
             if (count($curr_names[0]) > 1) {
                 $ret .= $this->_sep . $curr_names[0][$lev];
             } else {
-                $ret .= $this->_sep . $curr_names[0][0] . 's';
+                if (!empty($curr_names[0][0])) {
+                    $ret .= $this->_sep . $curr_names[0][0] . 's';
+                }
             }
         } else {
             $ret .= $this->_sep . $curr_names[0][0];
@@ -526,10 +533,12 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
             }
             $lev = ($fraction == 1) ? 0 : 1;
             if ($lev > 0) {
-                if (count($curr_names[1]) > 1) {
+                if (isset($curr_names[1]) && count($curr_names[1]) > 1) {
                     $ret .= $this->_sep . $curr_names[1][$lev];
                 } else {
-                    $ret .= $this->_sep . $curr_names[1][0] . 's';
+                    if (!empty($curr_names[1][0])) {
+                        $ret .= $this->_sep . $curr_names[1][0] . 's';
+                    }
                 }
             } else {
                 $ret .= $this->_sep . $curr_names[1][0];

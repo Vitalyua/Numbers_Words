@@ -238,7 +238,7 @@ class Numbers_Words_Locale_de extends Numbers_Words
         'UAH' => array(array('Ukrayna hrivnası'), array('sent')),
         'USD' => array(array('Amerikan dolları'), array('sent')),
         'ZAR' => array(array('Cənubi Afrika randı'), array('sent')),
-		'MGA' => array(array('Ariary'), array('')),
+		'MGA' => array(array('Ariary')),
 	    'MUR' => array(array('Mauritische Rupie'), array('cent')),
 		'SCR' => array(array('Seychellen Rupie'), array('cent')),
     );
@@ -458,6 +458,11 @@ class Numbers_Words_Locale_de extends Numbers_Words
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
+
+
+        if (empty($curr_names[1][0])){
+            $lev=0;
+        }
         if ($lev > 0) {
             if (count($curr_names[0]) > 1) {
                 $ret .= $this->_sep . $curr_names[0][$lev];
@@ -476,10 +481,12 @@ class Numbers_Words_Locale_de extends Numbers_Words
             }
             $lev = ($fraction == 1) ? 0 : 1;
             if ($lev > 0) {
-                if (count($curr_names[1]) > 1) {
+                if (isset($curr_names[1]) && count($curr_names[1]) > 1) {
                     $ret .= $this->_sep . $curr_names[1][$lev];
                 } else {
-                    $ret .= $this->_sep . $curr_names[1][0] . 's';
+                    if (!empty($curr_names[1][0])) {
+                        $ret .= $this->_sep . $curr_names[1][0] . 's';
+                    }
                 }
             } else {
                 $ret .= $this->_sep . $curr_names[1][0];

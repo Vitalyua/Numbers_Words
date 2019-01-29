@@ -140,34 +140,34 @@ class Numbers_Words_Locale_dk extends Numbers_Words
         'LKR' => array(array('rupee'), array('cent')),
         'TZS' => array(array('tanzanian shilling'), array('cent')),
         'ALL' => array(array('lek'), array('qindarka')),
-      'AUD' => array(array('australsk dollar', 'australske dollars'), array('cent')),
+        'AUD' => array(array('australsk dollar', 'australske dollars'), array('cent')),
         'BAM' => array(array('convertible marka'), array('fenig')),
         'BGN' => array(array('lev'), array('stotinka')),
         'BRL' => array(array('real'), array('centavos')),
         'BYR' => array(array('belarussian rouble'), array('kopiejka')),
-      'CAD' => array(array('canadisk dollar', 'canadisk dollars'), array('cent')),
-      'CHF' => array(array('schweitzer franc'), array('rappen')),
-      'CYP' => array(array('cypriotisk pund', 'cypriotiske pund'), array('cent')),
-      'CZK' => array(array('tjekkisk koruna'), array('halerz')),
-      'DKK' => array(array('krone', 'kroner'), array('�re')),
+        'CAD' => array(array('canadisk dollar', 'canadisk dollars'), array('cent')),
+        'CHF' => array(array('schweitzer franc'), array('rappen')),
+        'CYP' => array(array('cypriotisk pund', 'cypriotiske pund'), array('cent')),
+        'CZK' => array(array('tjekkisk koruna'), array('halerz')),
+        'DKK' => array(array('krone', 'kroner'), array('�re')),
         'EEK' => array(array('kroon'), array('senti')),
-      'EUR' => array(array('euro'), array('euro-cent')),
-      'GBP' => array(array('pund'), array('pence')),
+        'EUR' => array(array('euro'), array('euro-cent')),
+        'GBP' => array(array('pund'), array('pence')),
         'HKD' => array(array('hong kong dollar'), array('cent')),
         'HRK' => array(array('croatian kuna'), array('lipa')),
         'HUF' => array(array('forint'), array('filler')),
         'ILS' => array(array('new sheqel','new sheqels'), array('agora','agorot')),
         'ISK' => array(array('icelandic krona'), array('aurar')),
-      'JPY' => array(array('yen'), array('sen')),
+        'JPY' => array(array('yen'), array('sen')),
         'LTL' => array(array('litas'), array('cent')),
         'LVL' => array(array('lat'), array('sentim')),
         'MKD' => array(array('macedonian dinar'), array('deni')),
         'MTL' => array(array('maltese lira'), array('centym')),
-      'NOK' => array(array('norsk krone', 'norske kroner'), array('�re')),
-      'PLN' => array(array('zloty', 'zlotys'), array('grosz')),
+        'NOK' => array(array('norsk krone', 'norske kroner'), array('�re')),
+        'PLN' => array(array('zloty', 'zlotys'), array('grosz')),
         'ROL' => array(array('romanian leu'), array('bani')),
         'RUB' => array(array('russian Federation rouble'), array('kopiejka')),
-      'SEK' => array(array('svensk krone', 'svenske kroner'), array('�re')),
+        'SEK' => array(array('svensk krone', 'svenske kroner'), array('�re')),
         'SIT' => array(array('tolar'), array('stotinia')),
         'SKK' => array(array('slovak koruna'), array()),
         'TRL' => array(array('lira'), array('kuruş')),
@@ -175,7 +175,7 @@ class Numbers_Words_Locale_dk extends Numbers_Words
         'USD' => array(array('dollar', 'dollars'), array('cent')),
         'YUM' => array(array('dinars'), array('para')),
         'ZAR' => array(array('rand'), array('cent')),
-        'MGA' => array(array('ariary'), array('')),
+        'MGA' => array(array('ariary'),array() ),
         'MUR' => array(array('mauritian rupee'), array('cent')),
         'SCR' => array(array('aeychellois rupee'), array('cent')),
         'RSD' => array(array('aerbian dinar'), array('cent')),
@@ -426,6 +426,9 @@ class Numbers_Words_Locale_dk extends Numbers_Words
         if (($decimal != "") and ($decimal != 0)) {
             $ret = trim($this->_toWords($decimal));
             $lev = ($decimal == 1) ? 0 : 1;
+            if (empty($curr_names[1][0])){
+                $lev=0;
+            }
             if ($lev > 0) {
                 if (count($curr_names[0]) > 1) {
                     $ret .= $this->_sep . $curr_names[0][$lev];
@@ -449,10 +452,13 @@ class Numbers_Words_Locale_dk extends Numbers_Words
             }
             $lev = ($fraction == 1) ? 0 : 1;
             if ($lev > 0) {
-                if (count($curr_names[1]) > 1) {
+                if (isset($curr_names[1]) && count($curr_names[1]) > 1) {
                     $ret .= $this->_sep . $curr_names[1][$lev];
                 } else {
-                    $ret .= $this->_sep . $curr_names[1][0];
+                    if (isset($curr_names[1][0])){
+                        $ret .= $this->_sep . $curr_names[1][0];
+                    }
+
                 }
             } else {
                 $ret .= $this->_sep . $curr_names[1][0];

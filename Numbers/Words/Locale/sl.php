@@ -797,22 +797,22 @@ class Numbers_Words_Locale_sl extends Numbers_Words
             $int_curr = $this->def_currency;
         }
         if (isset($this->_currency_names[$int_curr])){
-        $curr_names = $this->_currency_names[$int_curr];
+            $curr_names = $this->_currency_names[$int_curr];
         }
 
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
         if (isset($curr_names[0])){
-        if ($lev > 0) {
+            if ($lev > 0) {
                 if (isset($curr_names[0]) && count($curr_names[0]) > 1) {
-                $ret .= $this->_sep . $curr_names[0][$lev];
+                    $ret .= $this->_sep . $curr_names[0][$lev];
+                } else {
+                    $ret .= $this->_sep . $curr_names[0][0] . 's';
+                }
             } else {
-                $ret .= $this->_sep . $curr_names[0][0] . 's';
+                $ret .= $this->_sep . $curr_names[0][0];
             }
-        } else {
-            $ret .= $this->_sep . $curr_names[0][0];
-        }
         }
 
 

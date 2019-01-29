@@ -508,6 +508,7 @@ class Numbers_Words_Locale_fr_BE extends Numbers_Words
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
+        if (empty($curr_names[1][0])){ $lev=0;}
         if ($lev > 0) {
             if (count($curr_names[0]) > 1) {
                 $ret .= $this->_sep . $curr_names[0][$lev];
@@ -529,7 +530,9 @@ class Numbers_Words_Locale_fr_BE extends Numbers_Words
                 if (count($curr_names[1]) > 1) {
                     $ret .= $this->_sep . $curr_names[1][$lev];
                 } else {
-                    $ret .= $this->_sep . $curr_names[1][0] . 's';
+                    if (!empty($curr_names[1][0])) {
+                        $ret .= $this->_sep . $curr_names[1][0] . 's';
+                    }
                 }
             } else {
                 $ret .= $this->_sep . $curr_names[1][0];

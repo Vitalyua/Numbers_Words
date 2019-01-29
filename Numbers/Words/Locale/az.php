@@ -402,6 +402,9 @@ class Numbers_Words_Locale_az extends Numbers_Words
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
+        if (empty($curr_names[1][0])){
+            $lev=0;
+        }
         if ($lev > 0) {
             if (count($curr_names[0]) > 1) {
                 $ret .= $this->_sep . $curr_names[0][$lev];
