@@ -219,6 +219,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
      */
     var $_sep = ' ';
 
+
     /**
      * The currency names (based on the below links,
      * informations from central bank websites and on encyclopedias)
