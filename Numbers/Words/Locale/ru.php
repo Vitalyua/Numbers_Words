@@ -56,6 +56,7 @@ class Numbers_Words_Locale_ru extends Numbers_Words
      */
     var $locale = 'ru';
 
+
     /**
      * Language name in English
      * @var string
