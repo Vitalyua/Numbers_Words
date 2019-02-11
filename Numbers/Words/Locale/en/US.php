@@ -284,6 +284,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
 	  'MUR' => array(array('Mauritian rupee'), array('cent')),
 	  'SCR' => array(array('Seychellois rupee'), array('cent')),
 	  'RSD' => array(array('Serbian dinar'), array('cent')),
+'SGD' => array(array('Singapore dollar'), array('cent')),
     );
 
     /**

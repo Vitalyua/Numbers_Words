@@ -241,6 +241,7 @@ class Numbers_Words_Locale_de extends Numbers_Words
 		'MGA' => array(array('Ariary')),
 	    'MUR' => array(array('Mauritische Rupie'), array('cent')),
 		'SCR' => array(array('Seychellen Rupie'), array('cent')),
+	'SGD' => array(array('Singapur Dollar'), array('cent')),
     );
 
     // }}}

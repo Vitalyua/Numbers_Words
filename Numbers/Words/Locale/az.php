@@ -232,6 +232,7 @@ class Numbers_Words_Locale_az extends Numbers_Words
         'MUR' => array(array('Mauritian rupisi'), array('sent')),
 		'SCR' => array(array('Seyşel rupisi'), array('sent')),
         'RSD' => array(array('Serb Dinarı'), array('sent')),
+'SGD' => array(array('Sinqapur dolları'), array('sent')),
     );
 
     /**

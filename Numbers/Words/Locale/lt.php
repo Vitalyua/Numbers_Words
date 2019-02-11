@@ -165,6 +165,7 @@ class Numbers_Words_Locale_lt extends Numbers_Words
         'MGA' => array(array('Ariary'), array('')),
 		'MUR' => array(array('Rupia mauriziana'), array('cent')),
 		'SCR' => array(array('Rupia delle Seychelles'), array('cent')),
+	'SGD' => array(array('Dollaro di Singapore'), array('cent')),
     );
     // }}}
     // {{{ _toWords()

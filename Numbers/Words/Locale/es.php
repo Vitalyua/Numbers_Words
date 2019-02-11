@@ -212,6 +212,7 @@ class Numbers_Words_Locale_es extends Numbers_Words
         'MGA' => array(array('Ariary'), array('')),
         'MUR' => array(array('Rupia de Mauricio'), array('sent')),
 		'SCR' => array(array('Rupia de Seychelles'), array('sent')),
+	'SGD' => array(array('Dolar de Singapur'), array('sent')),
     );
 
 

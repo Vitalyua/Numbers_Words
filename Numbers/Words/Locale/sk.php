@@ -408,7 +408,11 @@ class Numbers_Words_Locale_sk extends Numbers_Words
 		'SCR' => array(
             array(1, 'Seychelská  rupia', 'Seychelské rupia', 'Seychelské rupia'),
             array(1, '', '', ''),
-        )
+        ),
+	'SGD' => array(
+            array(1, 'Singapurský dolár', 'Singapurské dolár', 'Singapurské doláre'),
+            array(1, '', '', ''),
+        ),
     );
 
     /**
