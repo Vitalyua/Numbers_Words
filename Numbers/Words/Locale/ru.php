@@ -56,7 +56,6 @@ class Numbers_Words_Locale_ru extends Numbers_Words
      */
     var $locale = 'ru';
 
-
     /**
      * Language name in English
      * @var string
@@ -418,15 +417,19 @@ class Numbers_Words_Locale_ru extends Numbers_Words
         ),
         'MUR' => array(
             array(1, 'маврикийская рупия', 'маврикийских рупии', 'маврикийских рупий'),
-            array(1, '', '', ''),
+            array(1, 'цент', 'цента', 'центов')
         ),
 		'SCR' => array(
             array(1, 'сейшельская  рупия', 'сейшельских  рупии', 'сейшельских  рупий'),
-            array(1, '', '', ''),
+            array(1, 'цент', 'цента', 'центов')
         ),
 	'SGD' => array(
             array(1, 'cингапурский доллар', 'cингапурских  доллара', 'cингапурских  долларов'),
-            array(1, '', '', ''),
+            array(1, 'цент', 'цента', 'центов')
+        ),
+		'LKR' => array(
+            array(1, 'Шри-ланкийская рупия', 'Шри-ланкийских  рупии', 'Шри-ланкийских рупий'),
+            array(1, 'цент', 'цента', 'центов')
         ),
     );
 

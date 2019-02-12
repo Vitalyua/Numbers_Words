@@ -416,7 +416,8 @@ class Numbers_Words_Locale_bg extends Numbers_Words
             array(1, 'Сръбски динар', 'Сръбски динар','Сръбски динар',),
             array(1,  'цент', 'цента', 'центов'),
         ),
-
+        'SGD' => array(array('Sinqapur dolları'),      array(1,  'цент', 'цента', 'центов')),
+        'LKR' => array(array('Sri Lankan rupisi'),     array(1,  'цент', 'цента', 'центов')),
 
     );
     // }}}

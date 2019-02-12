@@ -219,7 +219,6 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
      */
     var $_sep = ' ';
 
-
     /**
      * The currency names (based on the below links,
      * informations from central bank websites and on encyclopedias)
@@ -239,12 +238,8 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
         'SAR' => array(array('Riyal'), array('halala')),
         'KWD' => array(array('Dinar'), array('fil')),
         'INR' => array(array('Rupee'), array('paise')),
-
-        'BDT' => array(array('Taka','Taka'), array('poisha','poisha')),
-
-        'LKR' => array(array('Rupee'), array('cent')),
+        'BDT' => array(array('Taka','Taka'), array('poisha','poisha')), 
         'TZS' => array(array('Tanzanian Shilling'), array('cent')),
-
       'ALL' => array(array('lek'), array('qindarka')),
       'AUD' => array(array('Australian dollar'), array('cent')),
       'BAM' => array(array('convertible marka'), array('fenig')),
@@ -285,7 +280,8 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
 	  'MUR' => array(array('Mauritian rupee'), array('cent')),
 	  'SCR' => array(array('Seychellois rupee'), array('cent')),
 	  'RSD' => array(array('Serbian dinar'), array('cent')),
-'SGD' => array(array('Singapore dollar'), array('cent')),
+	  'SGD' => array(array('Singapore dollar'), array('cent')),
+ 'LKR' => array(array('Sri Lankan Rupee'), array('cent')),
     );
 
     /**

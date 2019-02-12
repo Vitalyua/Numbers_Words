@@ -10,7 +10,7 @@
  * Include needed files
  */
 require_once "Numbers/Words.php";
- 
+
 
 /**
  * Class for translating numbers into Slovak.
@@ -203,13 +203,13 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * @access private
      */
     var $_misc_strings = array(
-        'deset'=>'двадесет',           // "ten"
-        'edinadeset'=>'единадесет', // "eleven"
-        'na'=>'на',                 // liaison particle for 12 to 19
-        'sto'=>'сто',               // "hundred"
-        'sta'=>'ста',               // suffix for 2 and 3 hundred
-        'stotin'=>'стотин',         // suffix for 4 to 9 hundred
-        'hiliadi'=>'хиляди'         // plural form of "thousand"
+        'deset' => 'двадесет',           // "ten"
+        'edinadeset' => 'единадесет', // "eleven"
+        'na' => 'на',                 // liaison particle for 12 to 19
+        'sto' => 'сто',               // "hundred"
+        'sta' => 'ста',               // suffix for 2 and 3 hundred
+        'stotin' => 'стотин',         // suffix for 4 to 9 hundred
+        'hiliadi' => 'хиляди'         // plural form of "thousand"
     );
 
     /**
@@ -317,7 +317,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
             array(2, 'усне', 'усне', 'усне'),
         ),
         'HUF' => array(
-            array(1, 'мађарски форинт',  'мађарски форинт', 'мађарски форинтс'),
+            array(1, 'мађарски форинт', 'мађарски форинт', 'мађарски форинтс'),
             array(1, 'пунила', 'филиљ', 'пунила'),
         ),
         'ISK' => array(
@@ -363,7 +363,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         ),
         'RUR' => array(
             array(1, 'руска рубља', 'руски рубљи', 'руски рублес'),
-          array(2, 'пени', 'пени', 'центи'),
+            array(2, 'пени', 'пени', 'центи'),
         ),
         'SEK' => array(
             array(2, 'шведска круна', 'шведске круне', 'шведске круне'),
@@ -387,7 +387,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         ),
         'USD' => array(
             array(1, 'амерички долар', 'US долара', 'US долара'),
-              array(1, 'центи', 'центи', 'центи'),
+            array(1, 'центи', 'центи', 'центи'),
         ),
         'YUM' => array(
             array(1, 'Југословенски динар', 'Југославенски динар', 'Југославенски динар'),
@@ -403,16 +403,19 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         ),
         'MUR' => array(
             array(1, 'Maurícijská  rupia', 'Maurícijské rupia', 'Maurícijské rupia'),
-            array(1, '', '', ''),
+            array(1, 'цент', 'центи', 'центи'),
         ),
-		'SCR' => array(
+        'SCR' => array(
             array(1, 'Seychelská  rupia', 'Seychelské rupia', 'Seychelské rupia'),
-            array(1, '', '', ''),
+            array(1, 'цент', 'центи', 'центи'),
         ),
-	'SGD' => array(
+        'SGD' => array(
             array(1, 'Singapurský dolár', 'Singapurské dolár', 'Singapurské doláre'),
-            array(1, '', '', ''),
+            array(1, 'цент', 'центи', 'центи'),
         ),
+        'LKR' => array(
+            array(1, 'Srí Lanky rupia', 'Srí Lanky rupia', 'Srí Lanky rupia'),
+            array(1, '', '', ''), array(1, 'цент', 'центи', 'центи'),),
     );
 
     /**
@@ -420,7 +423,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * @var string
      * @access public
      */
-    public $def_currency = 'EUR';  // Serbian money
+    public $def_currency = 'RSD';  // Serbian money
 
 
     // {{{ _toWords()
@@ -429,9 +432,9 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * Converts a number to its word representation
      * in Russian language and determines the case of string.
      *
-     * @param integer $num    An integer between -infinity and infinity inclusive :)
+     * @param integer $num An integer between -infinity and infinity inclusive :)
      *                        that need to be converted to words
-     * @param integer &$case  A variable passed by reference which is set to case
+     * @param integer &$case A variable passed by reference which is set to case
      *                        of the word associated with the number
      * @param integer $gender Gender of string, 0=neutral, 1=male, 2=female.
      *                        Optional, defaults to 1.
@@ -442,7 +445,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      */
     public function _toWordsWithCase($num, &$case, $gender = 1)
     {
-        $ret  = '';
+        $ret = '';
         $case = 3;
 
         $num = trim($num);
@@ -512,13 +515,13 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * Converts a three-digit number to its word representation
      * in Bulgarian language.
      *
-     * @param integer $num    An integer between 1 and 999 inclusive.
+     * @param integer $num An integer between 1 and 999 inclusive.
      * @param integer $gender An integer which represents the gender of
      *                                                     the current digits group.
      *                                                     0 - neuter
      *                                                     1 - masculine
      *                                                    -1 - feminine
-     * @param boolean $last   A flag that determines if the current digits group
+     * @param boolean $last A flag that determines if the current digits group
      *                        is the last one.
      *
      * @return string   The words for the given number.
@@ -537,9 +540,9 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         $ret = array();
 
         // extract the value of each digit from the three-digit number
-        $e = $num%10;                  // ones
-        $d = ($num-$e)%100/10;         // tens
-        $s = ($num-$d*10-$e)%1000/100; // hundreds
+        $e = $num % 10;                  // ones
+        $d = ($num - $e) % 100 / 10;         // tens
+        $s = ($num - $d * 10 - $e) % 1000 / 100; // hundreds
 
         // process the "hundreds" digit.
         if ($s) {
@@ -549,30 +552,30 @@ class Numbers_Words_Locale_sk extends Numbers_Words
                     break;
                 case 2:
                 case 3:
-                    $ret[1] = $this->_digits[0][$s].$this->_misc_strings['sta'];
+                    $ret[1] = $this->_digits[0][$s] . $this->_misc_strings['sta'];
                     break;
                 default:
-                    $ret[1] = $this->_digits[0][$s].$this->_misc_strings['stotin'];
+                    $ret[1] = $this->_digits[0][$s] . $this->_misc_strings['stotin'];
             }
         }
 
         // process the "tens" digit, and optionally the "ones" digit.
         if ($d) {
             // in the case of 1, the "ones" digit also must be processed
-            if ($d==1) {
+            if ($d == 1) {
                 if (!$e) {
                     $ret[3] = $this->_misc_strings['deset']; // ten
                 } else {
-                    if ($e==1) {
+                    if ($e == 1) {
                         $ret[3] = $this->_misc_strings['edinadeset']; // eleven
                     } else {
-                        $ret[3] = $this->_digits[1][$e].$this->_misc_strings['na'].$this->_misc_strings['deset']; // twelve - nineteen
+                        $ret[3] = $this->_digits[1][$e] . $this->_misc_strings['na'] . $this->_misc_strings['deset']; // twelve - nineteen
                     }
                     // the "ones" digit is alredy processed, so skip a second processment
                     $e = 0;
                 }
             } else {
-                $ret[3] = $this->_digits[1][$d].$this->_misc_strings['deset']; // twenty - ninety
+                $ret[3] = $this->_digits[1][$d] . $this->_misc_strings['deset']; // twenty - ninety
             }
         }
 
@@ -582,7 +585,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         }
 
         // put "and" where needed
-        if (count($ret)>1) {
+        if (count($ret) > 1) {
             if ($e) {
                 $ret[4] = $this->_and;
             } else {
@@ -592,7 +595,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
 
         // put "and" optionally in the case this is the last non-empty group
         if ($last) {
-            if (!$s||count($ret)==1) {
+            if (!$s || count($ret) == 1) {
                 $ret[0] = $this->_and;
             }
             $this->_last_and = true;
@@ -625,11 +628,11 @@ class Numbers_Words_Locale_sk extends Numbers_Words
     function _splitNumber($num)
     {
         if (is_string($num)) {
-            $ret    = array();
+            $ret = array();
             $strlen = strlen($num);
-            $first  = substr($num, 0, $strlen%3);
+            $first = substr($num, 0, $strlen % 3);
 
-            preg_match_all('/\d{3}/', substr($num, $strlen%3, $strlen), $m);
+            preg_match_all('/\d{3}/', substr($num, $strlen % 3, $strlen), $m);
             $ret =& $m[0];
 
             if ($first) {
@@ -672,7 +675,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         }
 
         // if the absolute value is greater than 9.99*10^302, return infinity
-        if (strlen($num)>306) {
+        if (strlen($num) > 306) {
             return $ret . $this->_infinity;
         }
 
@@ -684,17 +687,17 @@ class Numbers_Words_Locale_sk extends Numbers_Words
 
         $sizeof_numgroups = count($num_groups);
 
-        foreach ($num_groups as $i=>$number) {
+        foreach ($num_groups as $i => $number) {
             // what is the corresponding exponent for the current group
-            $pow = $sizeof_numgroups-$i;
+            $pow = $sizeof_numgroups - $i;
 
             // skip processment for empty groups
-            if ($number!='000') {
-                if ($number!=1 || $pow!=2) {
-                    $ret .= $this->_showDigitsGroup($number, $i+1==$sizeof_numgroups||$pow>2).$this->_sep;
+            if ($number != '000') {
+                if ($number != 1 || $pow != 2) {
+                    $ret .= $this->_showDigitsGroup($number, $i + 1 == $sizeof_numgroups || $pow > 2) . $this->_sep;
                 }
-                $ret .= $this->_exponent[($pow-1)*3];
-                if ($pow>2 && $number>1) {
+                $ret .= $this->_exponent[($pow - 1) * 3];
+                if ($pow > 2 && $number > 1) {
                     $ret .= $this->_plural;
                 }
                 $ret .= $this->_sep;
@@ -709,11 +712,11 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * Converts a currency value to its word representation
      * (with monetary units) in English language
      *
-     * @param integer       $int_curr   An international currency symbol as defined by the ISO 4217 standard (three characters)
-     * @param integer       $decimal A money total amount without fraction part (e.g. amount of dollars)
-     * @param integer|bool  $fraction   Fractional part of the money amount (e.g. amount of cents)
+     * @param integer $int_curr An international currency symbol as defined by the ISO 4217 standard (three characters)
+     * @param integer $decimal A money total amount without fraction part (e.g. amount of dollars)
+     * @param integer|bool $fraction Fractional part of the money amount (e.g. amount of cents)
      *                                  Optional. Defaults to false.
-     * @param integer|bool  $convert_fraction   Convert fraction to words (left as numeric if set to false).
+     * @param integer|bool $convert_fraction Convert fraction to words (left as numeric if set to false).
      *                                          Optional. Defaults to true.
      * @return string  The corresponding word representation for the currency
      *

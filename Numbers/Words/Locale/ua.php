@@ -389,23 +389,27 @@ class Numbers_Words_Locale_ua extends Numbers_Words
         'MGA' => array(
             array(1, 'малагасійський аріарі', 'малагасійських аріарі', 'малагасійських аріарі'),
             array(1, '', '', ''),
-			
+
         ),
         'MUR' => array(
             array(1, 'маврикійська рупія', 'маврикійських рупії', 'маврикійських рупій'),
-            array(1, '', '', ''),
+            array(1, 'цент', 'центи', 'центів'),
         ),
-		'SCR' => array(
+        'SCR' => array(
             array(1, 'cейшельська рупія', 'сейшельських рупії', 'сейшельських рупій'),
-            array(1, '', '', ''),
+            array(1, 'цент', 'центи', 'центів'),
         ),
         'RSD' => array(
             array(1, 'сербський динар', 'сербських динарії', 'сербських динарій'),
-            array(1,  'цент', 'центи', 'центів'),
+            array(1, 'цент', 'центи', 'центів'),
         ),
-	'SGD' => array(
-            array(1, 'сингапурскій  долар', 'сингапурских  долара', 'сингапурских  доларів'),
-            array(1, '', '', ''),
+        'SGD' => array(
+            array(1, 'сінгапурський долар', 'сингапурских  долара', 'сингапурских  доларів'),
+            array(1, 'цент', 'центи', 'центів'),
+        ),
+        'LKR' => array(
+            array(1, 'Шрі-ланкійська рупія', 'Шрі-ланкійських рупії', 'Шрі-ланкійських  рупії'),
+            array(1, 'цент', 'центи', 'центів'),
         ),
     );
 
@@ -423,9 +427,9 @@ class Numbers_Words_Locale_ua extends Numbers_Words
      * Converts a number to its word representation
      * in Russian language and determines the case of string.
      *
-     * @param integer $num    An integer between -infinity and infinity inclusive :)
+     * @param integer $num An integer between -infinity and infinity inclusive :)
      *                        that need to be converted to words
-     * @param integer &$case  A variable passed by reference which is set to case
+     * @param integer &$case A variable passed by reference which is set to case
      *                        of the word associated with the number
      * @param integer $gender Gender of string, 0=neutral, 1=male, 2=female.
      *                        Optional, defaults to 1.
@@ -437,7 +441,7 @@ class Numbers_Words_Locale_ua extends Numbers_Words
      */
     public function _toWordsWithCase($num, &$case, $gender = 1)
     {
-        $ret  = '';
+        $ret = '';
         $case = 3;
 
         $num = trim($num);
@@ -507,10 +511,10 @@ class Numbers_Words_Locale_ua extends Numbers_Words
      * Converts a group of 3 digits to its word representation
      * in Russian language.
      *
-     * @param integer $num    An integer between -infinity and infinity inclusive :)
+     * @param integer $num An integer between -infinity and infinity inclusive :)
      *                        that need to be converted to words
      * @param integer $gender Gender of string, 0=neutral, 1=male, 2=female.
-     * @param integer &$case  A variable passed by reference which is set to case
+     * @param integer &$case A variable passed by reference which is set to case
      *                        of the word associated with the number
      *
      * @return string  The corresponding word representation
@@ -520,7 +524,7 @@ class Numbers_Words_Locale_ua extends Numbers_Words
      */
     function _groupToWords($num, $gender, &$case)
     {
-        $ret  = '';
+        $ret = '';
         $case = 3;
 
         if ((int)$num == 0) {
@@ -554,7 +558,7 @@ class Numbers_Words_Locale_ua extends Numbers_Words
                 if ($tens == 1 && $ones == 0) {
                     $ret .= 'десять';
                 } elseif ($tens == 1) {
-                    $ret .= $this->_teens[$ones+10];
+                    $ret .= $this->_teens[$ones + 10];
                 } else {
                     if ($tens > 0) {
                         $ret .= $this->_tens[(int)$tens];
@@ -579,14 +583,15 @@ class Numbers_Words_Locale_ua extends Numbers_Words
         return $ret;
     }
     // }}}
+
     /**
      * Converts a currency value to its word representation
      * (with monetary units) in Russian language
      *
-     * @param integer $int_curr         An international currency symbol
+     * @param integer $int_curr An international currency symbol
      *                                  as defined by the ISO 4217 standard (three characters)
-     * @param integer $decimal          A money total amount without fraction part (e.g. amount of dollars)
-     * @param integer $fraction         Fractional part of the money amount (e.g. amount of cents)
+     * @param integer $decimal A money total amount without fraction part (e.g. amount of dollars)
+     * @param integer $fraction Fractional part of the money amount (e.g. amount of cents)
      *                                  Optional. Defaults to false.
      * @param integer $convert_fraction Convert fraction to words (left as numeric if set to false).
      *                                  Optional. Defaults to true.
@@ -605,7 +610,7 @@ class Numbers_Words_Locale_ua extends Numbers_Words
 
         $curr_names = $this->_currency_names[$int_curr];
 
-        $ret  = trim($this->_toWordsWithCase($decimal, $case, $curr_names[0][0]));
+        $ret = trim($this->_toWordsWithCase($decimal, $case, $curr_names[0][0]));
         $ret .= $this->_sep . $curr_names[0][$case];
 
         if ($fraction !== false) {
