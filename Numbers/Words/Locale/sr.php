@@ -408,7 +408,8 @@ class Numbers_Words_Locale_sr extends Numbers_Words
         'RSD' => array(
             array(1, 'Сербиан Динар', 'Сербиан Динар', 'Сербиан Динар'),
             array(1, 'цент', 'центи', 'центи'),
-        )
+        ),
+          'IDR' => array(array('Indonesian rupee'), array('')),
     );
 
     /**

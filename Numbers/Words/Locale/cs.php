@@ -187,6 +187,7 @@ class Numbers_Words_Locale_cs extends Numbers_Words
         'MUR' => array(array('Rupia de Mauricio'), array('cent')),
         'SCR' => array(array('Seychellois rupee'), array('cent')),
         'RSD' => array(array('Serbian dinar'), array('cent')),
+        'IDR' => array(array('Indonesian rupee'), array('')),
     );
     // }}}
     // {{{ _toWords()

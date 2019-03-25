@@ -68,19 +68,19 @@ class Numbers_Words_Locale_fr extends Numbers_Words
      * @access private
      */
     var $_misc_numbers = array(
-        10=>'dix',      // 10
-            'onze',     // 11
-            'douze',    // 12
-            'treize',   // 13
-            'quatorze', // 14
-            'quinze',   // 15
-            'seize',    // 16
-        20=>'vingt',    // 20
-        30=>'trente',   // 30
-        40=>'quarante', // 40
-        50=>'cinquante',// 50
-        60=>'soixante', // 60
-       100=>'cent'      // 100
+        10 => 'dix',      // 10
+        'onze',     // 11
+        'douze',    // 12
+        'treize',   // 13
+        'quatorze', // 14
+        'quinze',   // 15
+        'seize',    // 16
+        20 => 'vingt',    // 20
+        30 => 'trente',   // 30
+        40 => 'quarante', // 40
+        50 => 'cinquante',// 50
+        60 => 'soixante', // 60
+        100 => 'cent'      // 100
     );
 
 
@@ -89,7 +89,7 @@ class Numbers_Words_Locale_fr extends Numbers_Words
      * @var string
      * @access private
      */
-    var $_digits = array(1=>"un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf");
+    var $_digits = array(1 => "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf");
 
     /**
      * The word for zero.
@@ -111,7 +111,7 @@ class Numbers_Words_Locale_fr extends Numbers_Words
      * @access private
      */
     var $_and = 'et';
-    
+
     /**
      * The word separator.
      * @var string
@@ -150,7 +150,7 @@ class Numbers_Words_Locale_fr extends Numbers_Words
         'SAR' => array(array('Riyal'), array('halala')),
         'KWD' => array(array('Dinar'), array('fil')),
         'INR' => array(array('Rupee'), array('paise')),
-        'BDT' => array(array(1,'Taka','Taka','Taka'), array(2,'poisha','poisha','poisha')),
+        'BDT' => array(array(1, 'Taka', 'Taka', 'Taka'), array(2, 'poisha', 'poisha', 'poisha')),
 
         'ALL' => array(array('lek'), array('qindarka')),
         'AUD' => array(array('Australian dollar'), array('cent')),
@@ -169,7 +169,7 @@ class Numbers_Words_Locale_fr extends Numbers_Words
         'HKD' => array(array('Hong Kong dollar'), array('cent')),
         'HRK' => array(array('Croatian kuna'), array('lipa')),
         'HUF' => array(array('forint'), array('filler')),
-        'ILS' => array(array('new sheqel','new sheqels'), array('agora','agorot')),
+        'ILS' => array(array('new sheqel', 'new sheqels'), array('agora', 'agorot')),
         'ISK' => array(array('Icelandic krona'), array('aurar')),
         'JPY' => array(array('yen'), array('sen')),
         'LTL' => array(array('litas'), array('cent')),
@@ -189,10 +189,11 @@ class Numbers_Words_Locale_fr extends Numbers_Words
         'YUM' => array(array('dinars'), array('para')),
         'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('ariary'), array('')),
-		'MUR' => array(array('Roupie mauricienne'), array('cent')),
-		'SCR' => array(array('Roupie seychelloise'), array('cent')),
-	'SGD' => array(array('Dollar de Singapour'), array('cent')),
- 'LKR' => array(array('Roupie'), array('cent')),
+        'MUR' => array(array('Roupie mauricienne'), array('cent')),
+        'SCR' => array(array('Roupie seychelloise'), array('cent')),
+        'SGD' => array(array('Dollar de Singapour'), array('cent')),
+        'LKR' => array(array('Roupie'), array('cent')),
+        'IDR' => array(array('Roupie indonésienne'), array('')),
     );
 
     /**
@@ -205,105 +206,105 @@ class Numbers_Words_Locale_fr extends Numbers_Words
         3 => 'mille',
         6 => 'million',
         9 => 'milliard',
-       12 => 'trillion',
-       15 => 'quadrillion',
-       18 => 'quintillion',
-       21 => 'sextillion',
-       24 => 'septillion',
-       27 => 'octillion',
-       30 => 'nonillion',
-       33 => 'decillion',
-       36 => 'undecillion',
-       39 => 'duodecillion',
-       42 => 'tredecillion',
-       45 => 'quattuordecillion',
-       48 => 'quindecillion',
-       51 => 'sexdecillion',
-       54 => 'septendecillion',
-       57 => 'octodecillion',
-       60 => 'novemdecillion',
-       63 => 'vigintillion',
-       66 => 'unvigintillion',
-       69 => 'duovigintillion',
-       72 => 'trevigintillion',
-       75 => 'quattuorvigintillion',
-       78 => 'quinvigintillion',
-       81 => 'sexvigintillion',
-       84 => 'septenvigintillion',
-       87 => 'octovigintillion',
-       90 => 'novemvigintillion',
-       93 => 'trigintillion',
-       96 => 'untrigintillion',
-       99 => 'duotrigintillion',
-      102 => 'trestrigintillion',
-      105 => 'quattuortrigintillion',
-      108 => 'quintrigintillion',
-      111 => 'sextrigintillion',
-      114 => 'septentrigintillion',
-      117 => 'octotrigintillion',
-      120 => 'novemtrigintillion',
-      123 => 'quadragintillion',
-      126 => 'unquadragintillion',
-      129 => 'duoquadragintillion',
-      132 => 'trequadragintillion',
-      135 => 'quattuorquadragintillion',
-      138 => 'quinquadragintillion',
-      141 => 'sexquadragintillion',
-      144 => 'septenquadragintillion',
-      147 => 'octoquadragintillion',
-      150 => 'novemquadragintillion',
-      153 => 'quinquagintillion',
-      156 => 'unquinquagintillion',
-      159 => 'duoquinquagintillion',
-      162 => 'trequinquagintillion',
-      165 => 'quattuorquinquagintillion',
-      168 => 'quinquinquagintillion',
-      171 => 'sexquinquagintillion',
-      174 => 'septenquinquagintillion',
-      177 => 'octoquinquagintillion',
-      180 => 'novemquinquagintillion',
-      183 => 'sexagintillion',
-      186 => 'unsexagintillion',
-      189 => 'duosexagintillion',
-      192 => 'tresexagintillion',
-      195 => 'quattuorsexagintillion',
-      198 => 'quinsexagintillion',
-      201 => 'sexsexagintillion',
-      204 => 'septensexagintillion',
-      207 => 'octosexagintillion',
-      210 => 'novemsexagintillion',
-      213 => 'septuagintillion',
-      216 => 'unseptuagintillion',
-      219 => 'duoseptuagintillion',
-      222 => 'treseptuagintillion',
-      225 => 'quattuorseptuagintillion',
-      228 => 'quinseptuagintillion',
-      231 => 'sexseptuagintillion',
-      234 => 'septenseptuagintillion',
-      237 => 'octoseptuagintillion',
-      240 => 'novemseptuagintillion',
-      243 => 'octogintillion',
-      246 => 'unoctogintillion',
-      249 => 'duooctogintillion',
-      252 => 'treoctogintillion',
-      255 => 'quattuoroctogintillion',
-      258 => 'quinoctogintillion',
-      261 => 'sexoctogintillion',
-      264 => 'septoctogintillion',
-      267 => 'octooctogintillion',
-      270 => 'novemoctogintillion',
-      273 => 'nonagintillion',
-      276 => 'unnonagintillion',
-      279 => 'duononagintillion',
-      282 => 'trenonagintillion',
-      285 => 'quattuornonagintillion',
-      288 => 'quinnonagintillion',
-      291 => 'sexnonagintillion',
-      294 => 'septennonagintillion',
-      297 => 'octononagintillion',
-      300 => 'novemnonagintillion',
-      303 => 'centillion'
-        );
+        12 => 'trillion',
+        15 => 'quadrillion',
+        18 => 'quintillion',
+        21 => 'sextillion',
+        24 => 'septillion',
+        27 => 'octillion',
+        30 => 'nonillion',
+        33 => 'decillion',
+        36 => 'undecillion',
+        39 => 'duodecillion',
+        42 => 'tredecillion',
+        45 => 'quattuordecillion',
+        48 => 'quindecillion',
+        51 => 'sexdecillion',
+        54 => 'septendecillion',
+        57 => 'octodecillion',
+        60 => 'novemdecillion',
+        63 => 'vigintillion',
+        66 => 'unvigintillion',
+        69 => 'duovigintillion',
+        72 => 'trevigintillion',
+        75 => 'quattuorvigintillion',
+        78 => 'quinvigintillion',
+        81 => 'sexvigintillion',
+        84 => 'septenvigintillion',
+        87 => 'octovigintillion',
+        90 => 'novemvigintillion',
+        93 => 'trigintillion',
+        96 => 'untrigintillion',
+        99 => 'duotrigintillion',
+        102 => 'trestrigintillion',
+        105 => 'quattuortrigintillion',
+        108 => 'quintrigintillion',
+        111 => 'sextrigintillion',
+        114 => 'septentrigintillion',
+        117 => 'octotrigintillion',
+        120 => 'novemtrigintillion',
+        123 => 'quadragintillion',
+        126 => 'unquadragintillion',
+        129 => 'duoquadragintillion',
+        132 => 'trequadragintillion',
+        135 => 'quattuorquadragintillion',
+        138 => 'quinquadragintillion',
+        141 => 'sexquadragintillion',
+        144 => 'septenquadragintillion',
+        147 => 'octoquadragintillion',
+        150 => 'novemquadragintillion',
+        153 => 'quinquagintillion',
+        156 => 'unquinquagintillion',
+        159 => 'duoquinquagintillion',
+        162 => 'trequinquagintillion',
+        165 => 'quattuorquinquagintillion',
+        168 => 'quinquinquagintillion',
+        171 => 'sexquinquagintillion',
+        174 => 'septenquinquagintillion',
+        177 => 'octoquinquagintillion',
+        180 => 'novemquinquagintillion',
+        183 => 'sexagintillion',
+        186 => 'unsexagintillion',
+        189 => 'duosexagintillion',
+        192 => 'tresexagintillion',
+        195 => 'quattuorsexagintillion',
+        198 => 'quinsexagintillion',
+        201 => 'sexsexagintillion',
+        204 => 'septensexagintillion',
+        207 => 'octosexagintillion',
+        210 => 'novemsexagintillion',
+        213 => 'septuagintillion',
+        216 => 'unseptuagintillion',
+        219 => 'duoseptuagintillion',
+        222 => 'treseptuagintillion',
+        225 => 'quattuorseptuagintillion',
+        228 => 'quinseptuagintillion',
+        231 => 'sexseptuagintillion',
+        234 => 'septenseptuagintillion',
+        237 => 'octoseptuagintillion',
+        240 => 'novemseptuagintillion',
+        243 => 'octogintillion',
+        246 => 'unoctogintillion',
+        249 => 'duooctogintillion',
+        252 => 'treoctogintillion',
+        255 => 'quattuoroctogintillion',
+        258 => 'quinoctogintillion',
+        261 => 'sexoctogintillion',
+        264 => 'septoctogintillion',
+        267 => 'octooctogintillion',
+        270 => 'novemoctogintillion',
+        273 => 'nonagintillion',
+        276 => 'unnonagintillion',
+        279 => 'duononagintillion',
+        282 => 'trenonagintillion',
+        285 => 'quattuornonagintillion',
+        288 => 'quinnonagintillion',
+        291 => 'sexnonagintillion',
+        294 => 'septennonagintillion',
+        297 => 'octononagintillion',
+        300 => 'novemnonagintillion',
+        303 => 'centillion'
+    );
     // }}}
 
     // {{{ _splitNumber()
@@ -322,11 +323,11 @@ class Numbers_Words_Locale_fr extends Numbers_Words
     function _splitNumber($num)
     {
         if (is_string($num)) {
-            $ret    = array();
+            $ret = array();
             $strlen = strlen($num);
-            $first  = substr($num, 0, $strlen%3);
+            $first = substr($num, 0, $strlen % 3);
 
-            preg_match_all('/\d{3}/', substr($num, $strlen%3, $strlen), $m);
+            preg_match_all('/\d{3}/', substr($num, $strlen % 3, $strlen), $m);
             $ret =& $m[0];
 
             if ($first) {
@@ -345,7 +346,7 @@ class Numbers_Words_Locale_fr extends Numbers_Words
      * Converts a three-digit number to its word representation
      * in French language.
      *
-     * @param integer $num  An integer between 1 and 999 inclusive.
+     * @param integer $num An integer between 1 and 999 inclusive.
      * @param boolean $last A flag, that determines if it is the last group of digits -
      *                      this is used to accord the plural suffix of the "hundreds".
      *                      Example: 200 = "deux cents", but 200000 = "deux cent mille".
@@ -357,16 +358,16 @@ class Numbers_Words_Locale_fr extends Numbers_Words
     function _showDigitsGroup($num, $last = false)
     {
         $ret = '';
-        
+
         // extract the value of each digit from the three-digit number
-        $e = $num%10;                  // ones
-        $d = ($num-$e)%100/10;         // tens
-        $s = ($num-$d*10-$e)%1000/100; // hundreds
-        
+        $e = $num % 10;                  // ones
+        $d = ($num - $e) % 100 / 10;         // tens
+        $s = ($num - $d * 10 - $e) % 1000 / 100; // hundreds
+
         // process the "hundreds" digit.
         if ($s) {
-            if ($s>1) {
-                $ret .= $this->_digits[$s].$this->_sep.$this->_misc_numbers[100];
+            if ($s > 1) {
+                $ret .= $this->_digits[$s] . $this->_sep . $this->_misc_numbers[100];
                 if ($last && !$e && !$d) {
                     $ret .= $this->_plural;
                 }
@@ -379,32 +380,32 @@ class Numbers_Words_Locale_fr extends Numbers_Words
         // process the "tens" digit, and optionally the "ones" digit.
         if ($d) {
             // in the case of 1, the "ones" digit also must be processed
-            if ($d==1) {
-                if ($e<=6) {
-                    $ret .= $this->_misc_numbers[10+$e];
+            if ($d == 1) {
+                if ($e <= 6) {
+                    $ret .= $this->_misc_numbers[10 + $e];
                 } else {
-                    $ret .= $this->_misc_numbers[10].'-'.$this->_digits[$e];
+                    $ret .= $this->_misc_numbers[10] . '-' . $this->_digits[$e];
                 }
                 $e = 0;
-            } elseif ($d>5) {
-                if ($d<8) {
+            } elseif ($d > 5) {
+                if ($d < 8) {
                     $ret .= $this->_misc_numbers[60];
 
-                    $resto = $d*10+$e-60;
-                    if ($e==1) {
-                        $ret .= $this->_sep.$this->_and.$this->_sep;
+                    $resto = $d * 10 + $e - 60;
+                    if ($e == 1) {
+                        $ret .= $this->_sep . $this->_and . $this->_sep;
                     } elseif ($resto) {
                         $ret .= $this->_dash;
                     }
-                    
+
                     if ($resto) {
                         $ret .= $this->_showDigitsGroup($resto);
                     }
                     $e = 0;
                 } else {
-                    $ret .= $this->_digits[4].$this->_dash.$this->_misc_numbers[20];
+                    $ret .= $this->_digits[4] . $this->_dash . $this->_misc_numbers[20];
 
-                    $resto = $d*10+$e-80;
+                    $resto = $d * 10 + $e - 80;
                     if ($resto) {
                         $ret .= $this->_dash;
                         $ret .= $this->_showDigitsGroup($resto);
@@ -415,15 +416,15 @@ class Numbers_Words_Locale_fr extends Numbers_Words
                     }
                 }
             } else {
-                $ret .= $this->_misc_numbers[$d*10];
+                $ret .= $this->_misc_numbers[$d * 10];
             }
         }
 
         // process the "ones" digit
         if ($e) {
             if ($d) {
-                if ($e==1) {
-                    $ret .= $this->_sep.$this->_and.$this->_sep;
+                if ($e == 1) {
+                    $ret .= $this->_sep . $this->_and . $this->_sep;
                 } else {
                     $ret .= $this->_dash;
                 }
@@ -468,7 +469,7 @@ class Numbers_Words_Locale_fr extends Numbers_Words
         }
 
         // if the absolute value is greater than 9.99*10^302, return infinity
-        if (strlen($num)>306) {
+        if (strlen($num) > 306) {
             return $ret . $this->_infinity;
         }
 
@@ -480,17 +481,17 @@ class Numbers_Words_Locale_fr extends Numbers_Words
 
         $sizeof_numgroups = count($num_groups);
 
-        foreach ($num_groups as $i=>$number) {
+        foreach ($num_groups as $i => $number) {
             // what is the corresponding exponent for the current group
-            $pow = $sizeof_numgroups-$i;
+            $pow = $sizeof_numgroups - $i;
 
             // skip processment for empty groups
-            if ($number!='000') {
-                if ($number!=1 || $pow!=2) {
-                    $ret .= $this->_showDigitsGroup($number, $i+1==$sizeof_numgroups||$pow>2).$this->_sep;
+            if ($number != '000') {
+                if ($number != 1 || $pow != 2) {
+                    $ret .= $this->_showDigitsGroup($number, $i + 1 == $sizeof_numgroups || $pow > 2) . $this->_sep;
                 }
-                $ret .= $this->_exponent[($pow-1)*3];
-                if ($pow>2 && $number>1) {
+                $ret .= $this->_exponent[($pow - 1) * 3];
+                if ($pow > 2 && $number > 1) {
                     $ret .= $this->_plural;
                 }
                 $ret .= $this->_sep;
@@ -506,11 +507,11 @@ class Numbers_Words_Locale_fr extends Numbers_Words
      * Converts a currency value to its word representation
      * (with monetary units) in English language
      *
-     * @param integer       $int_curr   An international currency symbol as defined by the ISO 4217 standard (three characters)
-     * @param integer       $decimal A money total amount without fraction part (e.g. amount of dollars)
-     * @param integer|bool  $fraction   Fractional part of the money amount (e.g. amount of cents)
+     * @param integer $int_curr An international currency symbol as defined by the ISO 4217 standard (three characters)
+     * @param integer $decimal A money total amount without fraction part (e.g. amount of dollars)
+     * @param integer|bool $fraction Fractional part of the money amount (e.g. amount of cents)
      *                                  Optional. Defaults to false.
-     * @param integer|bool  $convert_fraction   Convert fraction to words (left as numeric if set to false).
+     * @param integer|bool $convert_fraction Convert fraction to words (left as numeric if set to false).
      *                                          Optional. Defaults to true.
      * @return string  The corresponding word representation for the currency
      *
@@ -528,8 +529,8 @@ class Numbers_Words_Locale_fr extends Numbers_Words
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
-        if (empty($curr_names[1][0])){
-            $lev=0;
+        if (empty($curr_names[1][0])) {
+            $lev = 0;
         }
 
         if ($lev > 0) {

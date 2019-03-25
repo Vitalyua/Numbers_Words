@@ -418,7 +418,7 @@ class Numbers_Words_Locale_bg extends Numbers_Words
         ),
         'SGD' => array(array('Sinqapur dolları'),      array(1,  'цент', 'цента', 'центов')),
         'LKR' => array(array('Sri Lankan rupisi'),     array(1,  'цент', 'цента', 'центов')),
-
+        'IDR' => array(array('Indonesian rupee'), array('')),
     );
     // }}}
 

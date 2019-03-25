@@ -113,6 +113,7 @@ class Numbers_Words_Locale_fr_BE extends Numbers_Words
         'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('ariary'), array('')),
         'MUR' => array(array('Mauritian rupee'), array('cent')),
+        'IDR' => array(array('Indonesian rupee'), array('')),
     );
     /**
      * The words for some numbers.

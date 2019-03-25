@@ -214,6 +214,7 @@ class Numbers_Words_Locale_es extends Numbers_Words
 		'SCR' => array(array('Rupia de Seychelles'), array('sent')),
 	'SGD' => array(array('Dolar de Singapur'), array('sent')),
 'LKR' => array(array('Rupia '), array('sent')),
+	'IDR' => array(array('Rupia indonesia'), array('')),
     );
 
 

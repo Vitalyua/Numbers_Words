@@ -86,7 +86,6 @@ class Numbers_Words_Locale_id extends Numbers_Words
         'KWD' => array(array('Dinar'), array('fil')),
         'INR' => array(array('Rupee'), array('paise')),
         'BDT' => array(array(1,'Taka','Taka','Taka'), array(2,'poisha','poisha','poisha')),
-
         'ALL' => array(array('lek'), array('qindarka')),
         'AUD' => array(array('Australian dollar'), array('cent')),
         'BAM' => array(array('convertible marka'), array('fenig')),
@@ -125,6 +124,7 @@ class Numbers_Words_Locale_id extends Numbers_Words
         'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('Ariary'), array('')),
         'MUR' => array(array('Mauritian rupee'), array('cent')),
+        'IDR' => array(array('Indonesian rupee'), array('')),
     );
     /**
      * The sufixes for exponents (singular and plural)

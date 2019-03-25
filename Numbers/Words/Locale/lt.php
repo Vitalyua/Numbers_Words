@@ -167,6 +167,7 @@ class Numbers_Words_Locale_lt extends Numbers_Words
 		'SCR' => array(array('Rupia delle Seychelles'), array('cent')),
 	'SGD' => array(array('Dollaro di Singapore'), array('cent')),
 	'LKR' => array(array('Rupia'), array('cent')),
+'IDR' => array(array('Rupia indonesiana'), array('')),
     );
     // }}}
     // {{{ _toWords()

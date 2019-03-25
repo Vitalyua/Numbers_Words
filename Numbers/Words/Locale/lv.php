@@ -87,7 +87,6 @@ class Numbers_Words_Locale_lv extends Numbers_Words
         'KWD' => array(array('Dinar'), array('fil')),
         'INR' => array(array('Rupee'), array('paise')),
         'BDT' => array(array(1,'Taka','Taka','Taka'), array(2,'poisha','poisha','poisha')),
-
         'ALL' => array(array('lek'), array('qindarka')),
         'AUD' => array(array('Australian dollar'), array('cent')),
         'BAM' => array(array('convertible marka'), array('fenig')),
@@ -127,6 +126,7 @@ class Numbers_Words_Locale_lv extends Numbers_Words
         'LS' => array(array('ls'), array('ls')),
         'MGA' => array(array('Ariary'), array('')),
         'MUR' => array(array('Mauritian rupee'), array('cent')),
+        'IDR' => array(array('Indonesian rupee'), array('')),
     );
 
     /**

@@ -416,6 +416,11 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         'LKR' => array(
             array(1, 'Srí Lanky rupia', 'Srí Lanky rupia', 'Srí Lanky rupia'),
             array(1, '', '', ''), array(1, 'цент', 'центи', 'центи'),),
+
+		'IDR' => array(
+            array(1, 'indonézska rupia', 'indonézsky rupia', 'indonézsky rupia'),
+            array(1, '', '', ''),
+        )
     );
 
     /**

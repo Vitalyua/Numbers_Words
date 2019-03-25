@@ -234,6 +234,7 @@ class Numbers_Words_Locale_az extends Numbers_Words
         'RSD' => array(array('Serb Dinarı'), array('sent')),
 	    'SGD' => array(array('Sinqapur dolları'), array('sent')),
     	'LKR' => array(array('Sri Lankan rupisi'), array('sent')),
+	'IDR' => array(array('İndoneziya rupisi'), array('')),
     );
 
     /**

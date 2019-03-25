@@ -91,7 +91,7 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
         5 => array('Lakh'),
         7 => array('Crore'),
         9 => array('Hundred Crore'),
-       11 => array('Thousand Crore')
+        11 => array('Thousand Crore')
     );
 
     /**
@@ -122,48 +122,49 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
      * @access private
      */
     var $_currency_names = array(
-      'ALL' => array(array('lek'), array('qindarka')),
-      'AUD' => array(array('Australian dollar'), array('cent')),
-      'BAM' => array(array('convertible marka'), array('fenig')),
-      'BGN' => array(array('lev'), array('stotinka')),
-      'BRL' => array(array('real'), array('centavos')),
-      'BYR' => array(array('Belarussian rouble'), array('kopiejka')),
-      'CAD' => array(array('Canadian dollar'), array('cent')),
-      'CHF' => array(array('Swiss franc'), array('rapp')),
-      'CYP' => array(array('Cypriot pound'), array('cent')),
-      'CZK' => array(array('Czech koruna'), array('halerz')),
-      'DKK' => array(array('Danish krone'), array('ore')),
-      'EEK' => array(array('kroon'), array('senti')),
-      'EUR' => array(array('euro'), array('euro-cent')),
-      'GBP' => array(array('pound', 'pounds'), array('pence', 'pence')),
-      'HKD' => array(array('Hong Kong dollar'), array('cent')),
-      'HRK' => array(array('Croatian kuna'), array('lipa')),
-      'HUF' => array(array('forint'), array('filler')),
-      'ILS' => array(array('new sheqel','new sheqels'), array('agora','agorot')),
-      'INR' => array(array('Indian Rupee'), array('Paise')),
-      'ISK' => array(array('Icelandic króna'), array('aurar')),
-      'JPY' => array(array('yen'), array('sen')),
-      'LTL' => array(array('litas'), array('cent')),
-      'LVL' => array(array('lat'), array('sentim')),
-      'MKD' => array(array('Macedonian dinar'), array('deni')),
-      'MTL' => array(array('Maltese lira'), array('centym')),
-      'NOK' => array(array('Norwegian krone'), array('oere')),
-      'PLN' => array(array('zloty', 'zlotys'), array('grosz')),
-      'ROL' => array(array('Romanian leu'), array('bani')),
-      'RUB' => array(array('Russian Federation rouble'), array('kopiejka')),
-      'SEK' => array(array('Swedish krona'), array('oere')),
-      'SIT' => array(array('Tolar'), array('stotinia')),
-      'SKK' => array(array('Slovak koruna'), array()),
-      'TRL' => array(array('lira'), array('kuruþ')),
-      'UAH' => array(array('hryvna'), array('cent')),
-      'USD' => array(array('dollar'), array('cent')),
-      'YUM' => array(array('dinars'), array('para')),
-      'ZAR' => array(array('rand'), array('cent')),
+        'ALL' => array(array('lek'), array('qindarka')),
+        'AUD' => array(array('Australian dollar'), array('cent')),
+        'BAM' => array(array('convertible marka'), array('fenig')),
+        'BGN' => array(array('lev'), array('stotinka')),
+        'BRL' => array(array('real'), array('centavos')),
+        'BYR' => array(array('Belarussian rouble'), array('kopiejka')),
+        'CAD' => array(array('Canadian dollar'), array('cent')),
+        'CHF' => array(array('Swiss franc'), array('rapp')),
+        'CYP' => array(array('Cypriot pound'), array('cent')),
+        'CZK' => array(array('Czech koruna'), array('halerz')),
+        'DKK' => array(array('Danish krone'), array('ore')),
+        'EEK' => array(array('kroon'), array('senti')),
+        'EUR' => array(array('euro'), array('euro-cent')),
+        'GBP' => array(array('pound', 'pounds'), array('pence', 'pence')),
+        'HKD' => array(array('Hong Kong dollar'), array('cent')),
+        'HRK' => array(array('Croatian kuna'), array('lipa')),
+        'HUF' => array(array('forint'), array('filler')),
+        'ILS' => array(array('new sheqel', 'new sheqels'), array('agora', 'agorot')),
+        'INR' => array(array('Indian Rupee'), array('Paise')),
+        'ISK' => array(array('Icelandic króna'), array('aurar')),
+        'JPY' => array(array('yen'), array('sen')),
+        'LTL' => array(array('litas'), array('cent')),
+        'LVL' => array(array('lat'), array('sentim')),
+        'MKD' => array(array('Macedonian dinar'), array('deni')),
+        'MTL' => array(array('Maltese lira'), array('centym')),
+        'NOK' => array(array('Norwegian krone'), array('oere')),
+        'PLN' => array(array('zloty', 'zlotys'), array('grosz')),
+        'ROL' => array(array('Romanian leu'), array('bani')),
+        'RUB' => array(array('Russian Federation rouble'), array('kopiejka')),
+        'SEK' => array(array('Swedish krona'), array('oere')),
+        'SIT' => array(array('Tolar'), array('stotinia')),
+        'SKK' => array(array('Slovak koruna'), array()),
+        'TRL' => array(array('lira'), array('kuruþ')),
+        'UAH' => array(array('hryvna'), array('cent')),
+        'USD' => array(array('dollar'), array('cent')),
+        'YUM' => array(array('dinars'), array('para')),
+        'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('Ariary'), array()),
-	  'MUR' => array(array('Mauritian rupee'), array('cent')),
-	  'SCR' => array(array('Seychellois rupee'), array('cent')),
-	  'SGD' => array(array('Singapore dollar'), array('cent')),
-	    'LKR' => array(array('Sri Lankan Rupee'), array('cent')),
+        'MUR' => array(array('Mauritian rupee'), array('cent')),
+        'SCR' => array(array('Seychellois rupee'), array('cent')),
+        'SGD' => array(array('Singapore dollar'), array('cent')),
+        'LKR' => array(array('Sri Lankan Rupee'), array('cent')),
+        'IDR' => array(array('Indonesian rupee'), array('')),
 
     );
 
@@ -181,9 +182,9 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
      * Converts a number to its word representation
      * in American English language
      *
-     * @param integer $num       An integer between -infinity and infinity inclusive :)
+     * @param integer $num An integer between -infinity and infinity inclusive :)
      *                           that need to be converted to words
-     * @param integer $power     The power of ten for the rest of the number to the right.
+     * @param integer $power The power of ten for the rest of the number to the right.
      *                           Optional, defaults to 0.
      * @param integer $powsuffix The power name to be added to the end of the return string.
      *                            Used internally. Optional, defaults to ''.
@@ -209,7 +210,7 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
         $num = preg_replace('/^0+/', '', $num);
 
         if (strlen($num) > 3) {
-            $maxp = strlen($num)-1;
+            $maxp = strlen($num) - 1;
             $curp = $maxp;
             for ($p = $maxp; $p > 0; --$p) { // power
 
@@ -219,7 +220,7 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
                     $snum = substr($num, $maxp - $curp, $curp - $p + 1);
                     $snum = preg_replace('/^0+/', '', $snum);
                     if ($snum !== '') {
-                        $cursuffix = $this->_exponent[$power][count($this->_exponent[$power])-1];
+                        $cursuffix = $this->_exponent[$power][count($this->_exponent[$power]) - 1];
                         if ($powsuffix != '') {
                             $cursuffix .= $this->_sep . $powsuffix;
                         }
@@ -240,20 +241,20 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
 
         $h = $t = $d = 0;
 
-        switch(strlen($num)) {
-        case 3:
-            $h = (int)substr($num, -3, 1);
+        switch (strlen($num)) {
+            case 3:
+                $h = (int)substr($num, -3, 1);
 
-        case 2:
-            $t = (int)substr($num, -2, 1);
+            case 2:
+                $t = (int)substr($num, -2, 1);
 
-        case 1:
-            $d = (int)substr($num, -1, 1);
-            break;
+            case 1:
+                $d = (int)substr($num, -1, 1);
+                break;
 
-        case 0:
-            return;
-            break;
+            case 0:
+                return;
+                break;
         }
 
         if ($h) {
@@ -269,66 +270,66 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
 
         // ten, twenty etc.
         switch ($t) {
-        case 9:
-        case 7:
-        case 6:
-            $ret .= $this->_sep . $this->_digits[$t] . 'ty';
-            break;
-
-        case 8:
-            $ret .= $this->_sep . 'eighty';
-            break;
-
-        case 5:
-            $ret .= $this->_sep . 'fifty';
-            break;
-
-        case 4:
-            $ret .= $this->_sep . 'forty';
-            break;
-
-        case 3:
-            $ret .= $this->_sep . 'thirty';
-            break;
-
-        case 2:
-            $ret .= $this->_sep . 'twenty';
-            break;
-
-        case 1:
-            switch ($d) {
-            case 0:
-                $ret .= $this->_sep . 'ten';
-                break;
-
-            case 1:
-                $ret .= $this->_sep . 'eleven';
-                break;
-
-            case 2:
-                $ret .= $this->_sep . 'twelve';
-                break;
-
-            case 3:
-                $ret .= $this->_sep . 'thirteen';
-                break;
-
-            case 4:
-            case 6:
-            case 7:
             case 9:
-                $ret .= $this->_sep . $this->_digits[$d] . 'teen';
-                break;
-
-            case 5:
-                $ret .= $this->_sep . 'fifteen';
+            case 7:
+            case 6:
+                $ret .= $this->_sep . $this->_digits[$t] . 'ty';
                 break;
 
             case 8:
-                $ret .= $this->_sep . 'eighteen';
+                $ret .= $this->_sep . 'eighty';
                 break;
-            }
-            break;
+
+            case 5:
+                $ret .= $this->_sep . 'fifty';
+                break;
+
+            case 4:
+                $ret .= $this->_sep . 'forty';
+                break;
+
+            case 3:
+                $ret .= $this->_sep . 'thirty';
+                break;
+
+            case 2:
+                $ret .= $this->_sep . 'twenty';
+                break;
+
+            case 1:
+                switch ($d) {
+                    case 0:
+                        $ret .= $this->_sep . 'ten';
+                        break;
+
+                    case 1:
+                        $ret .= $this->_sep . 'eleven';
+                        break;
+
+                    case 2:
+                        $ret .= $this->_sep . 'twelve';
+                        break;
+
+                    case 3:
+                        $ret .= $this->_sep . 'thirteen';
+                        break;
+
+                    case 4:
+                    case 6:
+                    case 7:
+                    case 9:
+                        $ret .= $this->_sep . $this->_digits[$d] . 'teen';
+                        break;
+
+                    case 5:
+                        $ret .= $this->_sep . 'fifteen';
+                        break;
+
+                    case 8:
+                        $ret .= $this->_sep . 'eighteen';
+                        break;
+                }
+                break;
         }
 
         if ($t != 1 && $d > 0) { // add digits only in <0>,<1,9> and <21,inf>
@@ -365,10 +366,10 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
      * Converts a currency value to its word representation
      * (with monetary units) in English language
      *
-     * @param integer $int_curr         An international currency symbol
+     * @param integer $int_curr An international currency symbol
      *                                  as defined by the ISO 4217 standard (three characters)
-     * @param integer $decimal          A money total amount without fraction part (e.g. amount of dollars)
-     * @param integer $fraction         Fractional part of the money amount (e.g. amount of cents)
+     * @param integer $decimal A money total amount without fraction part (e.g. amount of dollars)
+     * @param integer $fraction Fractional part of the money amount (e.g. amount of cents)
      *                                  Optional. Defaults to false.
      * @param integer $convert_fraction Convert fraction to words (left as numeric if set to false).
      *                                  Optional. Defaults to true.
@@ -389,8 +390,8 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
-        if (empty($curr_names[1][0])){
-            $lev=0;
+        if (empty($curr_names[1][0])) {
+            $lev = 0;
         }
         if ($lev > 0) {
             if (count($curr_names[0]) > 1) {
@@ -413,7 +414,7 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
                 if (count($curr_names[1]) > 1) {
                     $ret .= $this->_sep . $curr_names[1][$lev];
                 } else {
-                    if (!empty($curr_names[1][0] )){
+                    if (!empty($curr_names[1][0])) {
                         $ret .= $this->_sep . $curr_names[1][0] . 's';
                     }
 

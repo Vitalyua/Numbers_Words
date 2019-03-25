@@ -243,6 +243,7 @@ class Numbers_Words_Locale_de extends Numbers_Words
 		'SCR' => array(array('Seychellen Rupie'), array('cent')),
 	'SGD' => array(array('Singapur Dollar'), array('cent')),
 	'LKR' => array(array('Rupie '), array('cent')),
+	'IDR' => array(array('Indonesische Rupie'), array('')),
     );
 
     // }}}
