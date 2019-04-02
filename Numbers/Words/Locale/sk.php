@@ -404,19 +404,19 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         'MUR' => array(
             array(1, 'Maurícijská  rupia', 'Maurícijské rupia', 'Maurícijské rupia'),
             array(1, '', '', ''),
-        )
+        ),
         'SCR' => array(
             array(1, 'Seychelská  rupia', 'Seychelské rupia', 'Seychelské rupia'),
             array(1, '', '', ''),
-        )
+        ),
         'SGD' => array(
             array(1, 'Singapurský dolár', 'Singapurské dolár', 'Singapurské doláre'),
             array(1, '', '', ''),
         ),
         'LKR' => array(
             array(1, 'Srí Lanky rupia', 'Srí Lanky rupia', 'Srí Lanky rupia'),
-            array(1, '', '', ''), array(1, 'цент', 'центи', 'центи'),),
-
+            array(1, '', '', ''), array(1, 'цент', 'центи', 'центи'),
+        ),
 		'IDR' => array(
             array(1, 'indonézska rupia', 'indonézsky rupia', 'indonézsky rupia'),
             array(1, '', '', ''),
