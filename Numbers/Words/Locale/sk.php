@@ -170,15 +170,15 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * @access private
      */
     public $_teens = array(
-        11 => 'једанаест',
-        12 => 'дванаест',
-        13 => 'тринаест',
-        14 => 'четрнаест',
-        15 => 'петнаест',
-        16 => 'шеснаест',
-        17 => 'седамнаест',
-        18 => 'осамнаест',
-        19 => 'деветнаест',
+        11 => 'jedenásť',
+        12 => 'dvanásť',
+        13 => 'trinásť',
+        14 => 'štrnásť',
+        15 => 'pätnásť',
+        16 => 'šestnásť',
+        17 => 'sedemnásť',
+        18 => 'osemnásť',
+        19 => 'devätnásť',
     );
     var $_and = 'and';
     /**
@@ -187,14 +187,14 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * @access private
      */
     public $_tens = array(
-        2 => 'двадесет',
-        3 => 'тридесет',
-        4 => 'четрдесет',
-        5 => 'педесет',
-        6 => 'шездесет',
-        7 => 'седамдесет',
-        8 => 'осамдесет',
-        9 => 'деведесет',
+        2 => 'dvadsať',
+        3 => 'tridsať',
+        4 => 'štyridsať',
+        5 => 'päťdesiat',
+        6 => 'šesťdesiat',
+        7 => 'sedemdesiat ',
+        8 => 'osemdesiat',
+        9 => 'deväťdesiat',
     );
     /**
      * @todo
@@ -203,13 +203,13 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * @access private
      */
     var $_misc_strings = array(
-        'deset' => 'двадесет',           // "ten"
-        'edinadeset' => 'единадесет', // "eleven"
-        'na' => 'на',                 // liaison particle for 12 to 19
-        'sto' => 'сто',               // "hundred"
-        'sta' => 'ста',               // suffix for 2 and 3 hundred
-        'stotin' => 'стотин',         // suffix for 4 to 9 hundred
-        'hiliadi' => 'хиляди'         // plural form of "thousand"
+        'deset'=>'dvadeset',           // "ten"
+        'edinadeset'=>'edinadeset', // "eleven"
+        'na'=>'na',                 // liaison particle for 12 to 19
+        'sto'=>'sto',               // "hundred"
+        'sta'=>'sta',               // suffix for 2 and 3 hundred
+        'stotin'=>'stotin',         // suffix for 4 to 9 hundred
+        'hiliadi'=>'hiliadi'         // plural form of "thousand"
     );
 
     /**
@@ -218,15 +218,15 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * @access private
      */
     public $_hundreds = array(
-        1 => 'сто',
-        2 => 'две стотине',
-        3 => 'три стотине',
-        4 => 'четири стотине',
-        5 => 'пет стотина',
-        6 => 'шестсто',
-        7 => 'седам стотина',
-        8 => 'осам стотина',
-        9 => 'девет стотина'
+        1 => 'sto',
+        2 => 'dvesto',
+        3 => 'tristo',
+        4 => 'štyristo',
+        5 => 'päťsto',
+        6 => 'šesťsto',
+        7 => 'sedemsto',
+        8 => 'osemsto',
+        9 => 'deväťsto'
     );
 
     /**
@@ -236,9 +236,9 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * @access private
      */
     public $_digits = array(
-        array('нула', 'један', 'два', 'три', 'четири', 'пет', 'шест', 'седам', 'осам', 'девет'),
-        array('нула', 'један', 'два', 'три', 'четири', 'пет', 'шест', 'седам', 'осам', 'девет'),
-        array('нула', 'један', 'два', 'три', 'четири', 'пет', 'шест', 'седам', 'осам', 'девет'),
+        array('nula', 'jeden', 'dva', 'tri', 'štyri', 'päť', 'šesť', 'sedem', 'osem', 'deväť'),
+        array('nula', 'jeden', 'dva', 'tri', 'štyri', 'päť', 'šesť', 'sedem', 'osem', 'deväť'),
+        array('nula', 'jeden', 'dva', 'tri', 'štyri', 'päť', 'šesť', 'sedem', 'osem', 'deväť'),
     );
 
     /**
@@ -257,12 +257,12 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      */
     public $_currency_names = array(
         'ALL' => array(
-            array(1, 'лек', 'леки', 'леках'),
+            array(1, 'lek', 'leka', 'lekov'),
             array(2, 'схисха', 'схисха', 'раттлес'),
         ),
         'AUD' => array(
             array(1, 'аустралијски долар', 'аустралијски долар', 'аустралијски долари'),
-            array(1, 'цент', 'центи', 'центи'),
+            array(1, 'cent', 'cent', 'centov'),
         ),
         'BGN' => array(
             array(1, 'лава', 'лава', 'лава'),
@@ -270,7 +270,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         ),
         'BRL' => array(
             array(1, 'бразилиан реал', 'бразилске реалности', 'бразилиан реалс'),
-            array(1, 'центауро', 'центауро', 'центауро'),
+            array(1, 'cent', 'cent', 'centov'),
         ),
         'BYR' => array(
             array(1, 'белоруски рубља', 'белоруски рубљи', 'белоруски рубљи'),
@@ -278,7 +278,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         ),
         'CAD' => array(
             array(1, 'канадски долар', 'канадски долари', 'канадски долари'),
-            array(1, 'цент', 'центи', 'центи'),
+            array(1, 'cent', 'cent', 'centov'),
         ),
         'CHF' => array(
             array(1, 'швајцарски франак', 'швајцарски франци', 'швајцарски франци'),
@@ -286,7 +286,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         ),
         'CYP' => array(
             array(1, 'кипарска фунта', 'кипарских фунти', 'кипарске киле'),
-            array(1, 'цент', 'центи', 'центи'),
+            array(1, 'cent', 'cent', 'centov'),
         ),
         'CZK' => array(
             array(2, 'чешка круна', 'чешке круне', 'чешке круне'),
@@ -310,7 +310,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         ),
         'HKD' => array(
             array(1, 'хонг конг доллар', 'Хонконга долара', 'хонгконг долари'),
-            array(1, 'цент', 'центи', 'центи'),
+            array(1, 'cent', 'cent', 'centov'),
         ),
         'HRK' => array(
             array(2, 'цроатиан кун', 'цроатиан цоонеи', 'цроатиан кун'),
@@ -330,7 +330,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         ),
         'LTL' => array(
             array(1, 'лит', 'лити', 'литів'),
-            array(1, 'цент', 'центи', 'центів'),
+            array(1, 'cent', 'cent', 'centov'),
         ),
         'LVL' => array(
             array(1, 'лат', 'лати', 'латів'),
@@ -383,7 +383,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         ),
         'UAH' => array(
             array(2, 'хривња', 'хривња', 'хривња'),
-            array(1, 'центи', 'центи', 'центи'),
+            array(1, 'cent', 'cent', 'cent'),
         ),
         'USD' => array(
             array(1, 'амерички долар', 'US долара', 'US долара'),
@@ -395,7 +395,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         ),
         'ZAR' => array(
             array(1, 'ранд', 'ранди', 'ранди'),
-            array(1, 'цент', 'центи', 'центи'),
+            array(1, 'cent', 'cent', 'centov'),
         ),
         'MGA' => array(
             array(1, 'Ariary', 'Ariary', 'Ariary'),
@@ -403,15 +403,15 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         ),
         'MUR' => array(
             array(1, 'Maurícijská  rupia', 'Maurícijské rupia', 'Maurícijské rupia'),
-            array(1, 'цент', 'центи', 'центи'),
-        ),
+            array(1, '', '', ''),
+        )
         'SCR' => array(
             array(1, 'Seychelská  rupia', 'Seychelské rupia', 'Seychelské rupia'),
-            array(1, 'цент', 'центи', 'центи'),
-        ),
+            array(1, '', '', ''),
+        )
         'SGD' => array(
             array(1, 'Singapurský dolár', 'Singapurské dolár', 'Singapurské doláre'),
-            array(1, 'цент', 'центи', 'центи'),
+            array(1, '', '', ''),
         ),
         'LKR' => array(
             array(1, 'Srí Lanky rupia', 'Srí Lanky rupia', 'Srí Lanky rupia'),
