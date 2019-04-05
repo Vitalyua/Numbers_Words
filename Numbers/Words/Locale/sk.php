@@ -16,7 +16,6 @@ require_once "Numbers/Words.php";
  *
  * @category Numbers
  * @package  Numbers_Words
- 
  * @license  PHP 3.01 http://www.php.net/license/3_01.txt
  * @link     http://pear.php.net/package/Numbers_Words
  */
@@ -65,37 +64,37 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      */
     var $_exponent = array(
         0 => array('nula'),
-        3 => array('tisíc','tisíce','tisíc'),
-        6 => array('milion','miliony','miliónov'),
-        9 => array('miliarda','miliardy','miliard'),
-       12 => array('bilion','biliony','bilionů'),
-       15 => array('biliarda','biliardy','biliard'),
-       18 => array('trilion','triliony','trilionů'),
-       21 => array('triliarda','triliardy','triliard'),
+        3 => array('tisíc', 'tisíce', 'tisíc'),
+        6 => array('milion', 'miliony', 'miliónov'),
+        9 => array('miliarda', 'miliardy', 'miliard'),
+        12 => array('bilion', 'biliony', 'bilionů'),
+        15 => array('biliarda', 'biliardy', 'biliard'),
+        18 => array('trilion', 'triliony', 'trilionů'),
+        21 => array('triliarda', 'triliardy', 'triliard'),
 
-       24 => array('kvadrilion','kvadriliony','kvadrilionů'),
-       30 => array('kvintilion','kvintiliony','kvintilionů'),
-       36 => array('sextilion','sextiliony','sextilionů'),
-       42 => array('septilion','septiliony','septilionů'),
+        24 => array('kvadrilion', 'kvadriliony', 'kvadrilionů'),
+        30 => array('kvintilion', 'kvintiliony', 'kvintilionů'),
+        36 => array('sextilion', 'sextiliony', 'sextilionů'),
+        42 => array('septilion', 'septiliony', 'septilionů'),
 
-       48 => array('oktilion','oktiliony','oktilionů'),
-       54 => array('nonilion','noniliony','nonilionů'),
-       60 => array('decilion','deciliony','decilionů'),
+        48 => array('oktilion', 'oktiliony', 'oktilionů'),
+        54 => array('nonilion', 'noniliony', 'nonilionů'),
+        60 => array('decilion', 'deciliony', 'decilionů'),
 
-       66 => array('undecilion','undeciliony','undecilionů'),
-       72 => array('duodecilion','duodeciliony','duodecilionů'),
-       78 => array('tredecilion','tredeciliony','tredecilionů'),
-       84 => array('kvatrodecilion','kvatrodeciliony','kvatrodecilionů'),
-       90 => array('kvindecilion','kvindeciliony','kvindecilionů'),
-       96 => array('sexdecilion','sexdeciliony','sexdecilionů'),
-      102 => array('septendecilion','septendeciliony','septendecilionů'),
-      108 => array('oktodecilion','oktodeciliony','oktodecilionů'),
-      114 => array('novemdecilion','novemdeciliony','novemdecilionů'),
-      120 => array('vigintilion','vigintiliony','vigintilionů'),
-      192 => array('duotrigintilion','duotrigintiliony','duotrigintilionů'),
-      600 => array('centilion','centiliony','centilionů')
+        66 => array('undecilion', 'undeciliony', 'undecilionů'),
+        72 => array('duodecilion', 'duodeciliony', 'duodecilionů'),
+        78 => array('tredecilion', 'tredeciliony', 'tredecilionů'),
+        84 => array('kvatrodecilion', 'kvatrodeciliony', 'kvatrodecilionů'),
+        90 => array('kvindecilion', 'kvindeciliony', 'kvindecilionů'),
+        96 => array('sexdecilion', 'sexdeciliony', 'sexdecilionů'),
+        102 => array('septendecilion', 'septendeciliony', 'septendecilionů'),
+        108 => array('oktodecilion', 'oktodeciliony', 'oktodecilionů'),
+        114 => array('novemdecilion', 'novemdeciliony', 'novemdecilionů'),
+        120 => array('vigintilion', 'vigintiliony', 'vigintilionů'),
+        192 => array('duotrigintilion', 'duotrigintiliony', 'duotrigintilionů'),
+        600 => array('centilion', 'centiliony', 'centilionů')
 
-        );
+    );
 
     /**
      * The array containing the forms of Czech word for "hundred"
@@ -113,26 +112,26 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * @access private
      */
     var $_digits = array(
-            0 => 'nula',
-            1=>'jeden',
-        2=>'dva',
-        3=>'tri',
-        4=>'štyri',5=> 'päť', 6=>'šest',7=> 'sedem',8=> 'osem',9=> 'deväť',
+        0 => 'nula',
+        1 => 'jeden',
+        2 => 'dva',
+        3 => 'tri',
+        4 => 'štyri', 5 => 'päť', 6 => 'šest', 7 => 'sedem', 8 => 'osem', 9 => 'deväť',
 
     );
-    var $_digitsReplce=array(
-        200=>'dvesto',
-        300=>'tristo',
-        400=>'štyristo',
-        500=>'päťsto',
-        600=>'šesťsto',
-        700=>'sedemsto',
-        800=>'osemsto',
-        900=>'deväťsto',
-        1000=>'tisíc',
-        2000=>'dvetisíc',
-        3000=>'tritisíc',
-        //3000=>'štyritisíc',
+    var $_digitsReplce = array(
+        200 => 'dvesto',
+        300 => 'tristo',
+        400 => 'štyristo',
+        500 => 'päťsto',
+        600 => 'šesťsto',
+        700 => 'sedemsto',
+        800 => 'osemsto',
+        900 => 'deväťsto',
+        1000 => 'tisíc',
+        2000 => 'dvetisíc',
+        3000 => 'tritisíc',
+
     );
     /**
      * The word separator
@@ -142,47 +141,58 @@ class Numbers_Words_Locale_sk extends Numbers_Words
     var $_sep = ' ';
     public $def_currency = 'USD';  // Serbian money
     var $_currency_names = array(
+        'AED' => array(array('dirham'), array('fil')),
+        'AFN' => array(array('afganská'), array('pul')),
+        'DIR' => array(array('dirham'), array('fil')),
+        'BHD' => array(array('dinár'), array('fil')),
+        'SAR' => array(array('riál'), array('Halala')),
+        'KWD' => array(array('dinár'), array('fil')),
+        'INR' => array(array('rupia'), array('paise')),
+        'BDT' => array(array('taka'), array('poisha')),
+        'TZS' => array(array('tanzánsky šiling'), array('cent')),
         'ALL' => array(array('lek'), array('qindarka')),
-        'AUD' => array(array('Australian dollar'), array('cent')),
-        'BAM' => array(array('convertible marka'), array('fenig')),
+        'AUD' => array(array('austrálsky dolár'), array('cent')),
+        'BAM' => array(array('konvertibilná marka'), array('fenig')),
         'BGN' => array(array('lev'), array('stotinka')),
-        'BRL' => array(array('real'), array('centavos')),
-        'BYR' => array(array('Belarussian rouble'), array('kopiejka')),
-        'CAD' => array(array('Canadian dollar'), array('cent')),
-        'CHF' => array(array('Swiss franc'), array('rapp')),
-        'CYP' => array(array('Cypriot pound'), array('cent')),
-        'CZK' => array(array('Czech koruna'), array('halerz')),
-        'DKK' => array(array('Danish krone'), array('ore')),
-        'EEK' => array(array('kroon'), array('senti')),
+        'BRL' => array(array('reálny'), array('centavos')),
+        'BYR' => array(array('bieloruský rubeľ'), array('kopecky')),
+        'CAD' => array(array('kanadský dolár'), array('cent')),
+        'CHF' => array(array('švajčiarsky frank'), array('Rapp')),
+        'CYP' => array(array('cyperská libra'), array('cent')),
+        'CZK' => array(array('Česká koruna'), array('halerz')),
+        'DKK' => array(array('dánska koruna'), array('ruda')),
+        'EEK' => array(array('koruna'), array('senti')),
         'EUR' => array(array('euro'), array('euro-cent')),
-        'GBP' => array(array('pound', 'pounds'), array('pence', 'pence')),
-        'HKD' => array(array('Hong Kong dollar'), array('cent')),
-        'HRK' => array(array('Croatian kuna'), array('lipa')),
-        'HUF' => array(array('forint'), array('filler')),
-        'ILS' => array(array('new sheqel','new sheqels'), array('agora','agorot')),
-        'ISK' => array(array('Icelandic krona'), array('aurar')),
-        'JPY' => array(array('yen'), array('sen')),
+        'GBP' => array(array('libra'), array('pence')),
+        'HKD' => array(array('Hong Kong dolár'), array('cent')),
+        'HRK' => array(array('chorvátska kuna'), array('lipa')),
+        'HUF' => array(array('forint'), array('plnivo')),
+        'ILS' => array(array('nové sheqels'), array('agora')),
+        'ISK' => array(array('islandská koruna'), array('aurar')),
+        'JPY' => array(array('yen'), array('senátor')),
         'LTL' => array(array('litas'), array('cent')),
         'LVL' => array(array('lat'), array('sentim')),
-        'MKD' => array(array('Macedonian dinar'), array('deni')),
-        'MTL' => array(array('Maltese lira'), array('centym')),
-        'NOK' => array(array('Norwegian krone'), array('oere')),
-        'PLN' => array(array('zloty', 'zlotys'), array('grosz')),
-        'ROL' => array(array('Romanian leu'), array('bani')),
-        'RUB' => array(array('Russian Federation rouble'), array('kopiejka')),
-        'SEK' => array(array('Swedish krona'), array('oere')),
-        'SIT' => array(array('Tolar'), array('stotinia')),
-        'SKK' => array(array('Slovak koruna'), array()),
-        'TRL' => array(array('líra'), array('kuru')),
+        'MKD' => array(array('macedónsky dinár'), array('deni')),
+        'MTL' => array(array('Maltská líra'), array('centym')),
+        'NOK' => array(array('nórska koruna'), array('oere')),
+        'PLN' => array(array('zloty'), array('Grosz')),
+        'ROL' => array(array('Rumunský leu'), array('bani')),
+        'RUB' => array(array('Ruská federácia rubeľ'), array('kopecky')),
+        'SEK' => array(array('švédska koruna'), array('oere')),
+        'SIT' => array(array('tolar'), array('stotinia')),
+        'SKK' => array(array('slovenská koruna'), array('')),
+        'TRL' => array(array('líra'), array('kurus')),
         'UAH' => array(array('hrivna'), array('cent')),
         'USD' => array(array('dolár'), array('cent')),
         'YUM' => array(array('dinárov'), array('para')),
-        'ZAR' => array(array('riadok'), array('cent')),
+        'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('ariary'), array('')),
-        'MUR' => array(array('Maurícius rupia'), array('cent')),
-        'SCR' => array(array('Seychellois rupia'), array('cent')),
+        'MUR' => array(array('Mauritská rupia'), array('cent')),
+        'SCR' => array(array('Seychel rupia'), array('cent')),
         'RSD' => array(array('Srbský dinár'), array('cent')),
-        'IDR' => array(array('Indonézska rupia'), array('')),
+        'SGD' => array(array('Singapurský dolár'), array('cent')),
+        'LKR' => array(array('Srílanská rupia'), array('cent')),
+        'IDR' => array(array('Indonézština rupia'), array('')),
     );
     // }}}
     // {{{ _toWords()
@@ -191,9 +201,9 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * Converts a number to its word representation
      * in Czech language
      *
-     * @param integer $num       An integer between -infinity and infinity inclusive :)
+     * @param integer $num An integer between -infinity and infinity inclusive :)
      *                           that need to be converted to words
-     * @param integer $power     The power of ten for the rest of the number to the right.
+     * @param integer $power The power of ten for the rest of the number to the right.
      *                           Optional, defaults to 0.
      * @param integer $powsuffix The power name to be added to the end of the return string.
      *                            Used internally. Optional, defaults to ''.
@@ -216,13 +226,13 @@ class Numbers_Words_Locale_sk extends Numbers_Words
 
         // strip excessive zero signs and spaces
         $num = trim($num);
-        if (isset($this->_digitsReplce[$num])){
+        if (isset($this->_digitsReplce[$num])) {
             return $this->_sep . $this->_digitsReplce[$num];
         }
         $num = preg_replace('/^0+/', '', $num);
 
         if (strlen($num) > 3) {
-            $maxp = strlen($num)-1;
+            $maxp = strlen($num) - 1;
             $curp = $maxp;
             for ($p = $maxp; $p > 0; --$p) { // power
 
@@ -232,7 +242,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
                     $snum = substr($num, $maxp - $curp, $curp - $p + 1);
                     $snum = preg_replace('/^0+/', '', $snum);
                     if ($snum !== '') {
-                        $cursuffix = $this->_exponent[$power][count($this->_exponent[$power])-1];
+                        $cursuffix = $this->_exponent[$power][count($this->_exponent[$power]) - 1];
                         if ($powsuffix != '') {
                             $cursuffix .= $this->_sep . $powsuffix;
                         }
@@ -253,20 +263,20 @@ class Numbers_Words_Locale_sk extends Numbers_Words
 
         $h = $t = $d = 0;
 
-        switch(strlen($num)) {
-        case 3:
-            $h = (int)substr($num, -3, 1);
+        switch (strlen($num)) {
+            case 3:
+                $h = (int)substr($num, -3, 1);
 
-        case 2:
-            $t = (int)substr($num, -2, 1);
+            case 2:
+                $t = (int)substr($num, -2, 1);
 
-        case 1:
-            $d = (int)substr($num, -1, 1);
-            break;
+            case 1:
+                $d = (int)substr($num, -1, 1);
+                break;
 
-        case 0:
-            return;
-            break;
+            case 0:
+                return;
+                break;
         }
 
         if ($h) {
@@ -275,11 +285,11 @@ class Numbers_Words_Locale_sk extends Numbers_Words
             if ($h == 1) {
                 $ret .= $this->_sep . $this->_hundreds[0];
             } elseif ($h == 2) {
-                $ret .= $this->_sep . "dvě" .   $this->_hundreds[1];
-            } elseif ( ($h > 1) && ($h < 5) ) {
+                $ret .= $this->_sep . "dvě" . $this->_hundreds[1];
+            } elseif (($h > 1) && ($h < 5)) {
                 $ret .= $this->_sep . $this->_digits[$h] . $this->_hundreds[2];
-            } else {		//if ($h >= 5)
-                $ret .= $this->_sep . $this->_digits[$h] .   $this->_hundreds[3];
+            } else {        //if ($h >= 5)
+                $ret .= $this->_sep . $this->_digits[$h] . $this->_hundreds[3];
             }
             // in English only - add ' and' for [1-9]01..[1-9]99
             // (also for 1001..1099, 10001..10099 but it is harder)
@@ -291,70 +301,70 @@ class Numbers_Words_Locale_sk extends Numbers_Words
 
         // ten, twenty etc.
         switch ($t) {
-        case 2:
-            $ret .= $this->_sep . 'dvadsať';
-            break;
-        case 3:
-            $ret .= $this->_sep . 'tridsať';
-            break;
-        case 4:
-            $ret .= $this->_sep . $this->_digits[$t] . 'cet';
-            break;
-
-        case 5:
-            $ret .= $this->_sep . 'päťdesiat';
-            break;
-
-        case 6:
-            $ret .= $this->_sep . 'šesťdesiat';
-            break;
-
-        case 7:
-            $ret .= $this->_sep . 'sedemdesiat';
-            break;
-
-        case 8:
-            $ret .= $this->_sep . 'osemdesiat';
-            break;
-
-        case 9:
-            $ret .= $this->_sep . 'deväťdesiat';
-            break;
-
-        case 1:
-            switch ($d) {
-            case 0:
-                $ret .= $this->_sep . 'desať';
+            case 2:
+                $ret .= $this->_sep . 'dvadsať';
                 break;
-
-            case 1:
-                $ret .= $this->_sep . 'jedenásť';
+            case 3:
+                $ret .= $this->_sep . 'tridsať';
                 break;
-
-                case 3:
-                    $ret .= $this->_sep . 'trinásť';
-                    break;
             case 4:
-                $ret .= $this->_sep . 'štrnásť';
+                $ret .= $this->_sep . $this->_digits[$t] . 'cet';
                 break;
 
             case 5:
-                $ret .= $this->_sep . 'pätnásť';
+                $ret .= $this->_sep . 'päťdesiat';
+                break;
+
+            case 6:
+                $ret .= $this->_sep . 'šesťdesiat';
+                break;
+
+            case 7:
+                $ret .= $this->_sep . 'sedemdesiat';
+                break;
+
+            case 8:
+                $ret .= $this->_sep . 'osemdesiat';
                 break;
 
             case 9:
-                $ret .= $this->_sep . 'devätnásť';
+                $ret .= $this->_sep . 'deväťdesiat';
                 break;
 
-            case 2:
+            case 1:
+                switch ($d) {
+                    case 0:
+                        $ret .= $this->_sep . 'desať';
+                        break;
 
-            case 6:
-            case 7:
-            case 8:
-                $ret .= $this->_sep . $this->_digits[$d] . 'násť';
+                    case 1:
+                        $ret .= $this->_sep . 'jedenásť';
+                        break;
+
+                    case 3:
+                        $ret .= $this->_sep . 'trinásť';
+                        break;
+                    case 4:
+                        $ret .= $this->_sep . 'štrnásť';
+                        break;
+
+                    case 5:
+                        $ret .= $this->_sep . 'pätnásť';
+                        break;
+
+                    case 9:
+                        $ret .= $this->_sep . 'devätnásť';
+                        break;
+
+                    case 2:
+
+                    case 6:
+                    case 7:
+                    case 8:
+                        $ret .= $this->_sep . $this->_digits[$d] . 'násť';
+                        break;
+                }
                 break;
-            }
-            break;
         }
 
         if (($t != 1) && ($d > 0) && (($power == 0) || ($num > 1))) {
@@ -373,7 +383,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
             // inflection of exponental words
             if ($num == 1) {
                 $idx = 0;
-            } elseif ( (($num > 1) && ($num < 5)) || ((intval("$t$d") > 1) && (intval("$t$d") < 5))) {
+            } elseif ((($num > 1) && ($num < 5)) || ((intval("$t$d") > 1) && (intval("$t$d") < 5))) {
                 $idx = 1;
             } else {
                 $idx = 2;
@@ -389,15 +399,16 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         return $ret;
     }
     // }}}
+
     /**
      * Converts a currency value to its word representation
      * (with monetary units) in English language
      *
-     * @param integer       $int_curr   An international currency symbol as defined by the ISO 4217 standard (three characters)
-     * @param integer       $decimal A money total amount without fraction part (e.g. amount of dollars)
-     * @param integer|bool  $fraction   Fractional part of the money amount (e.g. amount of cents)
+     * @param integer $int_curr An international currency symbol as defined by the ISO 4217 standard (three characters)
+     * @param integer $decimal A money total amount without fraction part (e.g. amount of dollars)
+     * @param integer|bool $fraction Fractional part of the money amount (e.g. amount of cents)
      *                                  Optional. Defaults to false.
-     * @param integer|bool  $convert_fraction   Convert fraction to words (left as numeric if set to false).
+     * @param integer|bool $convert_fraction Convert fraction to words (left as numeric if set to false).
      *                                          Optional. Defaults to true.
      * @return string  The corresponding word representation for the currency
      *
@@ -416,8 +427,8 @@ class Numbers_Words_Locale_sk extends Numbers_Words
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
-        if (empty($curr_names[1][0])){
-            $lev=0;
+        if (empty($curr_names[1][0])) {
+            $lev = 0;
         }
         if ($lev > 0) {
             if (count($curr_names[0]) > 1) {
@@ -440,7 +451,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
                 if (count($curr_names[1]) > 1) {
                     $ret .= $this->_sep . $curr_names[1][$lev];
                 } else {
-                    if (!empty($curr_names[1][0])){
+                    if (!empty($curr_names[1][0])) {
                         $ret .= $this->_sep . $curr_names[1][0] . 's';
                     }
 
