@@ -238,7 +238,7 @@ class Numbers_Words_Locale_de extends Numbers_Words
         'UAH' => array(array('Ukrayna hrivnası'), array('sent')),
         'USD' => array(array('Amerikan dolları'), array('sent')),
         'ZAR' => array(array('Cənubi Afrika randı'), array('sent')),
-		'MGA' => array(array('Ariary')),
+		'MGA' => array(array('Ariary'), array('')),
 	    'MUR' => array(array('Mauritische Rupie'), array('cent')),
 		'SCR' => array(array('Seychellen Rupie'), array('cent')),
 	'SGD' => array(array('Singapur Dollar'), array('cent')),
