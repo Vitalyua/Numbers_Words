@@ -63,36 +63,36 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * @access private
      */
     var $_exponent = array(
-        0 => array('nula'),
-        3 => array('tisíc', 'tisíce', 'tisíc'),
-        6 => array('milion', 'miliony', 'miliónov'),
-        9 => array('miliarda', 'miliardy', 'miliard'),
-        12 => array('bilion', 'biliony', 'bilionů'),
-        15 => array('biliarda', 'biliardy', 'biliard'),
-        18 => array('trilion', 'triliony', 'trilionů'),
-        21 => array('triliarda', 'triliardy', 'triliard'),
+        0 => array(''),
+        3 => array('tisíc','tisíc','tisíc'),
+        6 => array('milion','miliony','miliónov'),
+        9 => array('miliarda','miliardy','miliard'),
+       12 => array('bilion','biliony','bilionů'),
+       15 => array('biliarda','biliardy','biliard'),
+       18 => array('trilion','triliony','trilionů'),
+       21 => array('triliarda','triliardy','triliard'),
 
-        24 => array('kvadrilion', 'kvadriliony', 'kvadrilionů'),
-        30 => array('kvintilion', 'kvintiliony', 'kvintilionů'),
-        36 => array('sextilion', 'sextiliony', 'sextilionů'),
-        42 => array('septilion', 'septiliony', 'septilionů'),
+       24 => array('kvadrilion','kvadriliony','kvadrilionů'),
+       30 => array('kvintilion','kvintiliony','kvintilionů'),
+       36 => array('sextilion','sextiliony','sextilionů'),
+       42 => array('septilion','septiliony','septilionů'),
 
-        48 => array('oktilion', 'oktiliony', 'oktilionů'),
-        54 => array('nonilion', 'noniliony', 'nonilionů'),
-        60 => array('decilion', 'deciliony', 'decilionů'),
+       48 => array('oktilion','oktiliony','oktilionů'),
+       54 => array('nonilion','noniliony','nonilionů'),
+       60 => array('decilion','deciliony','decilionů'),
 
-        66 => array('undecilion', 'undeciliony', 'undecilionů'),
-        72 => array('duodecilion', 'duodeciliony', 'duodecilionů'),
-        78 => array('tredecilion', 'tredeciliony', 'tredecilionů'),
-        84 => array('kvatrodecilion', 'kvatrodeciliony', 'kvatrodecilionů'),
-        90 => array('kvindecilion', 'kvindeciliony', 'kvindecilionů'),
-        96 => array('sexdecilion', 'sexdeciliony', 'sexdecilionů'),
-        102 => array('septendecilion', 'septendeciliony', 'septendecilionů'),
-        108 => array('oktodecilion', 'oktodeciliony', 'oktodecilionů'),
-        114 => array('novemdecilion', 'novemdeciliony', 'novemdecilionů'),
-        120 => array('vigintilion', 'vigintiliony', 'vigintilionů'),
-        192 => array('duotrigintilion', 'duotrigintiliony', 'duotrigintilionů'),
-        600 => array('centilion', 'centiliony', 'centilionů')
+       66 => array('undecilion','undeciliony','undecilionů'),
+       72 => array('duodecilion','duodeciliony','duodecilionů'),
+       78 => array('tredecilion','tredeciliony','tredecilionů'),
+       84 => array('kvatrodecilion','kvatrodeciliony','kvatrodecilionů'),
+       90 => array('kvindecilion','kvindeciliony','kvindecilionů'),
+       96 => array('sexdecilion','sexdeciliony','sexdecilionů'),
+      102 => array('septendecilion','septendeciliony','septendecilionů'),
+      108 => array('oktodecilion','oktodeciliony','oktodecilionů'),
+      114 => array('novemdecilion','novemdeciliony','novemdecilionů'),
+      120 => array('vigintilion','vigintiliony','vigintilionů'),
+      192 => array('duotrigintilion','duotrigintiliony','duotrigintilionů'),
+      600 => array('centilion','centiliony','centilionů')
 
     );
 
@@ -102,7 +102,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      * @access private
      */
     var $_hundreds = array(
-        0 => 'sto', 'tisíc', 'sta', 'set'
+        0 => 'sto', 'sto', 'sto', 'sto'
     );
 
     var $_zero = 'nula';
@@ -113,25 +113,25 @@ class Numbers_Words_Locale_sk extends Numbers_Words
      */
     var $_digits = array(
         0 => 'nula',
-        1 => 'jeden',
-        2 => 'dva',
-        3 => 'tri',
-        4 => 'štyri', 5 => 'päť', 6 => 'šest', 7 => 'sedem', 8 => 'osem', 9 => 'deväť',
+            1=>'jeden',
+        2=>'dva',
+        3=>'tri',
+        4=>'štyri',5=> 'päť', 6=>'šest',7=> 'sedem',8=> 'osem',9=> 'deväť',
 
     );
-    var $_digitsReplce = array(
-        200 => 'dvesto',
-        300 => 'tristo',
-        400 => 'štyristo',
-        500 => 'päťsto',
-        600 => 'šesťsto',
-        700 => 'sedemsto',
-        800 => 'osemsto',
-        900 => 'deväťsto',
-        1000 => 'tisíc',
-        2000 => 'dvetisíc',
-        3000 => 'tritisíc',
-
+    var $_digitsReplce=array(
+        200=>'dvesto',
+        300=>'tristo',
+        400=>'štyristo',
+        500=>'päťsto',
+        600=>'šesťsto',
+        700=>'sedemsto',
+        800=>'osemsto',
+        900=>'deväťsto',
+        1000=>'tisíc',
+        2000=>'dvetisíc',
+        3000=>'tritisíc',
+        //3000=>'štyritisíc',
     );
     /**
      * The word separator
@@ -183,7 +183,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         'SKK' => array(array('slovenská koruna'), array('')),
         'TRL' => array(array('líra'), array('kurus')),
         'UAH' => array(array('hrivna'), array('cent')),
-        'USD' => array(array('dolár'), array('cent')),
+        'USD' => array(array('dolárov'), array('cent')),
         'YUM' => array(array('dinárov'), array('para')),
         'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('ariary'), array('')),
@@ -226,13 +226,13 @@ class Numbers_Words_Locale_sk extends Numbers_Words
 
         // strip excessive zero signs and spaces
         $num = trim($num);
-        if (isset($this->_digitsReplce[$num])) {
-            return $this->_sep . $this->_digitsReplce[$num];
+        if (isset($this->_digitsReplce[$num])){
+            return   $this->_digitsReplce[$num];
         }
         $num = preg_replace('/^0+/', '', $num);
 
         if (strlen($num) > 3) {
-            $maxp = strlen($num) - 1;
+            $maxp = strlen($num)-1;
             $curp = $maxp;
             for ($p = $maxp; $p > 0; --$p) { // power
 
@@ -242,9 +242,9 @@ class Numbers_Words_Locale_sk extends Numbers_Words
                     $snum = substr($num, $maxp - $curp, $curp - $p + 1);
                     $snum = preg_replace('/^0+/', '', $snum);
                     if ($snum !== '') {
-                        $cursuffix = $this->_exponent[$power][count($this->_exponent[$power]) - 1];
+                        $cursuffix =' '. $this->_exponent[$power][count($this->_exponent[$power])-1];
                         if ($powsuffix != '') {
-                            $cursuffix .= $this->_sep . $powsuffix;
+                            $cursuffix .=  $powsuffix;
                         }
 
                         $ret .= $this->_toWords($snum, $p, $cursuffix);
@@ -258,7 +258,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
                 return $ret;
             }
         } elseif ($num == 0 || $num == '') {
-            return $this->_sep . $this->_digits[0];
+            return  $this->_digits[0];
         }
 
         $h = $t = $d = 0;
@@ -272,6 +272,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
 
             case 1:
                 $d = (int)substr($num, -1, 1);
+
                 break;
 
             case 0:
@@ -279,17 +280,18 @@ class Numbers_Words_Locale_sk extends Numbers_Words
                 break;
         }
 
+
         if ($h) {
 
             // inflection of the word "hundred"
             if ($h == 1) {
-                $ret .= $this->_sep . $this->_hundreds[0];
+                $ret .= "jedno" . $this->_hundreds[0] . ' ';
             } elseif ($h == 2) {
-                $ret .= $this->_sep . "dvě" . $this->_hundreds[1];
+                $ret .= "dvě" . $this->_hundreds[1] . ' ';
             } elseif (($h > 1) && ($h < 5)) {
-                $ret .= $this->_sep . $this->_digits[$h] . $this->_hundreds[2];
+                $ret .= $this->_digits[$h] . $this->_hundreds[2] . ' ';
             } else {        //if ($h >= 5)
-                $ret .= $this->_sep . $this->_digits[$h] . $this->_hundreds[3];
+                $ret .= $this->_digits[$h] . $this->_hundreds[3] . ' ';
             }
             // in English only - add ' and' for [1-9]01..[1-9]99
             // (also for 1001..1099, 10001..10099 but it is harder)
@@ -301,59 +303,60 @@ class Numbers_Words_Locale_sk extends Numbers_Words
 
         // ten, twenty etc.
         switch ($t) {
+
             case 2:
-                $ret .= $this->_sep . 'dvadsať';
+                $ret .= 'dvadsať';
                 break;
             case 3:
-                $ret .= $this->_sep . 'tridsať';
+                $ret .= 'tridsať';
                 break;
             case 4:
-                $ret .= $this->_sep . $this->_digits[$t] . 'cet';
+                $ret .= 'štyridsať';
                 break;
 
             case 5:
-                $ret .= $this->_sep . 'päťdesiat';
+                $ret .= 'päťdesiat';
                 break;
 
             case 6:
-                $ret .= $this->_sep . 'šesťdesiat';
+                $ret .= 'šesťdesiat';
                 break;
 
             case 7:
-                $ret .= $this->_sep . 'sedemdesiat';
+                $ret .= 'sedemdesiat';
                 break;
 
             case 8:
-                $ret .= $this->_sep . 'osemdesiat';
+                $ret .= 'osemdesiat';
                 break;
 
             case 9:
-                $ret .= $this->_sep . 'deväťdesiat';
+                $ret .= 'deväťdesiat';
                 break;
 
             case 1:
                 switch ($d) {
                     case 0:
-                        $ret .= $this->_sep . 'desať';
+                        $ret .= 'desať';
                         break;
 
                     case 1:
-                        $ret .= $this->_sep . 'jedenásť';
+                        $ret .= 'jedenásť';
                         break;
 
                     case 3:
-                        $ret .= $this->_sep . 'trinásť';
+                        $ret .= 'trinásť';
                         break;
                     case 4:
-                        $ret .= $this->_sep . 'štrnásť';
+                        $ret .= 'štrnásť';
                         break;
 
                     case 5:
-                        $ret .= $this->_sep . 'pätnásť';
+                        $ret .= 'pätnásť';
                         break;
 
                     case 9:
-                        $ret .= $this->_sep . 'devätnásť';
+                        $ret .= 'devätnásť';
                         break;
 
                     case 2:
@@ -361,14 +364,14 @@ class Numbers_Words_Locale_sk extends Numbers_Words
                     case 6:
                     case 7:
                     case 8:
-                        $ret .= $this->_sep . $this->_digits[$d] . 'násť';
+                        $ret .= $this->_digits[$d] . 'násť';
                         break;
                 }
                 break;
         }
 
         if (($t != 1) && ($d > 0) && (($power == 0) || ($num > 1))) {
-            $ret .= $this->_sep . $this->_digits[$d];
+            $ret .= $this->_digits[$d];
         }
 
         if ($power > 0) {
@@ -379,17 +382,18 @@ class Numbers_Words_Locale_sk extends Numbers_Words
             if (!isset($lev) || !is_array($lev)) {
                 return null;
             }
-
+            $plus = '';
             // inflection of exponental words
             if ($num == 1) {
                 $idx = 0;
+                $plus = 'jedna ';
             } elseif ((($num > 1) && ($num < 5)) || ((intval("$t$d") > 1) && (intval("$t$d") < 5))) {
                 $idx = 1;
             } else {
                 $idx = 2;
             }
 
-            $ret .= $this->_sep . $lev[$idx];
+            $ret .= $this->_sep . $plus . $lev[$idx];
         }
 
         if ($powsuffix != '') {
@@ -434,7 +438,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
             if (count($curr_names[0]) > 1) {
                 $ret .= $this->_sep . $curr_names[0][$lev];
             } else {
-                $ret .= $this->_sep . $curr_names[0][0] . 's';
+                $ret .= $this->_sep . $curr_names[0][0];// . 's'
             }
         } else {
             $ret .= $this->_sep . $curr_names[0][0];
@@ -452,7 +456,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
                     $ret .= $this->_sep . $curr_names[1][$lev];
                 } else {
                     if (!empty($curr_names[1][0])) {
-                        $ret .= $this->_sep . $curr_names[1][0] . 's';
+                        $ret .= $this->_sep . $curr_names[1][0];//. 's'
                     }
 
                 }
