@@ -156,6 +156,7 @@ class Numbers_Words_Locale_tr_TR extends Numbers_Words
         'ZAR' => array(array('Güney Afrika randı'), array('sent')),
         'MGA' => array(array('ariary'), array('')),
         'MUR' => array(array('Mauritian rupee'), array('cent')),
+        'CDF' => array(array('Kongolu Frangı'), array('')),
     );
 
     /**

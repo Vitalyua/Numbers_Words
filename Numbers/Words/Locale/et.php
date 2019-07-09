@@ -163,6 +163,7 @@ class Numbers_Words_Locale_et extends Numbers_Words
         'ZAR' => array(array('Cənubi Afrika randı'), array('sent')),
         'MGA' => array(array('Ariary'), array('')),
         'MUR' => array(array('Mauritian rupee'),  array('sent')),
+        'CDF' => array(array('Kongo frank'), array('')),
 
     );
 

@@ -125,6 +125,7 @@ class Numbers_Words_Locale_id extends Numbers_Words
         'MGA' => array(array('Ariary'), array('')),
         'MUR' => array(array('Mauritian rupee'), array('cent')),
         'IDR' => array(array('Indonesian rupee'), array('')),
+        'CDF' => array(array('Congolese franc'), array('')),
     );
     /**
      * The sufixes for exponents (singular and plural)

@@ -193,6 +193,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         'SGD' => array(array('Singapurský dolár'), array('cent')),
         'LKR' => array(array('Srílanská rupia'), array('cent')),
         'IDR' => array(array('Indonézština rupia'), array('')),
+        'CDF' => array(array('Konžský frank'), array('')),
     );
     // }}}
     // {{{ _toWords()

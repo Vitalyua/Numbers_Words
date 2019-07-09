@@ -230,11 +230,12 @@ class Numbers_Words_Locale_az extends Numbers_Words
         'ZAR' => array(array('Cənubi Afrika randı'), array('sent')),
         'MGA' => array(array('Ariary'), array('')),
         'MUR' => array(array('Mauritian rupisi'), array('sent')),
-		'SCR' => array(array('Seyşel rupisi'), array('sent')),
+        'SCR' => array(array('Seyşel rupisi'), array('sent')),
         'RSD' => array(array('Serb Dinarı'), array('sent')),
-	    'SGD' => array(array('Sinqapur dolları'), array('sent')),
-    	'LKR' => array(array('Sri Lankan rupisi'), array('sent')),
-	'IDR' => array(array('İndoneziya rupisi'), array('')),
+        'SGD' => array(array('Sinqapur dolları'), array('sent')),
+        'LKR' => array(array('Sri Lankan rupisi'), array('sent')),
+        'IDR' => array(array('İndoneziya rupisi'), array('')),
+        'CDF' => array(array('Congolese frank'), array('')),
     );
 
     /**
@@ -383,11 +384,11 @@ class Numbers_Words_Locale_az extends Numbers_Words
      * Converts a currency value to its word representation
      * (with monetary units) in English language
      *
-     * @param integer       $int_curr   An international currency symbol as defined by the ISO 4217 standard (three characters)
-     * @param integer       $decimal A money total amount without fraction part (e.g. amount of dollars)
-     * @param integer|bool  $fraction   Fractional part of the money amount (e.g. amount of cents)
+     * @param integer $int_curr An international currency symbol as defined by the ISO 4217 standard (three characters)
+     * @param integer $decimal A money total amount without fraction part (e.g. amount of dollars)
+     * @param integer|bool $fraction Fractional part of the money amount (e.g. amount of cents)
      *                                  Optional. Defaults to false.
-     * @param integer|bool  $convert_fraction   Convert fraction to words (left as numeric if set to false).
+     * @param integer|bool $convert_fraction Convert fraction to words (left as numeric if set to false).
      *                                          Optional. Defaults to true.
      * @return string  The corresponding word representation for the currency
      *
@@ -405,8 +406,8 @@ class Numbers_Words_Locale_az extends Numbers_Words
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
-        if (empty($curr_names[1][0])){
-            $lev=0;
+        if (empty($curr_names[1][0])) {
+            $lev = 0;
         }
         if ($lev > 0) {
             if (count($curr_names[0]) > 1) {

@@ -188,6 +188,7 @@ class Numbers_Words_Locale_cs extends Numbers_Words
         'SCR' => array(array('Seychellois rupee'), array('cent')),
         'RSD' => array(array('Serbian dinar'), array('cent')),
         'IDR' => array(array('Indonesian rupee'), array('')),
+        'CDF' => array(array('Konžský frank'), array('')),
     );
     // }}}
     // {{{ _toWords()

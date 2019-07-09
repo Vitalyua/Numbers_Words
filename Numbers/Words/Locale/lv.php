@@ -127,6 +127,7 @@ class Numbers_Words_Locale_lv extends Numbers_Words
         'MGA' => array(array('Ariary'), array('')),
         'MUR' => array(array('Mauritian rupee'), array('cent')),
         'IDR' => array(array('Indonesian rupee'), array('')),
+        'CDF' => array(array('Kongo frankas'), array('')),
     );
 
     /**

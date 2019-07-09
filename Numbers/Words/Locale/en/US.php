@@ -281,8 +281,10 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
 	  'SCR' => array(array('Seychellois rupee'), array('cent')),
 	  'RSD' => array(array('Serbian dinar'), array('cent')),
 	  'SGD' => array(array('Singapore dollar'), array('cent')),
- 'LKR' => array(array('Sri Lankan Rupee'), array('cent')),
-'IDR' => array(array('Indonesian rupiah'), array('sen')),
+      'LKR' => array(array('Sri Lankan Rupee'), array('cent')),
+      'IDR' => array(array('Indonesian rupiah'), array('sen')),
+        'CDF' => array(array('Congolese franc','Congolese francs'), array('')),
+
     );
 
     /**

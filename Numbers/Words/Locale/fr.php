@@ -194,6 +194,7 @@ class Numbers_Words_Locale_fr extends Numbers_Words
         'SGD' => array(array('Dollar de Singapour'), array('cent')),
         'LKR' => array(array('Roupie'), array('cent')),
         'IDR' => array(array('Roupie indonésienne'), array('')),
+        'CDF' => array(array('Franc congolais'), array('')),
     );
 
     /**

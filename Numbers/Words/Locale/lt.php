@@ -83,13 +83,13 @@ class Numbers_Words_Locale_lt extends Numbers_Words
      */
     var $_exponent = array(
         0 => array(''),
-        3 => array('tūkstantis','tūkstančiai','tūkstančių'),
-        6 => array('milijonas','milijonai','milijonų'),
-        9 => array('bilijonas','bilijonai','bilijonų'),
-       12 => array('trilijonas','trilijonai','trilijonų'),
-       15 => array('kvadrilijonas','kvadrilijonai','kvadrilijonų'),
-       18 => array('kvintilijonas','kvintilijonai','kvintilijonų')
-        );
+        3 => array('tūkstantis', 'tūkstančiai', 'tūkstančių'),
+        6 => array('milijonas', 'milijonai', 'milijonų'),
+        9 => array('bilijonas', 'bilijonai', 'bilijonų'),
+        12 => array('trilijonas', 'trilijonai', 'trilijonų'),
+        15 => array('kvadrilijonas', 'kvadrilijonai', 'kvadrilijonų'),
+        18 => array('kvintilijonas', 'kvintilijonai', 'kvintilijonų')
+    );
 
     /**
      * The array containing the digits (indexed by the digits themselves).
@@ -124,7 +124,7 @@ class Numbers_Words_Locale_lt extends Numbers_Words
         'SAR' => array(array('Riyal'), array('halala')),
         'KWD' => array(array('Dinar'), array('fil')),
         'INR' => array(array('Rupee'), array('paise')),
-        'BDT' => array(array(1,'Taka','Taka','Taka'), array(2,'poisha','poisha','poisha')),
+        'BDT' => array(array(1, 'Taka', 'Taka', 'Taka'), array(2, 'poisha', 'poisha', 'poisha')),
 
         'ALL' => array(array('lek'), array('qindarka')),
         'AUD' => array(array('Australian dollar'), array('cent')),
@@ -143,7 +143,7 @@ class Numbers_Words_Locale_lt extends Numbers_Words
         'HKD' => array(array('Hong Kong dollar'), array('cent')),
         'HRK' => array(array('Croatian kuna'), array('lipa')),
         'HUF' => array(array('forint'), array('filler')),
-        'ILS' => array(array('new sheqel','new sheqels'), array('agora','agorot')),
+        'ILS' => array(array('new sheqel', 'new sheqels'), array('agora', 'agorot')),
         'ISK' => array(array('Icelandic krona'), array('aurar')),
         'JPY' => array(array('yen'), array('sen')),
         'LTL' => array(array('litas'), array('cent')),
@@ -163,11 +163,12 @@ class Numbers_Words_Locale_lt extends Numbers_Words
         'YUM' => array(array('dinars'), array('para')),
         'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('Ariary'), array('')),
-		'MUR' => array(array('Rupia mauriziana'), array('cent')),
-		'SCR' => array(array('Rupia delle Seychelles'), array('cent')),
-	'SGD' => array(array('Dollaro di Singapore'), array('cent')),
-	'LKR' => array(array('Rupia'), array('cent')),
-'IDR' => array(array('Rupia indonesiana'), array('')),
+        'MUR' => array(array('Rupia mauriziana'), array('cent')),
+        'SCR' => array(array('Rupia delle Seychelles'), array('cent')),
+        'SGD' => array(array('Dollaro di Singapore'), array('cent')),
+        'LKR' => array(array('Rupia'), array('cent')),
+        'IDR' => array(array('Rupia indonesiana'), array('')),
+        'CDF' => array(array('Franco congolese'), array('')),
     );
     // }}}
     // {{{ _toWords()
@@ -176,9 +177,9 @@ class Numbers_Words_Locale_lt extends Numbers_Words
      * Converts a number to its word representation
      * in Lithuanian language
      *
-     * @param integer $num       An integer between -infinity and infinity inclusive :)
+     * @param integer $num An integer between -infinity and infinity inclusive :)
      *                           that need to be converted to words
-     * @param integer $power     The power of ten for the rest of the number to the right.
+     * @param integer $power The power of ten for the rest of the number to the right.
      *                           Optional, defaults to 0.
      * @param integer $powsuffix The power name to be added to the end of the return string.
      *                            Used internally. Optional, defaults to ''.
@@ -204,7 +205,7 @@ class Numbers_Words_Locale_lt extends Numbers_Words
         $num = preg_replace('/^0+/', '', $num);
 
         if (strlen($num) > 3) {
-            $maxp = strlen($num)-1;
+            $maxp = strlen($num) - 1;
             $curp = $maxp;
             for ($p = $maxp; $p > 0; --$p) { // power
 
@@ -214,7 +215,7 @@ class Numbers_Words_Locale_lt extends Numbers_Words
                     $snum = substr($num, $maxp - $curp, $curp - $p + 1);
                     $snum = preg_replace('/^0+/', '', $snum);
                     if ($snum !== '') {
-                        $cursuffix = $this->_exponent[$power][count($this->_exponent[$power])-1];
+                        $cursuffix = $this->_exponent[$power][count($this->_exponent[$power]) - 1];
                         if ($powsuffix != '') {
                             $cursuffix .= $this->_sep . $powsuffix;
                         }
@@ -235,111 +236,111 @@ class Numbers_Words_Locale_lt extends Numbers_Words
 
         $h = $t = $d = 0;
 
-        switch(strlen($num)) {
-        case 3:
-            $h = (int)substr($num, -3, 1);
+        switch (strlen($num)) {
+            case 3:
+                $h = (int)substr($num, -3, 1);
 
-        case 2:
-            $t = (int)substr($num, -2, 1);
+            case 2:
+                $t = (int)substr($num, -2, 1);
 
-        case 1:
-            $d = (int)substr($num, -1, 1);
-            break;
+            case 1:
+                $d = (int)substr($num, -1, 1);
+                break;
 
-        case 0:
-            return;
-            break;
+            case 0:
+                return;
+                break;
         }
 
-        if ( $h > 1 ) {
+        if ($h > 1) {
             $ret .= $this->_sep . $this->_digits[$h] . $this->_sep . 'šimtai';
-        } elseif ( $h ) {
+        } elseif ($h) {
             $ret .= $this->_sep . 'šimtas';
         }
 
         // ten, twenty etc.
         switch ($t) {
-        case 9:
-            $ret .= $this->_sep . 'devyniasdešimt';
-            break;
-
-        case 8:
-            $ret .= $this->_sep . 'aštuoniasdešimt';
-            break;
-
-        case 7:
-            $ret .= $this->_sep . 'septyniasdešimt';
-            break;
-
-        case 6:
-            $ret .= $this->_sep . 'šešiasdešimt';
-            break;
-
-        case 5:
-            $ret .= $this->_sep . 'penkiasdešimt';
-            break;
-
-        case 4:
-            $ret .= $this->_sep . 'keturiasdešimt';
-            break;
-
-        case 3:
-            $ret .= $this->_sep . 'trisdešimt';
-            break;
-
-        case 2:
-            $ret .= $this->_sep . 'dvidešimt';
-            break;
-
-        case 1:
-            switch ($d) {
-            case 0:
-                $ret .= $this->_sep . 'dešimt';
-                break;
-
-            case 1:
-                $ret .= $this->_sep . 'vienuolika';
-                break;
-
-            case 2:
-                $ret .= $this->_sep . 'dvylika';
-                break;
-
-            case 3:
-                $ret .= $this->_sep . 'trylika';
-                break;
-
-            case 4:
-                $ret .= $this->_sep . 'keturiolika';
-                break;
-
-            case 5:
-                $ret .= $this->_sep . 'penkiolika';
-                break;
-
-            case 6:
-                $ret .= $this->_sep . 'šešiolika';
-                break;
-
-            case 7:
-                $ret .= $this->_sep . 'septyniolika';
+            case 9:
+                $ret .= $this->_sep . 'devyniasdešimt';
                 break;
 
             case 8:
-                $ret .= $this->_sep . 'aštuoniolika';
+                $ret .= $this->_sep . 'aštuoniasdešimt';
                 break;
 
-            case 9:
-                $ret .= $this->_sep . 'devyniolika';
+            case 7:
+                $ret .= $this->_sep . 'septyniasdešimt';
                 break;
 
-            }
-            break;
+            case 6:
+                $ret .= $this->_sep . 'šešiasdešimt';
+                break;
+
+            case 5:
+                $ret .= $this->_sep . 'penkiasdešimt';
+                break;
+
+            case 4:
+                $ret .= $this->_sep . 'keturiasdešimt';
+                break;
+
+            case 3:
+                $ret .= $this->_sep . 'trisdešimt';
+                break;
+
+            case 2:
+                $ret .= $this->_sep . 'dvidešimt';
+                break;
+
+            case 1:
+                switch ($d) {
+                    case 0:
+                        $ret .= $this->_sep . 'dešimt';
+                        break;
+
+                    case 1:
+                        $ret .= $this->_sep . 'vienuolika';
+                        break;
+
+                    case 2:
+                        $ret .= $this->_sep . 'dvylika';
+                        break;
+
+                    case 3:
+                        $ret .= $this->_sep . 'trylika';
+                        break;
+
+                    case 4:
+                        $ret .= $this->_sep . 'keturiolika';
+                        break;
+
+                    case 5:
+                        $ret .= $this->_sep . 'penkiolika';
+                        break;
+
+                    case 6:
+                        $ret .= $this->_sep . 'šešiolika';
+                        break;
+
+                    case 7:
+                        $ret .= $this->_sep . 'septyniolika';
+                        break;
+
+                    case 8:
+                        $ret .= $this->_sep . 'aštuoniolika';
+                        break;
+
+                    case 9:
+                        $ret .= $this->_sep . 'devyniolika';
+                        break;
+
+                }
+                break;
         }
 
         // add digits only in <0>,<1,9> and <21,inf>
         if ($t != 1 && $d > 0) {
-            if ( $d > 1 || !$power || $t ) {
+            if ($d > 1 || !$power || $t) {
                 $ret .= $this->_sep . $this->_digits[$d];
             }
         }
@@ -355,9 +356,9 @@ class Numbers_Words_Locale_lt extends Numbers_Words
 
             //echo " $t $d  <br>";
 
-            if ($t == 1 || ($t > 0 && $d == 0 )) {
+            if ($t == 1 || ($t > 0 && $d == 0)) {
                 $ret .= $this->_sep . $lev[2];
-            } elseif ( $d > 1 ) {
+            } elseif ($d > 1) {
                 $ret .= $this->_sep . $lev[1];
             } else {
                 $ret .= $this->_sep . $lev[0];
@@ -376,11 +377,11 @@ class Numbers_Words_Locale_lt extends Numbers_Words
      * Converts a currency value to its word representation
      * (with monetary units) in English language
      *
-     * @param integer       $int_curr   An international currency symbol as defined by the ISO 4217 standard (three characters)
-     * @param integer       $decimal A money total amount without fraction part (e.g. amount of dollars)
-     * @param integer|bool  $fraction   Fractional part of the money amount (e.g. amount of cents)
+     * @param integer $int_curr An international currency symbol as defined by the ISO 4217 standard (three characters)
+     * @param integer $decimal A money total amount without fraction part (e.g. amount of dollars)
+     * @param integer|bool $fraction Fractional part of the money amount (e.g. amount of cents)
      *                                  Optional. Defaults to false.
-     * @param integer|bool  $convert_fraction   Convert fraction to words (left as numeric if set to false).
+     * @param integer|bool $convert_fraction Convert fraction to words (left as numeric if set to false).
      *                                          Optional. Defaults to true.
      * @return string  The corresponding word representation for the currency
      *
@@ -398,7 +399,9 @@ class Numbers_Words_Locale_lt extends Numbers_Words
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
-        if (empty($curr_names[1][0])){ $lev=0;}
+        if (empty($curr_names[1][0])) {
+            $lev = 0;
+        }
         if ($lev > 0) {
             if (count($curr_names[0]) > 1) {
                 $ret .= $this->_sep . $curr_names[0][$lev];

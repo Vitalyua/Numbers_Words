@@ -200,6 +200,7 @@ class Numbers_Words_Locale_pl extends Numbers_Words
         'ZAR' => array(array('rand','randy','randów'), array('cent', 'centy', 'centów')),
         'MGA' => array(array('ariary','ariary','ariary'), array('', '', '')),
         'MUR' => array(array('rupia maurytyjska','rupia maurytyjska','rupia maurytyjska'), array('cent', 'centy', 'centów')),
+        'CDF' => array(array('kongijski frank','kongijski frank','kongijski frank'), array('')),
 
     );
 

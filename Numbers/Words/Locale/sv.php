@@ -127,6 +127,7 @@ class Numbers_Words_Locale_sv extends Numbers_Words
         'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('Ariary'), array('')),
         'MUR' => array(array('Mauritian rupee'), array('cent')),
+        'CDF' => array(array('Kongolesisk franc'), array('')),
     );
 
     /**

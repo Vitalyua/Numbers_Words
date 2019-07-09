@@ -404,6 +404,10 @@ class Numbers_Words_Locale_sl extends Numbers_Words
           'MUR' => array(
             array(1, 'Mauritska rupija', 'Mauritska rupija', 'Mauritska rupija'),
             array(1,  'cent', 'cent', 'cent'),
+        ),
+        'CDF' => array(
+            array(1, 'Kongovski frank', 'Kongovski frank', 'Kongovski frank'),
+            array(1,  '', '', ''),
         )
 
     );

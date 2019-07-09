@@ -410,6 +410,7 @@ class Numbers_Words_Locale_sr extends Numbers_Words
             array(1, 'цент', 'центи', 'центи'),
         ),
           'IDR' => array(array('Indonesian rupee'), array('')),
+          'CDF' => array(array('Цонголесе франц'), array('')),
     );
 
     /**

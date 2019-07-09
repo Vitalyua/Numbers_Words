@@ -83,19 +83,19 @@ class Numbers_Words_Locale_es extends Numbers_Words
      * @access private
      */
     var $_exponent = array(
-        0 => array('',''),
-        3 => array('mil','mil'),
-        6 => array('mill�n','millones'),
-       12 => array('bill�n','billones'),
-       18 => array('tril�n','trillones'),
-       24 => array('cuatrill�n','cuatrillones'),
-       30 => array('quintill�n','quintillones'),
-       36 => array('sextill�n','sextillones'),
-       42 => array('septill�n','septillones'),
-       48 => array('octall�n','octallones'),
-       54 => array('nonall�n','nonallones'),
-       60 => array('decall�n','decallones'),
-        );
+        0 => array('', ''),
+        3 => array('mil', 'mil'),
+        6 => array('mill�n', 'millones'),
+        12 => array('bill�n', 'billones'),
+        18 => array('tril�n', 'trillones'),
+        24 => array('cuatrill�n', 'cuatrillones'),
+        30 => array('quintill�n', 'quintillones'),
+        36 => array('sextill�n', 'sextillones'),
+        42 => array('septill�n', 'septillones'),
+        48 => array('octall�n', 'octallones'),
+        54 => array('nonall�n', 'nonallones'),
+        60 => array('decall�n', 'decallones'),
+    );
     /**
      * The array containing the digits (indexed by the digits themselves).
      * @var array
@@ -104,7 +104,7 @@ class Numbers_Words_Locale_es extends Numbers_Words
     var $_digits = array(
         0 => 'cero', 'uno', 'dos', 'tres', 'cuatro',
         'cinco', 'seis', 'siete', 'ocho', 'nueve'
-        );
+    );
     /**
      * The word separator
      * @var string
@@ -211,10 +211,11 @@ class Numbers_Words_Locale_es extends Numbers_Words
         'ZAR' => array(array('Cənubi Afrika randı'), array('sent')),
         'MGA' => array(array('Ariary'), array('')),
         'MUR' => array(array('Rupia de Mauricio'), array('sent')),
-		'SCR' => array(array('Rupia de Seychelles'), array('sent')),
-	'SGD' => array(array('Dolar de Singapur'), array('sent')),
-'LKR' => array(array('Rupia '), array('sent')),
-	'IDR' => array(array('Rupia indonesia'), array('')),
+        'SCR' => array(array('Rupia de Seychelles'), array('sent')),
+        'SGD' => array(array('Dolar de Singapur'), array('sent')),
+        'LKR' => array(array('Rupia '), array('sent')),
+        'IDR' => array(array('Rupia indonesia'), array('')),
+        'CDF' => array(array('Franco congoleño'), array('')),
     );
 
 
@@ -224,7 +225,7 @@ class Numbers_Words_Locale_es extends Numbers_Words
      * Converts a number to its word representation
      * in Spanish (Castellano).
      *
-     * @param integer $num   An integer between -infinity and infinity inclusive :)
+     * @param integer $num An integer between -infinity and infinity inclusive :)
      *                        that should be converted to a words representation
      * @param integer $power The power of ten for the rest of the number to the right.
      *                        For example toWords(12,3) should give "doce mil".
@@ -268,7 +269,7 @@ class Numbers_Words_Locale_es extends Numbers_Words
                 return $ret;
             }
         } elseif ($num == 0 || $num == '') {
-            return(' '.$this->_digits[0]);
+            return (' ' . $this->_digits[0]);
             $current_power = strlen($num);
         } else {
             $current_power = strlen($num);
@@ -289,107 +290,107 @@ class Numbers_Words_Locale_es extends Numbers_Words
 
         // cientos: doscientos, trescientos, etc...
         switch ($h) {
-        case 1:
-            if (($d == 0) and ($t == 0)) { // is it's '100' use 'cien'
-                $ret .= $this->_sep . 'cien';
-            } else {
-                $ret .= $this->_sep . 'ciento';
-            }
-            break;
-        case 2:
-        case 3:
-        case 4:
-        case 6:
-        case 8:
-            $ret .= $this->_sep . $this->_digits[$h] . 'cientos';
-            break;
-        case 5:
-            $ret .= $this->_sep . 'quinientos';
-            break;
-        case 7:
-            $ret .= $this->_sep . 'setecientos';
-            break;
-        case 9:
-            $ret .= $this->_sep . 'novecientos';
-            break;
+            case 1:
+                if (($d == 0) and ($t == 0)) { // is it's '100' use 'cien'
+                    $ret .= $this->_sep . 'cien';
+                } else {
+                    $ret .= $this->_sep . 'ciento';
+                }
+                break;
+            case 2:
+            case 3:
+            case 4:
+            case 6:
+            case 8:
+                $ret .= $this->_sep . $this->_digits[$h] . 'cientos';
+                break;
+            case 5:
+                $ret .= $this->_sep . 'quinientos';
+                break;
+            case 7:
+                $ret .= $this->_sep . 'setecientos';
+                break;
+            case 9:
+                $ret .= $this->_sep . 'novecientos';
+                break;
         }
 
         // decenas: veinte, treinta, etc...
         switch ($t) {
-        case 9:
-            $ret .= $this->_sep . 'noventa';
-            break;
-
-        case 8:
-            $ret .= $this->_sep . 'ochenta';
-            break;
-
-        case 7:
-            $ret .= $this->_sep . 'setenta';
-            break;
-
-        case 6:
-            $ret .= $this->_sep . 'sesenta';
-            break;
-
-        case 5:
-            $ret .= $this->_sep . 'cincuenta';
-            break;
-
-        case 4:
-            $ret .= $this->_sep . 'cuarenta';
-            break;
-
-        case 3:
-            $ret .= $this->_sep . 'treinta';
-            break;
-
-        case 2:
-            if ($d == 0) {
-                $ret .= $this->_sep . 'veinte';
-            } else {
-                if (($power > 0) and ($d == 1)) {
-                    $ret .= $this->_sep . 'veinti�n';
-                } else {
-                    $ret .= $this->_sep . 'veinti' . $this->_digits[$d];
-                }
-            }
-            break;
-
-        case 1:
-            switch ($d) {
-            case 0:
-                $ret .= $this->_sep . 'diez';
+            case 9:
+                $ret .= $this->_sep . 'noventa';
                 break;
 
-            case 1:
-                $ret .= $this->_sep . 'once';
+            case 8:
+                $ret .= $this->_sep . 'ochenta';
                 break;
 
-            case 2:
-                $ret .= $this->_sep . 'doce';
-                break;
-
-            case 3:
-                $ret .= $this->_sep . 'trece';
-                break;
-
-            case 4:
-                $ret .= $this->_sep . 'catorce';
-                break;
-
-            case 5:
-                $ret .= $this->_sep . 'quince';
+            case 7:
+                $ret .= $this->_sep . 'setenta';
                 break;
 
             case 6:
-            case 7:
-            case 9:
-            case 8:
-                $ret .= $this->_sep . 'dieci' . $this->_digits[$d];
+                $ret .= $this->_sep . 'sesenta';
                 break;
-            }
-            break;
+
+            case 5:
+                $ret .= $this->_sep . 'cincuenta';
+                break;
+
+            case 4:
+                $ret .= $this->_sep . 'cuarenta';
+                break;
+
+            case 3:
+                $ret .= $this->_sep . 'treinta';
+                break;
+
+            case 2:
+                if ($d == 0) {
+                    $ret .= $this->_sep . 'veinte';
+                } else {
+                    if (($power > 0) and ($d == 1)) {
+                        $ret .= $this->_sep . 'veinti�n';
+                    } else {
+                        $ret .= $this->_sep . 'veinti' . $this->_digits[$d];
+                    }
+                }
+                break;
+
+            case 1:
+                switch ($d) {
+                    case 0:
+                        $ret .= $this->_sep . 'diez';
+                        break;
+
+                    case 1:
+                        $ret .= $this->_sep . 'once';
+                        break;
+
+                    case 2:
+                        $ret .= $this->_sep . 'doce';
+                        break;
+
+                    case 3:
+                        $ret .= $this->_sep . 'trece';
+                        break;
+
+                    case 4:
+                        $ret .= $this->_sep . 'catorce';
+                        break;
+
+                    case 5:
+                        $ret .= $this->_sep . 'quince';
+                        break;
+
+                    case 6:
+                    case 7:
+                    case 9:
+                    case 8:
+                        $ret .= $this->_sep . 'dieci' . $this->_digits[$d];
+                        break;
+                }
+                break;
         }
 
         // add digits only if it is a multiple of 10 and not 1x or 2x
@@ -399,15 +400,15 @@ class Numbers_Words_Locale_es extends Numbers_Words
             if ($t != 0) {
                 // use 'un' instead of 'uno' when there is a suffix ('mil', 'millones', etc...)
                 if (($power > 0) and ($d == 1)) {
-                    $ret .= $this->_sep.' y un';
+                    $ret .= $this->_sep . ' y un';
                 } else {
-                    $ret .= $this->_sep.'y '.$this->_digits[$d];
+                    $ret .= $this->_sep . 'y ' . $this->_digits[$d];
                 }
             } else {
                 if (($power > 0) and ($d == 1)) {
-                    $ret .= $this->_sep.'un';
+                    $ret .= $this->_sep . 'un';
                 } else {
-                    $ret .= $this->_sep.$this->_digits[$d];
+                    $ret .= $this->_sep . $this->_digits[$d];
                 }
             }
         }
@@ -440,11 +441,11 @@ class Numbers_Words_Locale_es extends Numbers_Words
      * Converts a currency value to its word representation
      * (with monetary units) in English language
      *
-     * @param integer       $int_curr   An international currency symbol as defined by the ISO 4217 standard (three characters)
-     * @param integer       $decimal A money total amount without fraction part (e.g. amount of dollars)
-     * @param integer|bool  $fraction   Fractional part of the money amount (e.g. amount of cents)
+     * @param integer $int_curr An international currency symbol as defined by the ISO 4217 standard (three characters)
+     * @param integer $decimal A money total amount without fraction part (e.g. amount of dollars)
+     * @param integer|bool $fraction Fractional part of the money amount (e.g. amount of cents)
      *                                  Optional. Defaults to false.
-     * @param integer|bool  $convert_fraction   Convert fraction to words (left as numeric if set to false).
+     * @param integer|bool $convert_fraction Convert fraction to words (left as numeric if set to false).
      *                                          Optional. Defaults to true.
      * @return string  The corresponding word representation for the currency
      *
@@ -462,8 +463,8 @@ class Numbers_Words_Locale_es extends Numbers_Words
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
-        if (empty($curr_names[1][0])){
-            $lev=0;
+        if (empty($curr_names[1][0])) {
+            $lev = 0;
         }
         if ($lev > 0) {
             if (count($curr_names[0]) > 1) {
