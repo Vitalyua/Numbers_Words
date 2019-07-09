@@ -129,6 +129,7 @@ class Numbers_Words_Locale_it_IT extends Numbers_Words
         'ZAR' => array(array('rand'), array('cent')),
         'MGA' => array(array('ariary'), array('')),
         'MUR' => array(array('Mauritian rupee'), array('cent')),
+        'CDF' => array(array('Franco congolese'), array('')),
     );
     /**
      * The sufixes for exponents (singular and plural)

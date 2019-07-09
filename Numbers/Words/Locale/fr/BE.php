@@ -114,6 +114,7 @@ class Numbers_Words_Locale_fr_BE extends Numbers_Words
         'MGA' => array(array('ariary'), array('')),
         'MUR' => array(array('Mauritian rupee'), array('cent')),
         'IDR' => array(array('Indonesian rupee'), array('')),
+        'CDF' => array(array('Franc congolais'), array('')),
     );
     /**
      * The words for some numbers.
