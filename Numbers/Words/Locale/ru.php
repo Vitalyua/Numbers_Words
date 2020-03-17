@@ -270,6 +270,16 @@ class Numbers_Words_Locale_ru extends Numbers_Words
      * @access private
      */
     var $_currency_names = array(
+        'AED' => array(array('Дирхам'), array('fil')),
+        'AFN' => array(array('Afghani'), array('pul')),
+        'DIR' => array(array('Дирхам'), array('fil')),
+        'BHD' => array(array('Динар'), array('fil')),
+        'SAR' => array(array('Риал'), array('халал')),
+        'KWD' => array(array('Динар'), array('fil')),
+        'INR' => array(array('Рупий'), array('paise')),
+        'BDT' => array(array('Taka','Taka'), array('poisha','poisha')),
+        'TZS' => array(array('Tanzanian Shilling'), array('cent')),
+
         'ALL' => array(
             array(1, 'лек', 'лека', 'леков'),
             array(2, 'киндарка', 'киндарки', 'киндарок')
@@ -439,6 +449,7 @@ class Numbers_Words_Locale_ru extends Numbers_Words
             array(1, 'конголезский франк', 'конголезских франков', 'конголезских франков'),
             array(1, '', '', '')
         ),
+        AED
     );
 
     /**
