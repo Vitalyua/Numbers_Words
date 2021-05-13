@@ -449,7 +449,7 @@ class Numbers_Words_Locale_ru extends Numbers_Words
             array(1, 'конголезский франк', 'конголезских франков', 'конголезских франков'),
             array(1, '', '', '')
         ),
-        AED
+
     );
 
     /**
