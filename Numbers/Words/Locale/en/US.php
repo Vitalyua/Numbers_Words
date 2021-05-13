@@ -240,6 +240,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
         'INR' => array(array('Rupee'), array('paise')),
         'BDT' => array(array('Taka','Taka'), array('poisha','poisha')), 
         'TZS' => array(array('Tanzanian Shilling'), array('cent')),
+        'KES' => array(array('Kenyan Shilling'), array('cent')),
       'ALL' => array(array('lek'), array('qindarka')),
       'AUD' => array(array('Australian dollar'), array('cent')),
       'BAM' => array(array('convertible marka'), array('fenig')),
