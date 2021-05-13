@@ -420,6 +420,7 @@ class Numbers_Words_Locale_bg extends Numbers_Words
         'LKR' => array(array('Sri Lankan rupisi'),     array(1,  'цент', 'цента', 'центов')),
         'IDR' => array(array('Indonesian rupee'), array('')),
         'CDF' => array(array('Конгоански франк'), array('')),
+        'KES' => array( array(1, 'Кенийски шилинг', 'Кенийски шилинги', 'кенийски шилинг'),   array(1, 'цент', 'цента', 'центов')),
     );
     // }}}
 

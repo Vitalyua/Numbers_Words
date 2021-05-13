@@ -245,6 +245,7 @@ class Numbers_Words_Locale_de extends Numbers_Words
         'LKR' => array(array('Rupie '), array('cent')),
         'IDR' => array(array('Indonesische Rupie'), array('')),
         'CDF' => array(array('Kongolesischer Franken'), array('')),
+        'KES' => array(array('Kenianischer Schilling'), array('cent')),
     );
 
     // }}}

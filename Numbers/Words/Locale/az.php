@@ -236,6 +236,7 @@ class Numbers_Words_Locale_az extends Numbers_Words
         'LKR' => array(array('Sri Lankan rupisi'), array('sent')),
         'IDR' => array(array('İndoneziya rupisi'), array('')),
         'CDF' => array(array('Congolese frank'), array('')),
+        'KES' => array(array('Keniya şillinqi'), array('sent')),
     );
 
     /**

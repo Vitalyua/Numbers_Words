@@ -216,6 +216,7 @@ class Numbers_Words_Locale_es extends Numbers_Words
         'LKR' => array(array('Rupia '), array('sent')),
         'IDR' => array(array('Rupia indonesia'), array('')),
         'CDF' => array(array('Franco congoleño'), array('')),
+        'KES' => array(array('Chelín keniano'), array('sent')),
     );
 
 

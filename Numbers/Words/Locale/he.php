@@ -286,9 +286,10 @@ class Numbers_Words_Locale_he extends Numbers_Words
       'USD' => array(array('dollar'), array('cent')),
       'YUM' => array(array('dinars'), array('para')),
       'ZAR' => array(array('rand'), array('cent')),
-        'MGA' => array(array('ariary'), array('')),
-        'MUR' => array(array('Mauritian rupee'), array('cent')),
-        'CDF' => array(array('Congolese franc'), array('')),
+      'MGA' => array(array('ariary'), array('')),
+      'MUR' => array(array('Mauritian rupee'), array('cent')),
+      'CDF' => array(array('Congolese franc'), array('')),
+      'KES' => array(array('Shilling kenyan'), array('cent')),
     );
 
     /**

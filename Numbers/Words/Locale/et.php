@@ -164,6 +164,7 @@ class Numbers_Words_Locale_et extends Numbers_Words
         'MGA' => array(array('Ariary'), array('')),
         'MUR' => array(array('Mauritian rupee'),  array('sent')),
         'CDF' => array(array('Kongo frank'), array('')),
+        'KES' => array(array('Keenia šilling'), array('sent')),
 
     );
 
