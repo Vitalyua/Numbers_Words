@@ -506,8 +506,11 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
         $int_curr = strtoupper($int_curr);
         if (!isset($this->_currency_names[$int_curr])) {
             $int_curr = $this->def_currency;
+            $curr_names =    array(array("$int_curr"), array('cent')); //По умолчанию если нет валюты
+        }else{
+            $curr_names = $this->_currency_names[$int_curr];
         }
-        $curr_names = $this->_currency_names[$int_curr];
+
 
         $ret = trim($this->_toWords($decimal));
         $lev = ($decimal == 1) ? 0 : 1;
