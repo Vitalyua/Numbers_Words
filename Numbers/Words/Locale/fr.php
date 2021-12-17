@@ -196,6 +196,7 @@ class Numbers_Words_Locale_fr extends Numbers_Words
         'IDR' => array(array('Roupie indonésienne'), array('')),
         'CDF' => array(array('Franc congolais'), array('')),
         'KES' => array(array('Shilling kenyan'), array('cent')),
+        'XOF' => array(array('Francs CFA'), array('cent')),
     );
 
     /**

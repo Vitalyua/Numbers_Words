@@ -167,6 +167,7 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
        'IDR' => array(array('Indonesian rupiah'), array('sen')),
         'CDF' => array(array('Congolese franc','Congolese francs'), array('')),
         'KES' => array(array(1, 'Kenyan shilling'), array(1, 'cent')),
+        'XOF' => array(array(1, 'Francs CFA'), array(1, 'cent')),
 
     );
 
