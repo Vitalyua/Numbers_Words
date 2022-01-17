@@ -287,6 +287,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
       'IDR' => array(array('Indonesian rupiah'), array('sen')),
       'CDF' => array(array('Congolese franc','Congolese francs'), array('')),
        'XOF' => array(array('Francs CFA'), array('cent')),
+       'NZD' => array(array('New Zealand dollar'), array('cent')),
     );
 
     /**

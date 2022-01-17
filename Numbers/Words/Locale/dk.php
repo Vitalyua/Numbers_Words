@@ -181,6 +181,8 @@ class Numbers_Words_Locale_dk extends Numbers_Words
         'RSD' => array(array('aerbian dinar'), array('cent')),
         'CDF' => array(array('kongolesisk franc'), array('')),
         'KES' => array(array('kenyansk shilling'), array('cent')),
+        'XOF' => array(array(1, 'Francs CFA'), array(1, 'cent')),
+        'NZD' => array(array('New Zealand dollar'), array('cent')),
 
     );
 

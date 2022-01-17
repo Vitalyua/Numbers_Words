@@ -169,6 +169,9 @@ class Numbers_Words_Locale_lt extends Numbers_Words
         'LKR' => array(array('Rupia'), array('cent')),
         'IDR' => array(array('Rupia indonesiana'), array('')),
         'CDF' => array(array('Franco congolese'), array('')),
+        'KES' => array(array('Shilling kenyan'), array('cent')),
+        'XOF' => array(array('Francs CFA'), array('cent')),
+        'NZD' => array(array('New Zealand dollar'), array('cent')),
     );
     // }}}
     // {{{ _toWords()

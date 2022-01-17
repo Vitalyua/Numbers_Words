@@ -217,6 +217,8 @@ class Numbers_Words_Locale_es extends Numbers_Words
         'IDR' => array(array('Rupia indonesia'), array('')),
         'CDF' => array(array('Franco congoleño'), array('')),
         'KES' => array(array('Chelín keniano'), array('sent')),
+        'XOF' => array(array(1, 'Francs CFA'), array(1, 'cent')),
+        'NZD' => array(array('New Zealand dollar'), array('cent')),
     );
 
 

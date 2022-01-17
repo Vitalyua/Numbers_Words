@@ -168,7 +168,7 @@ class Numbers_Words_Locale_en_IN extends Numbers_Words
         'CDF' => array(array('Congolese franc','Congolese francs'), array('')),
         'KES' => array(array(1, 'Kenyan shilling'), array(1, 'cent')),
         'XOF' => array(array(1, 'Francs CFA'), array(1, 'cent')),
-
+        'NZD' => array(array('New Zealand dollar'), array('cent')),
     );
 
     /**

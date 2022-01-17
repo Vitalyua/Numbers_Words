@@ -424,6 +424,8 @@ class Numbers_Words_Locale_ua extends Numbers_Words
             array(1, 'цент', 'центи', 'центів'),
         ),
         'XOF' => array(array('Francs CFA'), array('cent')),
+
+        'NZD' => array(array('New Zealand dollar'), array('cent')),
     );
 
     /**

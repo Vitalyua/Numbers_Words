@@ -194,6 +194,9 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         'LKR' => array(array('Srílanská rupia'), array('cent')),
         'IDR' => array(array('Indonézština rupia'), array('')),
         'CDF' => array(array('Konžský frank'), array('')),
+        'KES' => array(array('Shilling kenyan'), array('cent')),
+        'XOF' => array(array('Francs CFA'), array('cent')),
+        'NZD' => array(array('New Zealand dollar'), array('cent')),
     );
     // }}}
     // {{{ _toWords()

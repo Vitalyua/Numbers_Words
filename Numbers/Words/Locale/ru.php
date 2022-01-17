@@ -453,6 +453,15 @@ class Numbers_Words_Locale_ru extends Numbers_Words
             array(1, 'кенийский шиллинг', 'кенийских шиллингов', 'кенийски шилинги'),
             array(1, 'цент', 'цента', 'центов')
         ),
+        'XOF' => array(
+            array(1, 'Shilling kenyan', 'Shilling kenyan', 'Shilling kenyan'),
+            array(1, 'цент', 'цента', 'центов')
+        ),
+        'NZD' => array(
+            array(1, 'New Zealand dollar', 'New Zealand dollar', 'New Zealand dollar'),
+            array(1, 'цент', 'цента', 'центов')
+        ),
+
     );
 
     /**

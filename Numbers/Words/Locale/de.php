@@ -246,6 +246,8 @@ class Numbers_Words_Locale_de extends Numbers_Words
         'IDR' => array(array('Indonesische Rupie'), array('')),
         'CDF' => array(array('Kongolesischer Franken'), array('')),
         'KES' => array(array('Kenianischer Schilling'), array('cent')),
+        'XOF' => array(array(1, 'Francs CFA'), array(1, 'cent')),
+        'NZD' => array(array('New Zealand dollar'), array('cent')),
     );
 
     // }}}

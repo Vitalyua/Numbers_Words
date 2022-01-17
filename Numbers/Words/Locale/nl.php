@@ -195,6 +195,9 @@ class Numbers_Words_Locale_nl extends Numbers_Words
         'MUR' => array(array('Mauritian rupee'), array('cent')),
         'IDR' => array(array('Indonesian rupee'), array('')),
         'CDF' => array(array('Congolese franc'), array('')),
+        'KES' => array(array('Shilling kenyan'), array('cent')),
+        'XOF' => array(array('Francs CFA'), array('cent')),
+        'NZD' => array(array('New Zealand dollar'), array('cent')),
     );
 
     var $def_currency = 'EUR';

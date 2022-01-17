@@ -129,6 +129,7 @@ class Numbers_Words_Locale_sv extends Numbers_Words
         'MUR' => array(array('Mauritian rupee'), array('cent')),
         'CDF' => array(array('Kongolesisk franc'), array('')),
         'XOF' => array(array('Francs CFA'), array('cent')),
+        'NZD' => array(array('New Zealand dollar'), array('cent')),
     );
 
     /**
