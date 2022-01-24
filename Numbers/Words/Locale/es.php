@@ -146,7 +146,7 @@ class Numbers_Words_Locale_es extends Numbers_Words
         'BYR' => array(array('Belarusiya rublu'), array('qəpik')),
         'BZD' => array(array('Beliz dolları'), array('sent')),
         'CAD' => array(array('Kanada dolları'), array('sent')),
-        'CDF' => array(array('Konqo frankı'), array('sentim')),
+
         'CHF' => array(array('İsveçrə frankı'), array('rapp')),
         'CLP' => array(array('Çili pesosu'), array('sentavo')),
         'CNY' => array(array('Çin yuanı'), array('fen')),
@@ -178,7 +178,7 @@ class Numbers_Words_Locale_es extends Numbers_Words
         'HNL' => array(array('Honduras lempirası'), array('sentavo')),
         'HRK' => array(array('Xorvat kunası'), array('lipa')),
         'HUF' => array(array('Macar forinti'), array('filler')),
-        'IDR' => array(array('İndoneziya rupiası'), array('sen')),
+
         'ILS' => array(array('İsrail yeni şeqeli'), array('aqorot')),
         'INR' => array(array('Hindistan rupisi'), array('paysa')),
         'IQD' => array(array('İraq dinarı'), array('fils')),
@@ -219,6 +219,7 @@ class Numbers_Words_Locale_es extends Numbers_Words
         'KES' => array(array('Chelín keniano'), array('sent')),
         'XOF' => array(array(1, 'Francs CFA'), array(1, 'cent')),
         'NZD' => array(array('New Zealand dollar'), array('cent')),
+
     );
 
 

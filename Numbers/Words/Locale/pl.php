@@ -201,7 +201,7 @@ class Numbers_Words_Locale_pl extends Numbers_Words
         'MGA' => array(array('ariary','ariary','ariary'), array('', '', '')),
         'MUR' => array(array('rupia maurytyjska','rupia maurytyjska','rupia maurytyjska'), array('cent', 'centy', 'centów')),
         'CDF' => array(array('kongijski frank','kongijski frank','kongijski frank'), array('')),
-
+        'CNY' => array(array('Chinese yuan'), array('renminbi')),
     );
 
     /**
@@ -289,7 +289,7 @@ class Numbers_Words_Locale_pl extends Numbers_Words
             break;
 
         case 0:
-            return;
+
             break;
         }
 

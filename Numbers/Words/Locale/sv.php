@@ -130,6 +130,7 @@ class Numbers_Words_Locale_sv extends Numbers_Words
         'CDF' => array(array('Kongolesisk franc'), array('')),
         'XOF' => array(array('Francs CFA'), array('cent')),
         'NZD' => array(array('New Zealand dollar'), array('cent')),
+        'CNY' => array(array('Chinese yuan'), array('cent')),
     );
 
     /**
@@ -279,7 +280,7 @@ class Numbers_Words_Locale_sv extends Numbers_Words
             break;
 
         case 0:
-            return;
+
             break;
         }
 

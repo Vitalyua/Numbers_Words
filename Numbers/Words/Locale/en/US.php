@@ -288,6 +288,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
       'CDF' => array(array('Congolese franc','Congolese francs'), array('')),
        'XOF' => array(array('Francs CFA'), array('cent')),
        'NZD' => array(array('New Zealand dollar'), array('cent')),
+       'CNY' => array(array('Chinese yuan'), array('')),
     );
 
     /**
@@ -375,7 +376,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
             break;
 
         case 0:
-            return;
+
             break;
         }
 
@@ -506,7 +507,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
     {
         $int_curr = strtoupper($int_curr);
         if (!isset($this->_currency_names[$int_curr])) {
-            $int_curr = $this->def_currency;
+           // $int_curr = $this->def_currency;
             $curr_names =    array(array("$int_curr"), array('cent')); //По умолчанию если нет валюты
         }else{
             $curr_names = $this->_currency_names[$int_curr];

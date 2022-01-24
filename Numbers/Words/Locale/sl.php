@@ -408,7 +408,8 @@ class Numbers_Words_Locale_sl extends Numbers_Words
         'CDF' => array(
             array(1, 'Kongovski frank', 'Kongovski frank', 'Kongovski frank'),
             array(1,  '', '', ''),
-        )
+        ),
+        'CNY' => array(array('Chinese yuan'), array('cent')),
 
     );
 

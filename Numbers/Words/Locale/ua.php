@@ -426,6 +426,7 @@ class Numbers_Words_Locale_ua extends Numbers_Words
         'XOF' => array(array('Francs CFA'), array('cent')),
 
         'NZD' => array(array('New Zealand dollar'), array('cent')),
+        'CNY' => array(array('Chinese yuan'), array('cent')),
     );
 
     /**

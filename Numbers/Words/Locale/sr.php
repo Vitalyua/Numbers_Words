@@ -411,6 +411,7 @@ class Numbers_Words_Locale_sr extends Numbers_Words
         ),
           'IDR' => array(array('Indonesian rupee'), array('')),
           'CDF' => array(array('Цонголесе франц'), array('')),
+        'CNY' => array(array('Chinese yuan'), array('cent')),
     );
 
     /**

@@ -198,6 +198,7 @@ class Numbers_Words_Locale_nl extends Numbers_Words
         'KES' => array(array('Shilling kenyan'), array('cent')),
         'XOF' => array(array('Francs CFA'), array('cent')),
         'NZD' => array(array('New Zealand dollar'), array('cent')),
+        'CNY' => array(array('Chinese yuan'), array('renminbi')),
     );
 
     var $def_currency = 'EUR';
@@ -281,7 +282,7 @@ class Numbers_Words_Locale_nl extends Numbers_Words
                 break;
 
             case 0:
-                return;
+
                 break;
         }
 

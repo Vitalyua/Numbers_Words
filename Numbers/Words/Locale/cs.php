@@ -190,6 +190,8 @@ class Numbers_Words_Locale_cs extends Numbers_Words
         'IDR' => array(array('Indonesian rupee'), array('')),
         'CDF' => array(array('Konžský frank'), array('')),
         'KES' => array(array('Kenyansk shilling'), array('cent')),
+        'NZD' => array(array('New Zealand dollar'), array('cent')),
+        'CNY' => array(array('Chinese yuan'), array('renminbi')),
     );
     // }}}
     // {{{ _toWords()
@@ -269,7 +271,7 @@ class Numbers_Words_Locale_cs extends Numbers_Words
             break;
 
         case 0:
-            return;
+
             break;
         }
 

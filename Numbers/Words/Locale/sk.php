@@ -197,6 +197,7 @@ class Numbers_Words_Locale_sk extends Numbers_Words
         'KES' => array(array('Shilling kenyan'), array('cent')),
         'XOF' => array(array('Francs CFA'), array('cent')),
         'NZD' => array(array('New Zealand dollar'), array('cent')),
+        'CNY' => array(array('Chinese yuan'), array('cent')),
     );
     // }}}
     // {{{ _toWords()

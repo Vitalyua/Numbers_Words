@@ -461,6 +461,7 @@ class Numbers_Words_Locale_ru extends Numbers_Words
             array(1, 'New Zealand dollar', 'New Zealand dollar', 'New Zealand dollar'),
             array(1, 'цент', 'цента', 'центов')
         ),
+        'CNY' => array(array('Chinese yuan'), array('cent')),
 
     );
 
