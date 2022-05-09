@@ -506,9 +506,7 @@ class Numbers_Words_Locale_en_US extends Numbers_Words
     function toCurrencyWords($int_curr, $decimal, $fraction = false, $convert_fraction = true)
     {
         $int_curr = strtoupper($int_curr);
-        if ($int_curr=='TND'){
-            $decimal=3;
-        }
+
         if (!isset($this->_currency_names[$int_curr])) {
            // $int_curr = $this->def_currency;
             $curr_names =    array(array("$int_curr"), array('cent')); //По умолчанию если нет валюты
