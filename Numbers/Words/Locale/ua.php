@@ -558,7 +558,7 @@ class Numbers_Words_Locale_ua extends Numbers_Words
         } else {
             $num = str_pad($num, 3, '0', STR_PAD_LEFT);
 
-            $hundreds = (int)$num{0};
+            $hundreds = (int)$num[0];
             if ($hundreds) {
                 $ret = $this->_hundreds[$hundreds];
                 if (substr($num, 1) != '00') {
@@ -568,8 +568,8 @@ class Numbers_Words_Locale_ua extends Numbers_Words
                 $case = 3;
             }
 
-            $tens = (int)$num{1};
-            $ones = (int)$num{2};
+            $tens = (int)$num[1];
+            $ones = (int)$num[2];
             if ($tens || $ones) {
                 if ($tens == 1 && $ones == 0) {
                     $ret .= 'десять';
@@ -577,7 +577,7 @@ class Numbers_Words_Locale_ua extends Numbers_Words
                     $ret .= $this->_teens[$ones + 10];
                 } else {
                     if ($tens > 0) {
-                        $ret .= $this->_tens[(int)$tens];
+                        $ret .= $this->_tens[$tens];
                     }
 
                     if ($ones > 0) {
