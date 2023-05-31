@@ -194,12 +194,8 @@ class Numbers_Words
             $currency[1] = substr($currency[1], 0, 2);
             
             if ($round_digit >= 5) {
-                // round up without losing precision
-                include_once "Math/BigInteger.php";
-
-                $int = new Math_BigInteger(join($currency));
-                $int = $int->add(new Math_BigInteger(1));
-                $int_str = $int->toString();
+                $int = bcadd(join($currency),1);
+                $int_str = (string)$int;
 
                 $currency[0] = substr($int_str, 0, -2);
                 $currency[1] = substr($int_str, -2);
