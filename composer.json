@@ -31,11 +31,15 @@
         {
             "name": "Piotr Klaban",
             "email": "makler@man.torun.pl"
-        }
+        },
+	{
+		"name": "Oleksandr Shevchuk",
+		"email": "aleksandr.shevchuk@gmail.com"
+	}
     ],
     "require": {
-        "php": ">=5.3.2",
-        "pear/math_biginteger": ">=1.0.2"
+        "php": ">=8.0",
+        "ext-bcmath": "*"
     },
     "autoload": {
         "psr-0": {
